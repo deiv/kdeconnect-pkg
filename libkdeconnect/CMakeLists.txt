@@ -13,19 +13,20 @@ set(libkdeconnect_SRC
     devicesmodel.cpp
     notificationsmodel.cpp
     modeltest.cpp
+    kdebugnamespace.cpp
 )
 
 set_source_files_properties(
     ${CMAKE_BINARY_DIR}/kded/org.kde.kdeconnect.daemon.xml
     ${CMAKE_BINARY_DIR}/kded/org.kde.kdeconnect.device.xml
-#    ${CMAKE_BINARY_DIR}/kded/plugins/battery/org.kde.kdeconnect.device.battery.xml
+    ${CMAKE_BINARY_DIR}/kded/plugins/battery/org.kde.kdeconnect.device.battery.xml
     ${CMAKE_BINARY_DIR}/kded/plugins/notifications/org.kde.kdeconnect.device.notifications.xml
     ${CMAKE_BINARY_DIR}/kded/plugins/notifications/org.kde.kdeconnect.device.notifications.notification.xml
     PROPERTIES NO_NAMESPACE true
 )
 qt4_add_dbus_interface(libkdeconnect_SRC ${CMAKE_BINARY_DIR}/kded/org.kde.kdeconnect.daemon.xml daemoninterface)
 qt4_add_dbus_interface(libkdeconnect_SRC ${CMAKE_BINARY_DIR}/kded/org.kde.kdeconnect.device.xml deviceinterface)
-#qt4_add_dbus_interface(libkdeconnect_SRC ${CMAKE_BINARY_DIR}/kded/plugins/battery/org.kde.kdeconnect.device.battery.xml devicebatteryinterface )
+qt4_add_dbus_interface(libkdeconnect_SRC ${CMAKE_BINARY_DIR}/kded/plugins/battery/org.kde.kdeconnect.device.battery.xml devicebatteryinterface )
 qt4_add_dbus_interface(libkdeconnect_SRC ${CMAKE_BINARY_DIR}/kded/plugins/notifications/org.kde.kdeconnect.device.notifications.xml devicenotificationsinterface )
 qt4_add_dbus_interface(libkdeconnect_SRC ${CMAKE_BINARY_DIR}/kded/plugins/notifications/org.kde.kdeconnect.device.notifications.notification.xml notificationinterface  )
 
@@ -38,7 +39,7 @@ set_target_properties(kdeconnect PROPERTIES
 add_dependencies(kdeconnect
         org.kde.kdeconnect.daemon.xml
         org.kde.kdeconnect.device.xml
-#        org.kde.kdeconnect.device.battery.xml
+        org.kde.kdeconnect.device.battery.xml
         org.kde.kdeconnect.device.notifications.xml
         org.kde.kdeconnect.device.notifications.notification.xml
 )

@@ -26,6 +26,8 @@
 
 #include "../kdeconnectplugin.h"
 
+#define PACKAGE_TYPE_MPRIS QLatin1String("kdeconnect.mpris")
+
 class MprisControlPlugin
     : public KdeConnectPlugin
 {
@@ -40,7 +42,7 @@ public Q_SLOTS:
 
 private Q_SLOTS:
     void serviceOwnerChanged(const QString &name, const QString &oldOwner, const QString &newOwner);
-    void propertiesChanged(const QString& interface, const QVariantMap& properties);
+    void propertiesChanged(const QString& propertyInterface, const QVariantMap& properties);
 
 private:
     void addPlayer(const QString& ifaceName);

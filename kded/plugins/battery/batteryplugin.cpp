@@ -20,11 +20,11 @@
 
 #include "batteryplugin.h"
 
-#include <QDebug>
 #include <KNotification>
 #include <KIcon>
 #include <KLocalizedString>
 
+#include "../../kdebugnamespace.h"
 #include "batterydbusinterface.h"
 
 K_PLUGIN_FACTORY( KdeConnectPluginFactory, registerPlugin< BatteryPlugin >(); )
@@ -34,6 +34,9 @@ BatteryPlugin::BatteryPlugin(QObject *parent, const QVariantList &args)
     : KdeConnectPlugin(parent, args)
     , batteryDbusInterface(new BatteryDbusInterface(parent))
 {
+
+    //TODO: Add battery reporting, could be based on:
+    // http://kde-apps.org/content/show.php/battery+plasmoid+with+remaining+time?content=120309
 
 }
 
@@ -50,34 +53,30 @@ BatteryPlugin::~BatteryPlugin()
     // the next dbus access to its parent). The implication of not deleting this
     // is that disabling the plugin does not remove the interface (that will
     // return outdated values) and that enabling it again instantiates a second
-    // adaptor. This is a partial memory leak (the memory will be freed when the
-    // device is destroyed anyway)
+    // adaptor. This is also a memory leak until the entire device is destroyed.
 
     //batteryDbusInterface->deleteLater();
 }
 
 bool BatteryPlugin::receivePackage(const NetworkPackage& np)
 {
-
-    if (np.type() != PACKAGE_TYPE_BATTERY) return false;
-
     bool isCharging = np.get<bool>("isCharging");
     int currentCharge = np.get<int>("currentCharge");
+    int thresholdEvent = np.get<int>("thresholdEvent", (int)ThresholdNone);
 
-    if (batteryDbusInterface->isCharging() != currentCharge
-        || batteryDbusInterface->isCharging() != isCharging) {
-
+    if (batteryDbusInterface->charge() != currentCharge
+        || batteryDbusInterface->isCharging() != isCharging
+    ) {
         batteryDbusInterface->updateValues(isCharging, currentCharge);
+    }
 
-        if (currentCharge == 14 && !isCharging) {
-            KNotification* notification = new KNotification("batteryLow");
-            notification->setPixmap(KIcon("battery-040").pixmap(48, 48));
-            notification->setComponentData(KComponentData("kdeconnect", "kdeconnect"));
-            notification->setTitle(i18nc("device name: low battery", "%1: low battery",device()->name()));
-            notification->setText(i18n("Battery at 14%"));
-            notification->sendEvent();
-        }
-
+    if ( thresholdEvent == ThresholdBatteryLow && !isCharging ) {
+        KNotification* notification = new KNotification("batteryLow");
+        notification->setPixmap(KIcon("battery-040").pixmap(48, 48));
+        notification->setComponentData(KComponentData("kdeconnect", "kdeconnect"));
+        notification->setTitle(i18nc("device name: low battery", "%1: low battery", device()->name()));
+        notification->setText(i18n("Battery at %1%", currentCharge));
+        notification->sendEvent();
     }
 
     return true;

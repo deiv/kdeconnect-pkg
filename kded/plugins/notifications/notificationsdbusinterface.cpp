@@ -20,18 +20,23 @@
 
 #include "notificationsdbusinterface.h"
 
-#include <QDebug>
 #include <QDBusConnection>
 
 #include <KNotification>
 #include <KIcon>
+#include <KMD5>
+
+#include "../../kdebugnamespace.h"
+#include "../../filetransferjob.h"
+#include "notificationsplugin.h"
 
 NotificationsDbusInterface::NotificationsDbusInterface(Device* device, QObject *parent)
     : QDBusAbstractAdaptor(parent)
     , mDevice(device)
     , mLastId(0)
+    , imagesDir(QDir::temp().absoluteFilePath("kdeconnect"))
 {
-
+    imagesDir.mkpath(imagesDir.absolutePath());
 }
 
 NotificationsDbusInterface::~NotificationsDbusInterface()
@@ -49,18 +54,27 @@ void NotificationsDbusInterface::processPackage(const NetworkPackage& np)
     if (np.get<bool>("isCancel")) {
         removeNotification(np.get<QString>("id"));
     } else {
-        Notification* noti = new Notification(np, this);
+
+        QString destination;
+        if (np.hasPayload()) {
+            QString filename = KMD5(np.get<QString>("appName").toLatin1()).hexDigest();  //TODO: Store with extension?
+            destination = imagesDir.absoluteFilePath(filename);
+            FileTransferJob* job = np.createPayloadTransferJob(destination);
+            job->start();
+        }
+
+        Notification* noti = new Notification(np, destination, this);
         addNotification(noti);
 
-        if (!np.get<bool>("requestAnswer", false)) { //Do not show notifications for answers to a initial request
-            KNotification* notification = new KNotification("notification");
+        //Do not show updates to existent notification nor answers to a initialization request
+        if (!mInternalIdToPublicId.contains(noti->internalId()) && !np.get<bool>("requestAnswer", false)) {
+            KNotification* notification = new KNotification("notification", KNotification::CloseOnTimeout, this);
             notification->setPixmap(KIcon("preferences-desktop-notification").pixmap(48, 48));
             notification->setComponentData(KComponentData("kdeconnect", "kdeconnect"));
             notification->setTitle(mDevice->name());
             notification->setText(noti->appName() + ": " + noti->ticker());
             notification->sendEvent();
         }
-
 
     }
 }
@@ -87,23 +101,20 @@ void NotificationsDbusInterface::addNotification(Notification* noti)
 
 void NotificationsDbusInterface::removeNotification(const QString& internalId)
 {
-    qDebug() << "removeNotification" << internalId;
+    kDebug(kdeconnect_kded()) << "removeNotification" << internalId;
 
     if (!mInternalIdToPublicId.contains(internalId)) {
-        qDebug() << "Not found";
+        kDebug(kdeconnect_kded()) << "Not found";
         return;
     }
 
-    QString publicId = mInternalIdToPublicId[internalId];
-    mInternalIdToPublicId.remove(internalId);
+    QString publicId = mInternalIdToPublicId.take(internalId);
 
-    if (!mNotifications.contains(publicId)) {
-        qDebug() << "Not found";
+    Notification* noti = mNotifications.take(publicId);
+    if (!noti) {
+        kDebug(kdeconnect_kded()) << "Not found";
         return;
     }
-
-    Notification* noti = mNotifications[publicId];
-    mNotifications.remove(publicId);
 
     //Deleting the notification will unregister it automatically
     //QDBusConnection::sessionBus().unregisterObject(mDevice->dbusPath()+"/notifications/"+publicId);

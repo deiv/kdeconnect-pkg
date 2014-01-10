@@ -20,12 +20,11 @@
 
 #include "pluginloader.h"
 
-#include "kdeconnectplugin.h"
-
 #include <KServiceTypeTrader>
-#include <KDebug>
 
+#include "../kdebugnamespace.h"
 #include "../device.h"
+#include "kdeconnectplugin.h"
 
 PluginLoader* PluginLoader::instance()
 {
@@ -36,53 +35,55 @@ PluginLoader* PluginLoader::instance()
 PluginLoader::PluginLoader()
 {
     KService::List offers = KServiceTypeTrader::self()->query("KdeConnect/Plugin");
-    for(KService::List::const_iterator iter = offers.begin(); iter < offers.end(); ++iter) {
+    for(KService::List::const_iterator iter = offers.constBegin(); iter != offers.constEnd(); ++iter) {
         KService::Ptr service = *iter;
         plugins[service->library()] = service;
     }
 }
 
-QStringList PluginLoader::getPluginList()
+QStringList PluginLoader::getPluginList() const
 {
     return plugins.keys();
 }
 
-KPluginInfo PluginLoader::getPluginInfo(const QString& name) {
-
+KPluginInfo PluginLoader::getPluginInfo(const QString& name) const
+{
     KService::Ptr service = plugins[name];
     if (!service) {
-        qDebug() << "Plugin unknown" << name;
+        kDebug(kdeconnect_kded()) << "Plugin unknown" << name;
         return KPluginInfo();
     }
 
     return KPluginInfo(service);
 }
 
-KdeConnectPlugin* PluginLoader::instantiatePluginForDevice(const QString& name, Device* device) {
+PluginData PluginLoader::instantiatePluginForDevice(const QString& name, Device* device) const
+{
+    PluginData ret;
 
     KService::Ptr service = plugins[name];
     if (!service) {
-        qDebug() << "Plugin unknown" << name;
-        return NULL;
+        kDebug(kdeconnect_kded()) << "Plugin unknown" << name;
+        return ret;
     }
 
     KPluginFactory *factory = KPluginLoader(service->library()).factory();
     if (!factory) {
-        qDebug() << "KPluginFactory could not load the plugin:" << service->library();
-        return NULL;
+        kDebug(kdeconnect_kded()) << "KPluginFactory could not load the plugin:" << service->library();
+        return ret;
     }
 
-    QVariant deviceVariant;
-    deviceVariant.setValue<Device*>(device);
+    ret.interfaces = service->property("X-KdeConnect-SupportedPackageType", QVariant::StringList).toStringList();
 
-    //FIXME: create<KdeConnectPlugin> return NULL
-    QObject *plugin = factory->create<QObject>(device, QVariantList() << deviceVariant);
-    if (!plugin) {
-        qDebug() << "Error loading plugin";
-        return NULL;
+    QVariant deviceVariant = QVariant::fromValue<Device*>(device);
+
+    ret.plugin = (KdeConnectPlugin*) factory->create<QObject>(device, QVariantList() << deviceVariant);
+    if (!ret.plugin) {
+        kDebug(kdeconnect_kded()) << "Error loading plugin";
+        return ret;
     }
 
-    qDebug() << "Loaded plugin:" << service->name();
-    return (KdeConnectPlugin*)plugin;
+    kDebug(kdeconnect_kded()) << "Loaded plugin:" << service->name();
+    return ret;
 }
 

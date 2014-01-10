@@ -31,8 +31,8 @@
 
 #include "device.h"
 #include "networkpackage.h"
-#include "devicelinks/devicelink.h"
-#include "linkproviders/linkprovider.h"
+#include "backends/devicelink.h"
+#include "backends/linkprovider.h"
 
 class Daemon
     : public KDEDModule
@@ -73,8 +73,8 @@ private:
     QMap<QString, Device*> mDevices;
 
     // The Initializer object sets things up, and also does cleanup when it goes out of scope
-    QCA::Initializer init;
+    QCA::Initializer mQcaInitializer;
 
 };
 
-#endif // UDP_WIRELESS_H
+#endif

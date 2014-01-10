@@ -22,24 +22,44 @@
 
 #include <KSharedConfig>
 #include <KConfigGroup>
+
 #include <QByteArray>
 #include <QDataStream>
 #include <QHostInfo>
 #include <QSslKey>
 #include <QDateTime>
-#include <QtCrypto/QtCrypto>
-
+#include <QtCrypto>
 #include <qjson/serializer.h>
 #include <qjson/qobjecthelper.h>
 
+#include "filetransferjob.h"
+
 const QCA::EncryptionAlgorithm NetworkPackage::EncryptionAlgorithm = QCA::EME_PKCS1v15;
-const int NetworkPackage::ProtocolVersion = 3;
+const int NetworkPackage::ProtocolVersion = 5;
 
 NetworkPackage::NetworkPackage(const QString& type)
 {
     mId = QString::number(QDateTime::currentMSecsSinceEpoch());
     mType = type;
     mBody = QVariantMap();
+    mPayload = QSharedPointer<QIODevice>();
+    mPayloadSize = 0;
+}
+
+void NetworkPackage::createIdentityPackage(NetworkPackage* np)
+{
+    KSharedConfigPtr config = KSharedConfig::openConfig("kdeconnectrc");
+    QString id = config->group("myself").readEntry<QString>("id","");
+    np->mId = QString::number(QDateTime::currentMSecsSinceEpoch());
+    np->mType = PACKAGE_TYPE_IDENTITY;
+    np->mPayload = QSharedPointer<QIODevice>();
+    np->mPayloadSize = 0;
+    np->set("deviceId", id);
+    np->set("deviceName", QHostInfo::localHostName());
+    np->set("protocolType", "desktop"); //TODO: Detect laptop, tablet, phone...
+    np->set("protocolVersion",  NetworkPackage::ProtocolVersion);
+
+    //kDebug(kdeconnect_kded()) << "createIdentityPackage" << np->serialize();
 }
 
 QByteArray NetworkPackage::serialize() const
@@ -51,14 +71,22 @@ QByteArray NetworkPackage::serialize() const
     //variant["body"] = mBody;
     QVariantMap variant = QJson::QObjectHelper::qobject2qvariant(this);
 
+    if (hasPayload()) {
+        //kDebug(kdeconnect_kded()) << "Serializing payloadTransferInfo";
+        variant["payloadSize"] = 0;
+        variant["payloadTransferInfo"] = mPayloadTransferInfo;
+    }
+
     //QVariant -> json
     bool ok;
     QJson::Serializer serializer;
     QByteArray json = serializer.serialize(variant,&ok);
     if (!ok) {
-        qDebug() << "Serialization error:" << serializer.errorMessage();
+        kDebug(kdeconnect_kded()) << "Serialization error:" << serializer.errorMessage();
     } else {
-        qDebug() << "Serialized package:" << json;
+        if (!isEncrypted()) {
+            //kDebug(kdeconnect_kded()) << "Serialized package:" << json;
+        }
         json.append('\n');
     }
 
@@ -67,25 +95,30 @@ QByteArray NetworkPackage::serialize() const
 
 bool NetworkPackage::unserialize(const QByteArray& a, NetworkPackage* np)
 {
-    qDebug() << "Unserialize: " << a;
-
     //Json -> QVariant
     QJson::Parser parser;
     bool ok;
     QVariantMap variant = parser.parse(a, &ok).toMap();
     if (!ok) {
-        qDebug() << "Unserialization error:" << parser.errorLine() << parser.errorString();
+        kDebug(kdeconnect_kded()) << "Unserialization error:" << a;
         return false;
     }
 
     //QVariant -> Object
-    QJson::QObjectHelper::qvariant2qobject(variant,np);
+    QJson::QObjectHelper::qvariant2qobject(variant, np);
+
+    if (!np->isEncrypted()) {
+        //kDebug(kdeconnect_kded()) << "Unserialized: " << a;
+    }
+
+    np->mPayloadSize = variant["payloadSize"].toInt(); //Will return 0 if was not present, which is ok
+    np->mPayloadTransferInfo = variant["payloadTransferInfo"].toMap(); //Will return an empty qvariantmap if was not present, which is ok
 
     return true;
 
 }
 
-void NetworkPackage::encrypt (QCA::PublicKey& key)
+void NetworkPackage::encrypt(QCA::PublicKey& key)
 {
 
     QByteArray serialized = serialize();
@@ -100,7 +133,7 @@ void NetworkPackage::encrypt (QCA::PublicKey& key)
         chunks.append( encryptedChunk.toBase64() );
     }
 
-    qDebug() << chunks.size() << "chunks";
+    //kDebug(kdeconnect_kded()) << chunks.size() << "chunks";
 
     mId = QString::number(QDateTime::currentMSecsSinceEpoch());
     mType = PACKAGE_TYPE_ENCRYPTED;
@@ -109,8 +142,9 @@ void NetworkPackage::encrypt (QCA::PublicKey& key)
 
 }
 
-bool NetworkPackage::decrypt (QCA::PrivateKey& key, NetworkPackage* out) const
+bool NetworkPackage::decrypt(QCA::PrivateKey& key, NetworkPackage* out) const
 {
+
     const QStringList& chunks = mBody["data"].toStringList();
 
     QByteArray decryptedJson;
@@ -122,26 +156,22 @@ bool NetworkPackage::decrypt (QCA::PrivateKey& key, NetworkPackage* out) const
             return false;
         }
         decryptedJson.append(decryptedChunk.toByteArray());
-
     }
 
-    return unserialize(decryptedJson, out);
+    bool success = unserialize(decryptedJson, out);
+
+    if (!success) return false;
+
+    if (hasPayload()) {
+        out->mPayload = mPayload;
+    }
+
+    return true;
 
 }
 
-
-
-void NetworkPackage::createIdentityPackage(NetworkPackage* np)
+FileTransferJob* NetworkPackage::createPayloadTransferJob(const KUrl& destination) const
 {
-    KSharedConfigPtr config = KSharedConfig::openConfig("kdeconnectrc");
-    QString id = config->group("myself").readEntry<QString>("id","");
-    np->mId = QString::number(QDateTime::currentMSecsSinceEpoch());
-    np->mType = PACKAGE_TYPE_IDENTITY;
-    np->set("deviceId", id);
-    np->set("deviceName", QHostInfo::localHostName());
-    np->set("protocolVersion",  NetworkPackage::ProtocolVersion);
-
-    //qDebug() << "createIdentityPackage" << np->serialize();
+    return new FileTransferJob(payload(), payloadSize(), destination);
 }
-
 

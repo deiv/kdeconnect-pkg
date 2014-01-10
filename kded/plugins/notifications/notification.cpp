@@ -21,15 +21,17 @@
 #include "notification.h"
 
 #include <QDBusConnection>
-#include <QDebug>
 
-Notification::Notification(const NetworkPackage& np, QObject* parent)
+#include "../../kdebugnamespace.h"
+
+Notification::Notification(const NetworkPackage& np, const QString& iconPath, QObject* parent)
     : QObject(parent)
 {
     mId = np.get<QString>("id");
     mAppName = np.get<QString>("appName");
     mTicker = np.get<QString>("ticker");
     mDismissable = np.get<bool>("isClearable");
+    mIconPath = iconPath;
 }
 
 Notification::~Notification()

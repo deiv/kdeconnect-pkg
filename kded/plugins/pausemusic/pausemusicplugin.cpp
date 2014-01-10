@@ -20,12 +20,16 @@
 
 #include "pausemusicplugin.h"
 
-#include <QDebug>
 #include <QDBusConnection>
 #include <QDBusInterface>
-#include <qdbusconnectioninterface.h>
+#include <QDBusConnectionInterface>
 #include <QDBusReply>
 #include <QDBusMessage>
+
+#include <KSharedConfig>
+#include <KConfigGroup>
+
+#include "../../kdebugnamespace.h"
 
 K_PLUGIN_FACTORY( KdeConnectPluginFactory, registerPlugin< PauseMusicPlugin >(); )
 K_EXPORT_PLUGIN( KdeConnectPluginFactory("kdeconnect_pausemusic", "kdeconnect_pausemusic") )
@@ -34,33 +38,23 @@ PauseMusicPlugin::PauseMusicPlugin(QObject* parent, const QVariantList& args)
     : KdeConnectPlugin(parent, args)
 {
 
-    //TODO: Be able to change this from plugin settings
-    pauseWhen = PauseWhenRinging;
-
 }
 
 bool PauseMusicPlugin::receivePackage(const NetworkPackage& np)
 {
+    //FIXME: There should be a better way to listen to changes in the config file instead of reading the value each time
+    KSharedConfigPtr config = KSharedConfig::openConfig("kdeconnect/plugins/pausemusic");
+    bool pauseOnlyWhenTalking = config->group("pause_condition").readEntry("talking_only", false);
 
-    if (np.type() != PACKAGE_TYPE_TELEPHONY) {
-        return false;
-    }
-
-
-    if (pauseWhen == PauseWhenRinging) {
-
-        if (np.get<QString>("event") != "ringing" && np.get<QString>("event") != "talking") {
-            return true;
-        }
-
-    } else if (pauseWhen == PauseWhenTalking) {
-
+    if (pauseOnlyWhenTalking) {
         if (np.get<QString>("event") != "talking") {
             return true;
         }
-
+    } else { //Pause as soon as it rings
+        if (np.get<QString>("event") != "ringing" && np.get<QString>("event") != "talking") {
+            return true;
+        }
     }
-
 
     bool pauseConditionFulfilled = !np.get<bool>("isCancel");
 
@@ -82,7 +76,7 @@ bool PauseMusicPlugin::receivePackage(const NetworkPackage& np)
     } else {
         Q_FOREACH (const QString& iface, pausedSources) {
             QDBusInterface mprisInterface(iface, "/org/mpris/MediaPlayer2", "org.mpris.MediaPlayer2.Player");
-            //Calling play does not work in spotify
+            //Calling play does not work for Spotify
             //mprisInterface->call(QDBus::Block,"Play");
             //Workaround: Using playpause instead (checking first if it is already playing)
             QString status = mprisInterface.property("PlaybackStatus").toString();

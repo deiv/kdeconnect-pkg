@@ -20,10 +20,10 @@
 
 #include "telephonyplugin.h"
 
-#include <QDebug>
-
 #include <KLocalizedString>
 #include <KIcon>
+
+#include "../../kdebugnamespace.h"
 
 K_PLUGIN_FACTORY( KdeConnectPluginFactory, registerPlugin< TelephonyPlugin >(); )
 K_EXPORT_PLUGIN( KdeConnectPluginFactory("kdeconnect_telephony", "kdeconnect_telephony") )
@@ -55,8 +55,8 @@ KNotification* TelephonyPlugin::createNotification(const NetworkPackage& np)
     } else if (event == "sms") {
         type = "smsReceived";
         icon = "mail-receive";
-        QString content = np.get<QString>("messageBody","");
-        content = i18n("SMS from %1: %2", phoneNumber, content);
+        QString messageBody = np.get<QString>("messageBody","");
+        content = i18n("SMS from %1: %2", phoneNumber, messageBody);
     } else if (event == "talking") {
         return NULL;
     } else {
@@ -66,9 +66,9 @@ KNotification* TelephonyPlugin::createNotification(const NetworkPackage& np)
         content = i18n("Unknown telephony event: %2", event);
     }
 
-    qDebug() << "Creating notification with type:" << type;
+    kDebug(kdeconnect_kded()) << "Creating notification with type:" << type;
 
-    KNotification* notification = new KNotification(type); //, KNotification::Persistent
+    KNotification* notification = new KNotification(type, KNotification::CloseOnTimeout, this); //, KNotification::Persistent
     notification->setPixmap(KIcon(icon).pixmap(48, 48));
     notification->setComponentData(KComponentData("kdeconnect", "kdeconnect"));
     notification->setTitle(title);
@@ -80,9 +80,6 @@ KNotification* TelephonyPlugin::createNotification(const NetworkPackage& np)
 
 bool TelephonyPlugin::receivePackage(const NetworkPackage& np)
 {
-
-    if (np.type() != PACKAGE_TYPE_TELEPHONY) return false;
-
     if (np.get<bool>("isCancel")) {
 
         //It would be awesome to remove the old notification from the system tray here, but there is no way to do it :(
