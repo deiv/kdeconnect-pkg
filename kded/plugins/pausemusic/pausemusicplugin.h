@@ -40,8 +40,6 @@ public Q_SLOTS:
     virtual void connected() { };
     
 private:
-    enum PauseCondtions { PauseWhenTalking, PauseWhenRinging, NeverPause };
-    PauseCondtions pauseWhen;
     QSet<QString> pausedSources;
 
 };

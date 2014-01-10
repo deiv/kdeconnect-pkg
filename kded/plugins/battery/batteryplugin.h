@@ -21,11 +21,9 @@
 #ifndef BATTERYPLUGIN_H
 #define BATTERYPLUGIN_H
 
-#include <QDBusAbstractAdaptor>
-
-#include <KNotification>
-
 #include "../kdeconnectplugin.h"
+
+#define PACKAGE_TYPE_BATTERY QLatin1String("kdeconnect.battery")
 
 class BatteryDbusInterface;
 
@@ -43,6 +41,14 @@ public Q_SLOTS:
     virtual void connected();
 
 private:
+    // Keep these values in sync with THRESHOLD* constants in
+    // kdeconnect-android:BatteryPlugin.java
+    // see README for their meaning
+    enum ThresholdBatteryEvent {
+        ThresholdNone       = 0,
+        ThresholdBatteryLow = 1
+    };
+
     BatteryDbusInterface* batteryDbusInterface;
 };
 

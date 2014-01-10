@@ -1,6 +1,33 @@
 [Desktop Entry]
 Name=KdeConnect
-Comment=KdeConnect awesome plasmoid
+Name[cs]=KdeConnect
+Name[de]=KdeConnect
+Name[es]=KdeConnect
+Name[fr]=KdeConnect
+Name[hu]=KdeConnect
+Name[it]=KdeConnect
+Name[nl]=KdeConnect
+Name[pt]=KDEConnect
+Name[pt_BR]=KdeConnect
+Name[ru]=KdeConnect
+Name[sv]=KDE anslut
+Name[tr]=KdeConnect
+Name[uk]=KdeConnect
+Name[x-test]=xxKdeConnectxx
+Comment=Show notifications from your devices using KDE Connect
+Comment[de]=Zeigt Benachrichtigungen von Ihren Geräten mit KDE-Connect
+Comment[es]=Mostrar notificaciones de sus dispositivos usando KDE Connect
+Comment[fr]=Afficher les notifications provenant de vos périphériques à l'aide de KDE Connect
+Comment[hu]=Az eszközökről származó értesítések megjelenítése a KDE csatlakozás használatával
+Comment[it]=Mostra le notifiche dei tuoi dispositivi tramite KDE Connect
+Comment[nl]=Meldingen van uw apparaten met KDE Connect tonen
+Comment[pt]=Mostrar notificações dos seus dispositivos usando o KDE Connect
+Comment[pt_BR]=Mostrar notificações dos seus dispositivos usando o KDE Connect
+Comment[ru]=Показывать уведомления от устройств с помощью KDE Connect
+Comment[sv]=Visa underrättelser från apparater med KDE anslut
+Comment[tr]=KDE Bağlan kullanılarak cihazınızdan bildirimleri görüntüleyin
+Comment[uk]=Показ сповіщень з ваших пристроїв за допомогою програми «З’єднання KDE»
+Comment[x-test]=xxShow notifications from your devices using KDE Connectxx
 
 Icon=smartphone
 Type=Service
@@ -10,6 +37,7 @@ X-Plasma-API=declarativeappletscript
 X-Plasma-MainScript=ui/kdeconnect.qml
 X-Plasma-DefaultSize=290,340
 X-Plasma-NotificationArea=true
+X-Plasma-ConfigPlugins=kcm_kdeconnect
 
 X-KDE-PluginInfo-Author=Albert Vaca Cintora
 X-KDE-PluginInfo-Email=albertvaka@gmail.com

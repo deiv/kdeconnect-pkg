@@ -19,6 +19,3 @@ add_subdirectory(kcm)
 add_subdirectory(plasmoid)
 
 add_subdirectory(tests)
-
-include(MacroOptionalAddSubdirectory)
-macro_optional_add_subdirectory( po )

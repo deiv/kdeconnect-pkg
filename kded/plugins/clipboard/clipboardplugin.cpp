@@ -29,21 +29,21 @@ K_EXPORT_PLUGIN( KdeConnectPluginFactory("kdeconnect_clipboard", "kdeconnect_cli
 
 ClipboardPlugin::ClipboardPlugin(QObject *parent, const QVariantList &args)
     : KdeConnectPlugin(parent, args)
+    , ignore_next_clipboard_change(false)
+    , clipboard(QApplication::clipboard())
 {
-    clipboard = QApplication::clipboard();
-    ignore_next_clipboard_change = false;
-    connect(clipboard,SIGNAL(changed(QClipboard::Mode)),this,SLOT(clipboardChanged(QClipboard::Mode)));
+    connect(clipboard, SIGNAL(changed(QClipboard::Mode)), this, SLOT(clipboardChanged(QClipboard::Mode)));
 }
 
 void ClipboardPlugin::clipboardChanged(QClipboard::Mode mode)
 {
-    if (mode != QClipboard::QClipboard::Clipboard) return;
+    if (mode != QClipboard::Clipboard) return;
 
     if (ignore_next_clipboard_change) {
         ignore_next_clipboard_change = false;
         return;
     }
-    //qDebug() << "ClipboardChanged";
+    //kDebug(kdeconnect_kded()) << "ClipboardChanged";
     NetworkPackage np(PACKAGE_TYPE_CLIPBOARD);
     np.set("content",clipboard->text());
     device()->sendPackage(np);
@@ -51,10 +51,7 @@ void ClipboardPlugin::clipboardChanged(QClipboard::Mode mode)
 
 bool ClipboardPlugin::receivePackage(const NetworkPackage& np)
 {
-    if (np.type() == PACKAGE_TYPE_CLIPBOARD) {
-        ignore_next_clipboard_change = true;
-        clipboard->setText(np.get<QString>("content"));
-        return true;
-    }
-    return false;
+    ignore_next_clipboard_change = true;
+    clipboard->setText(np.get<QString>("content"));
+    return true;
 }

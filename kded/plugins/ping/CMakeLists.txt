@@ -2,17 +2,19 @@ find_package(KDE4 REQUIRED)
 find_package(QJSON REQUIRED)
 find_package(QCA2 REQUIRED)
 
+include(KDE4Defaults)
+
 include_directories(
     ${QJSON_INCLUDE_DIR}
     ${QCA2_INCLUDE_DIR}
+    ${KDE4_INCLUDES}
+    ${CMAKE_SOURCE_DIR}
 )
-
-include(KDE4Defaults)
-include_directories(${KDE4_INCLUDES})
 
 set(kdeconnect_ping_SRCS
     pingplugin.cpp
     ../kdeconnectplugin.cpp
+    ../../kdebugnamespace.cpp
 )
 
 kde4_add_plugin(kdeconnect_ping ${kdeconnect_ping_SRCS})

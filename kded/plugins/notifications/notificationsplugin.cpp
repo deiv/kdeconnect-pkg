@@ -20,10 +20,9 @@
 
 #include "notificationsplugin.h"
 
-#include <QDebug>
-
 #include <KIcon>
 
+#include "../../kdebugnamespace.h"
 #include "notificationsdbusinterface.h"
 
 K_PLUGIN_FACTORY( KdeConnectPluginFactory, registerPlugin< NotificationsPlugin >(); )
@@ -38,7 +37,7 @@ NotificationsPlugin::NotificationsPlugin(QObject* parent, const QVariantList& ar
 void NotificationsPlugin::connected()
 {
     NetworkPackage np(PACKAGE_TYPE_NOTIFICATION);
-    np.set("request",true);
+    np.set("request", true);
     device()->sendPackage(np);
 }
 
@@ -56,7 +55,6 @@ NotificationsPlugin::~NotificationsPlugin()
 
 bool NotificationsPlugin::receivePackage(const NetworkPackage& np)
 {
-    if (np.type() != PACKAGE_TYPE_NOTIFICATION) return false;
     if (np.get<bool>("request")) return false;
 
     notificationsDbusInterface->processPackage(np);
