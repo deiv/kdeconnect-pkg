@@ -2,7 +2,7 @@ Source: kdeconnect
 Section: kde
 Priority: optional
 Maintainer: David Suárez <david.sephirot@gmail.com>
-Build-Depends: debhelper (>= 7.0.50~), cmake, pkg-kde-tools
+Build-Depends: debhelper (>= 7.0.50~), cmake, pkg-kde-tools, kdelibs5-dev, libqjson-dev, libqca2-dev, libqca2-plugin-ossl
 Standards-Version: 3.9.5
 Homepage: https://projects.kde.org/projects/playground/base/kdeconnect-kde
 Vcs-Git: git://github.com/deiv/kdeconnect-pkg.git -b debian
