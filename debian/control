@@ -1,0 +1,17 @@
+Source: kdeconnect
+Section: kde
+Priority: optional
+Maintainer: David Suárez <david.sephirot@gmail.com>
+Build-Depends: debhelper (>= 7.0.50~), cmake, pkg-kde-tools
+Standards-Version: 3.9.5
+Homepage: https://projects.kde.org/projects/playground/base/kdeconnect-kde
+#Vcs-Git: git://git.debian.org/collab-maint/kdeconnect.git
+#Vcs-Browser: http://git.debian.org/?p=collab-maint/kdeconnect.git;a=summary
+
+Package: kdeconnect
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Adds communication between KDE and your smartphones and similar devices
+ Tool to integrate the KDE desktop with your smartphones and similar devices.
+ It adds a set of plasmoid, plugins and services to the KDE desktop. At the
+ moment it only supports Android based devices.
