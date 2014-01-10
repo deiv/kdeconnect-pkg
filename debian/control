@@ -5,8 +5,8 @@ Maintainer: David Suárez <david.sephirot@gmail.com>
 Build-Depends: debhelper (>= 7.0.50~), cmake, pkg-kde-tools
 Standards-Version: 3.9.5
 Homepage: https://projects.kde.org/projects/playground/base/kdeconnect-kde
-#Vcs-Git: git://git.debian.org/collab-maint/kdeconnect.git
-#Vcs-Browser: http://git.debian.org/?p=collab-maint/kdeconnect.git;a=summary
+Vcs-Git: git://github.com/deiv/kdeconnect-pkg.git -b debian
+Vcs-Browser: https://github.com/deiv/kdeconnect-pkg
 
 Package: kdeconnect
 Architecture: any
