@@ -11,7 +11,8 @@ Vcs-Browser: https://github.com/deiv/kdeconnect-pkg
 Package: kdeconnect
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: Adds communication between KDE and your smartphones and similar devices
- Tool to integrate the KDE desktop with your smartphones and similar devices.
- It adds a set of plasmoid, plugins and services to the KDE desktop. At the
- moment it only supports Android based devices.
+Description: connect smartphones to your KDE Plasma Workspace
+ Tool to integrate the KDE Plasma Workspace with your smartphones and
+ similar devices.
+ It adds a set of plasmoid, plugins and services to the KDE Plasma Workspace.
+ At the  moment it only supports Android based devices.
