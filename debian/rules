@@ -10,3 +10,8 @@ CXXFLAGS+=$(CPPFLAGS)
 
 %:
 	dh $@ --with kde
+
+override_dh_auto_install:
+	dh_auto_install
+	# remove '-dev' related files
+	rm debian/kdeconnect/usr/lib/libkdeconnect.so
