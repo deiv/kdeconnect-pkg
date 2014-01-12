@@ -2,6 +2,3 @@ kdeconnect: package-name-doesnt-match-sonames libkdeconnect1
 
 # no '-dev' pkg provided
 kdeconnect: no-symbols-control-file usr/lib/libkdeconnect.so.1.0.1
-
-kdeconnect: unusual-interpreter usr/share/kde4/services/kcm_kdeconnect.desktop #!xdg-open
-kdeconnect: script-not-executable usr/share/kde4/services/kcm_kdeconnect.desktop
