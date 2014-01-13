@@ -2,7 +2,13 @@ Source: kdeconnect
 Section: kde
 Priority: optional
 Maintainer: David Suárez <david.sephirot@gmail.com>
-Build-Depends: debhelper (>= 7.0.50~), cmake, pkg-kde-tools, kdelibs5-dev, libqjson-dev, libqca2-dev, libqca2-plugin-ossl
+Build-Depends: cmake,
+               debhelper (>= 7.0.50~),
+               kdelibs5-dev,
+               libqca2-dev,
+               libqca2-plugin-ossl,
+               libqjson-dev,
+               pkg-kde-tools
 Standards-Version: 3.9.5
 Homepage: https://projects.kde.org/projects/playground/base/kdeconnect-kde
 Vcs-Git: git://github.com/deiv/kdeconnect-pkg.git
@@ -10,7 +16,7 @@ Vcs-Browser: https://github.com/deiv/kdeconnect-pkg
 
 Package: kdeconnect
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}
 Description: connect smartphones to your KDE Plasma Workspace
  Tool to integrate the KDE Plasma Workspace with your smartphones and
  similar devices.
