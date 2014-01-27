@@ -16,7 +16,11 @@ Vcs-Browser: https://github.com/deiv/kdeconnect-pkg
 
 Package: kdeconnect
 Architecture: any
-Depends: ${misc:Depends}, ${shlibs:Depends}
+Depends: libqca2,
+         libqca2-plugin-gnupg,
+         libqca2-plugin-ossl,
+         ${misc:Depends},
+         ${shlibs:Depends}
 Description: connect smartphones to your KDE Plasma Workspace
  Tool to integrate the KDE Plasma Workspace with your smartphones and
  similar devices.
