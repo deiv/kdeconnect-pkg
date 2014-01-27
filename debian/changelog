@@ -1,3 +1,10 @@
+kdeconnect (0.4.2-2) unstable; urgency=low
+
+  * Add libqca2-plugin-gnupg and libqca2-plugin-ossl runtime depends.
+    (Closes: #735850)
+
+ -- David Suárez <david.sephirot@gmail.com>  Mon, 27 Jan 2014 19:56:34 +0100
+
 kdeconnect (0.4.2-1) unstable; urgency=low
 
   * Initial release (Closes: #734374)
