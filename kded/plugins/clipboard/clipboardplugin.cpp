@@ -21,11 +21,10 @@
 #include "clipboardplugin.h"
 
 #include <QClipboard>
-#include <KDebug>
 #include <QApplication>
 
 K_PLUGIN_FACTORY( KdeConnectPluginFactory, registerPlugin< ClipboardPlugin >(); )
-K_EXPORT_PLUGIN( KdeConnectPluginFactory("kdeconnect_clipboard", "kdeconnect_clipboard") )
+K_EXPORT_PLUGIN( KdeConnectPluginFactory("kdeconnect_clipboard", "kdeconnect-kded") )
 
 ClipboardPlugin::ClipboardPlugin(QObject *parent, const QVariantList &args)
     : KdeConnectPlugin(parent, args)

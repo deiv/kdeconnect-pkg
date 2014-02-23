@@ -1,0 +1,52 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Mauro Panzeri <damonhill82@gmail.com>, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: kdeconnect-plasmoid\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-02-17 02:14+0000\n"
+"PO-Revision-Date: 2013-10-31 18:24+0100\n"
+"Last-Translator: Mauro Panzeri <damonhill82@gmail.com>\n"
+"Language-Team: Italian <kde-i18n-it@kde.org>\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 1.5\n"
+
+#: package/contents/ui/Battery.qml:34
+msgid "Charging, %1"
+msgstr ""
+
+#: package/contents/ui/Battery.qml:34
+msgid "Discharging, %1"
+msgstr ""
+
+#: package/contents/ui/Battery.qml:34
+msgid "No info"
+msgstr ""
+
+#: package/contents/ui/CompactRepresentation.qml:48
+msgid "KDE Connect device notifications"
+msgstr ""
+
+#: package/contents/ui/DeviceDelegate.qml:53
+#: package/contents/ui/DeviceDelegate.qml:59
+#: package/contents/ui/DeviceDelegate.qml:64
+msgid "Browse"
+msgstr ""
+
+#: package/contents/ui/DeviceDelegate.qml:107
+msgid "Battery"
+msgstr ""
+
+#: package/contents/ui/DeviceDelegate.qml:122
+msgid "Notifications"
+msgstr "Notifiche"
+
+#: package/contents/ui/kdeconnect.qml:39
+msgid "No paired devices available"
+msgstr "Nessun dispositivo associato disponibile"

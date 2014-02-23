@@ -1,0 +1,228 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Freek de Kruijf <freek@opensuse.org>, 2013, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-02-17 02:14+0000\n"
+"PO-Revision-Date: 2014-02-17 21:02+0100\n"
+"Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
+"Language-Team: Dutch <kde-i18n-nl@kde.org>\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 1.5\n"
+
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Freek de Kruijf"
+
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "freekdekruijf@kde.nl"
+
+#: device.cpp:139
+msgid "Already paired"
+msgstr "Paar al gemaakt"
+
+#: device.cpp:142
+msgid "Pairing already requested for this device"
+msgstr "Paar maken voor dit apparaat is al gevraagd"
+
+#: device.cpp:146
+msgid "Device not reachable"
+msgstr "Apparaat niet bereikbaar"
+
+#: device.cpp:159
+msgid "Error contacting device"
+msgstr "Fout bij het contact maken met apparaat"
+
+#: device.cpp:196
+msgid "Timed out"
+msgstr "Tijdslimiet overschreden"
+
+#: device.cpp:295 device.cpp:347
+msgid "Canceled by other peer"
+msgstr "Geannuleerd door andere kant"
+
+#: device.cpp:311
+msgid "Received incorrect key"
+msgstr "Onjuiste sleutel ontvangen"
+
+#: device.cpp:328
+#, kde-format
+msgid "Pairing request from %1"
+msgstr "Verzoek om een paar te maken van %1"
+
+#: device.cpp:329
+msgid "Accept"
+msgstr "Accepteren"
+
+#: device.cpp:329
+msgid "Reject"
+msgstr "Afwijzen"
+
+#: device.cpp:388
+msgid "Canceled by the user"
+msgstr "Geannuleerd door de gebruiker"
+
+#: filetransferjob.cpp:107
+msgid "Received incomplete file"
+msgstr "Onvolledig bestand ontvangen"
+
+#: kdeconnectd.cpp:63
+msgid "kdeconnect"
+msgstr "kdeconnect"
+
+#: kdeconnectd.cpp:65
+msgid "connect devices"
+msgstr "verbinding maken met apparaten"
+
+#: plugins/battery/batteryplugin.cpp:77
+#, kde-format
+msgctxt "device name: low battery"
+msgid "%1: low battery"
+msgstr "%1: laag batterijniveau"
+
+#: plugins/battery/batteryplugin.cpp:78
+#, kde-format
+msgid "Battery at %1%"
+msgstr "Batterij op %1%"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, PauseMusicConfigUi)
+#: plugins/pausemusic/pausemusic_config.ui:17
+msgid "Pause music plugin"
+msgstr "Plug-in voor muziek pauzeren"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: plugins/pausemusic/pausemusic_config.ui:29
+msgid "Pause condition"
+msgstr "Staat: gepauzeerd"
+
+#. i18n: ectx: property (text), widget (QRadioButton, rad_ringing)
+#: plugins/pausemusic/pausemusic_config.ui:35
+msgid "Pause as soon as phone rings"
+msgstr "Pauzeren zodra de telefoon belt"
+
+#. i18n: ectx: property (text), widget (QRadioButton, rad_talking)
+#: plugins/pausemusic/pausemusic_config.ui:42
+msgid "Pause only while talking"
+msgstr "Alleen pauzeren bij praten"
+
+#. i18n: ectx: property (text), widget (QCheckBox, check_mute)
+#: plugins/pausemusic/pausemusic_config.ui:65
+msgid "Mute system instead of pause"
+msgstr "Demp het systeem in plaats van pauzeren"
+
+#: plugins/ping/pingplugin.cpp:49
+msgid "Ping!"
+msgstr "Ping!"
+
+#: plugins/sftp/mounter.cpp:172
+msgid "Failed to start sshfs"
+msgstr "Starten van sshfs is mislukt"
+
+#: plugins/sftp/mounter.cpp:194
+msgid "Error when accessing to filesystem"
+msgstr "Fout bij toegang tot bestandssysteem"
+
+#: plugins/sftp/mounter.cpp:205
+msgid "Failed to mount filesystem: device not responding"
+msgstr "Bestandssysteem aankoppelen is mislukt: apparaat geeft geen respons"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, ShareConfigUi)
+#. i18n: ectx: property (windowTitle), widget (QWidget, SftpConfigUi)
+#: plugins/sftp/sftp_config.ui:17 plugins/share/share_config.ui:17
+msgid "Share plugin settings"
+msgstr "Plug-in-instellingen van delen"
+
+#. i18n: ectx: property (text), widget (QCheckBox, idle)
+#: plugins/sftp/sftp_config.ui:49
+msgid "Disconnect when idle"
+msgstr "Verbinding verbreken bij niets doen"
+
+#. i18n: ectx: property (title), widget (QGroupBox, error)
+#: plugins/sftp/sftp_config.ui:59
+msgid "Error"
+msgstr "Fout"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: plugins/sftp/sftp_config.ui:81
+msgid "sshfsf not found in PATH"
+msgstr "sshfsf niet in PATH gevonden"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: plugins/sftp/sftp_config.ui:113
+msgid "Mountpoint:"
+msgstr "Aankoppelpunt:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: plugins/sftp/sftp_config.ui:144
+msgid "Timeout:"
+msgstr "Tijdslimiet:"
+
+#. i18n: ectx: property (suffix), widget (QSpinBox, timeout)
+#: plugins/sftp/sftp_config.ui:160
+msgid " min"
+msgstr " min"
+
+#: plugins/sftp/sftpplugin.cpp:170 plugins/sftp/sftpplugin.cpp:191
+#: plugins/sftp/sftpplugin.cpp:216
+#, kde-format
+msgid "Device %1"
+msgstr "Apparaat %1"
+
+#: plugins/sftp/sftpplugin.cpp:171
+#, kde-format
+msgid "Filesystem mounted at %1"
+msgstr "Bestandssysteem aangekoppeld op %1"
+
+#: plugins/sftp/sftpplugin.cpp:192
+msgid "Filesystem unmounted"
+msgstr "Bestandssysteem afgekoppeld"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: plugins/share/share_config.ui:23
+msgid "Receiving"
+msgstr "Ontvangen"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: plugins/share/share_config.ui:31
+msgid "Save files in:"
+msgstr "Bestanden opslaan in:"
+
+#: plugins/share/shareplugin.cpp:132
+msgid "Transfer finished"
+msgstr "Overdracht is voltooid"
+
+#: plugins/share/shareplugin.cpp:134
+msgid "Open destination folder"
+msgstr "Doelmap openen"
+
+#: plugins/telephony/telephonyplugin.cpp:41
+msgid "unknown number"
+msgstr "onbekend nummer"
+
+#: plugins/telephony/telephonyplugin.cpp:50
+#, kde-format
+msgid "Incoming call from %1"
+msgstr "Inkomend gesprek van %1"
+
+#: plugins/telephony/telephonyplugin.cpp:54
+#, kde-format
+msgid "Missed call from %1"
+msgstr "Gemist gesprek van %1"
+
+#: plugins/telephony/telephonyplugin.cpp:59
+#, kde-format
+msgid "SMS from %1: %2"
+msgstr "SMS van %1: %2"
+
+#: plugins/telephony/telephonyplugin.cpp:66
+#, kde-format
+msgid "Unknown telephony event: %2"
+msgstr "Onbekende telefoongebeurtenis: %2"

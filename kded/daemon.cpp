@@ -21,25 +21,23 @@
 #include "daemon.h"
 
 #include <QUuid>
+#include <QFile>
+#include <QFileInfo>
 #include <QDBusConnection>
 #include <QNetworkSession>
 #include <QNetworkConfigurationManager>
 
 #include <KConfig>
 #include <KConfigGroup>
+#include <KStandardDirs>
 
 #include "kdebugnamespace.h"
 #include "networkpackage.h"
 #include "backends/lan/lanlinkprovider.h"
 #include "backends/loopback/loopbacklinkprovider.h"
 
-K_PLUGIN_FACTORY(KdeConnectFactory, registerPlugin<Daemon>();)
-K_EXPORT_PLUGIN(KdeConnectFactory("kdeconnect", "kdeconnect"))
-
-Daemon::Daemon(QObject *parent, const QList<QVariant>&)
-    : KDEDModule(parent)
+Daemon::Daemon(QObject *parent) : QObject(parent)
 {
-
     KSharedConfigPtr config = KSharedConfig::openConfig("kdeconnectrc");
 
     if (!config->group("myself").hasKey("id")) {
@@ -53,21 +51,42 @@ Daemon::Daemon(QObject *parent, const QList<QVariant>&)
     //kDebug(kdeconnect_kded()) << "QCA supported capabilities:" << QCA::supportedFeatures().join(",");
     if(!QCA::isSupported("rsa")) {
         //TODO: Maybe display this in a more visible way?
-        qWarning() << "Error: KDE Connect could not find support for RSA in your QCA installation, if your distribution provides"
+        kWarning(kdeconnect_kded()) << "Error: KDE Connect could not find support for RSA in your QCA installation, if your distribution provides"
                    << "separate packages for QCA-ossl and QCA-gnupg plugins, make sure you have them installed and try again";
         return;
     }
 
-    if (!config->group("myself").hasKey("privateKey") || !config->group("myself").hasKey("publicKey")) {
+    const QFile::Permissions strict = QFile::ReadOwner | QFile::WriteOwner | QFile::ReadUser | QFile::WriteUser;
+    if (!config->group("myself").hasKey("privateKeyPath"))
+    {
+        const QString privateKeyPath = KStandardDirs::locateLocal("appdata", "key.pem", true, KComponentData("kdeconnect", "kdeconnect"));
+        
+        QFile privKey(privateKeyPath);
+        
+        if (!privKey.open(QIODevice::ReadWrite | QIODevice::Truncate))
+        {
+            kWarning(kdeconnect_kded()) << "Error: KDE Connect could not create private keys file: " << privateKeyPath;
+            return;
+        }
+        
+        if (!privKey.setPermissions(strict))
+        {
+            kWarning(kdeconnect_kded()) << "Error: KDE Connect could not set permissions for private file: " << privateKeyPath;
+            //return;
+        }
 
-        //http://delta.affinix.com/docs/qca/rsatest_8cpp-example.html
-        QCA::PrivateKey privateKey = QCA::KeyGenerator().createRSA(2048);
-        config->group("myself").writeEntry("privateKey", privateKey.toPEM());
-
-        QCA::PublicKey publicKey = privateKey.toPublicKey();
-        config->group("myself").writeEntry("publicKey", publicKey.toPEM());
-        //TODO: Store key in a PEM file instead (use something like KStandardDirs::locate("appdata", "private.pem"))
-
+        //http://delta.affinix.com/docs/qca/rsatest_8cpp-example.html        
+        privKey.write(QCA::KeyGenerator().createRSA(2048).toPEM().toAscii());
+        privKey.close();
+        
+        config->group("myself").writeEntry("privateKeyPath", privateKeyPath);
+    }
+    
+    if (QFile::permissions(config->group("myself").readEntry("privateKeyPath")) != strict)
+    {
+        kWarning(kdeconnect_kded()) << "Error: KDE Connect detects wrong permissions for private file " << config->group("myself").readEntry("privateKeyPath");
+        //FIXME: Do not silently fail, because user won't notice the problem
+        //return;
     }
 
     //Debugging
@@ -81,7 +100,7 @@ Daemon::Daemon(QObject *parent, const QList<QVariant>&)
     const KConfigGroup& known = config->group("trusted_devices");
     const QStringList& list = known.groupList();
     Q_FOREACH(const QString& id, list) {
-        Device* device = new Device(id);
+        Device* device = new Device(this, id);
         connect(device, SIGNAL(reachableStatusChanged()),
                 this, SLOT(onDeviceReachableStatusChanged()));
         mDevices[id] = device;
@@ -123,20 +142,15 @@ void Daemon::forceOnNetworkChange()
     }
 }
 
-QStringList Daemon::visibleDevices()
+QStringList Daemon::devices(bool onlyReachable, bool onlyVisible)
 {
     QStringList ret;
     Q_FOREACH(Device* device, mDevices) {
-        if (device->isReachable()) {
-            ret.append(device->id());
-        }
+        if (onlyReachable && !device->isReachable()) continue;
+        if (onlyVisible && !device->isPaired()) continue;
+        ret.append(device->id());
     }
     return ret;
-}
-
-QStringList Daemon::devices()
-{
-    return mDevices.keys();
 }
 
 void Daemon::onNewDeviceLink(const NetworkPackage& identityPackage, DeviceLink* dl)
@@ -153,7 +167,7 @@ void Daemon::onNewDeviceLink(const NetworkPackage& identityPackage, DeviceLink* 
     } else {
         //kDebug(kdeconnect_kded()) << "It is a new device";
 
-        Device* device = new Device(identityPackage, dl);
+        Device* device = new Device(this, identityPackage, dl);
         connect(device, SIGNAL(reachableStatusChanged()), this, SLOT(onDeviceReachableStatusChanged()));
         mDevices[id] = device;
 

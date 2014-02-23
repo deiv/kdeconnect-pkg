@@ -20,13 +20,13 @@
 
 #include "shareplugin.h"
 
+#include <KGlobalSettings>
 #include <KIcon>
 #include <KLocalizedString>
 #include <KStandardDirs>
 #include <KSharedConfig>
 #include <KConfigGroup>
 
-#include <QFile>
 #include <qprocess.h>
 #include <QDir>
 #include <QDesktopServices>
@@ -36,7 +36,7 @@
 #include "autoclosingqfile.h"
 
 K_PLUGIN_FACTORY( KdeConnectPluginFactory, registerPlugin< SharePlugin >(); )
-K_EXPORT_PLUGIN( KdeConnectPluginFactory("kdeconnect_share", "kdeconnect_share") )
+K_EXPORT_PLUGIN( KdeConnectPluginFactory("kdeconnect_share", "kdeconnect-kded") )
 
 SharePlugin::SharePlugin(QObject* parent, const QVariantList& args)
     : KdeConnectPlugin(parent, args)
@@ -46,8 +46,7 @@ SharePlugin::SharePlugin(QObject* parent, const QVariantList& args)
 
 QString SharePlugin::destinationDir()
 {
-    //TODO: Change this for the xdg download user dir
-    QString defaultPath = QDesktopServices::storageLocation(QDesktopServices::DesktopLocation);
+    QString defaultPath = KGlobalSettings::downloadPath();
 
     //FIXME: There should be a better way to listen to changes in the config file instead of reading the value each time
     KSharedConfigPtr config = KSharedConfig::openConfig("kdeconnect/plugins/share");
