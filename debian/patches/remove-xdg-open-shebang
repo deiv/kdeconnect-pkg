@@ -3,10 +3,10 @@ Description: Remove the xdg-open shebang from distributed desktop file
 Last-Update: 2014-01-12
 Author: David Suárez <david.sephirot@gmail.com>
 
---- kdeconnect-0.4.2.orig/kcm/kcm_kdeconnect.desktop
-+++ kdeconnect-0.4.2/kcm/kcm_kdeconnect.desktop
+--- a/kcm/kcm_kdeconnect.desktop
++++ b/kcm/kcm_kdeconnect.desktop
 @@ -1,4 +1,3 @@
 -#!/usr/bin/env xdg-open
  [Desktop Entry]
  Exec=kcmshell4 kcm_kdeconnect
- Icon=smartphone
+ Icon=kdeconnect
