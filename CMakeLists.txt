@@ -15,7 +15,11 @@ include_directories(${CMAKE_CURRENT_BINARY_DIR})
 add_subdirectory(kded)
 add_subdirectory(libkdeconnect)
 add_subdirectory(kcm)
-#add_subdirectory(kioslave)
+#add_subdirectory(kio)
 add_subdirectory(plasmoid)
+add_subdirectory(icon)
 
 add_subdirectory(tests)
+
+include(MacroOptionalAddSubdirectory)
+macro_optional_add_subdirectory( po )

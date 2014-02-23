@@ -1,0 +1,54 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Eloy Cuadra <ecuadra@eloihr.net>, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-02-15 01:46+0000\n"
+"PO-Revision-Date: 2014-02-18 15:48+0100\n"
+"Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
+"Language-Team: Spanish <kde-l10n-es@kde.org>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 1.5\n"
+
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Eloy Cuadra"
+
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "ecuadra@eloihr.net"
+
+#: kiokdeconnect.cpp:39
+msgid "kiokdeconnect"
+msgstr "kiokdeconnect"
+
+#: kiokdeconnect.cpp:93
+msgid "Listing devices..."
+msgstr "Listando dispositivos..."
+
+#: kiokdeconnect.cpp:130
+msgid "Accessing device..."
+msgstr "Accediendo al dispositivo..."
+
+#: kiokdeconnect.cpp:145
+msgid "Could not mount device filesystem"
+msgstr "No se ha podido montar el sistema de archivos del dispositivo"
+
+#: kiokdeconnect.cpp:160
+msgid "Camera pictures"
+msgstr "Imágenes de la cámara"
+
+#: kiokdeconnect.cpp:169
+msgid "All files"
+msgstr "Todos los archivos"
+
+#: kiokdeconnect.cpp:194
+msgid "Could not contact background service."
+msgstr "No se ha podido contactar con el servicio en segundo plano."

@@ -19,13 +19,20 @@
  */
 
 import QtQuick 1.1
-import org.kde.plasma.graphicswidgets 0.1 as PlasmaWidgets
 import org.kde.plasma.core 0.1 as PlasmaCore
 
 Item {
-    PlasmaWidgets.IconWidget {
+    id: view
+    anchors.fill: parent
+
+    //TODO: Use this to detect if we should be iconized or full size
+    function isConstrained() {
+        return (plasmoid.formFactor == Vertical || plasmoid.formFactor == Horizontal);
+    }
+
+    PlasmaCore.IconItem {
         id: icon
-        Component.onCompleted: setIcon("smartphone");
+        source: "kdeconnect"
         anchors.fill: parent
     }
 
@@ -37,8 +44,9 @@ Item {
         PlasmaCore.ToolTip {
             id: tooltip
             target: mouseArea
-            image: QIcon("smartphone")
-            subText: "KDE Connect device notifications"
+            image: QIcon("kdeconnect")
+            subText: i18n("KDE Connect device notifications")
         }
     }
+
 }

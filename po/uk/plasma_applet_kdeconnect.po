@@ -1,0 +1,53 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Yuri Chornoivan <yurchor@ukr.net>, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-02-17 02:14+0000\n"
+"PO-Revision-Date: 2014-02-15 09:09+0200\n"
+"Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
+"Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
+"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Lokalize 1.5\n"
+
+#: package/contents/ui/Battery.qml:34
+msgid "Charging, %1"
+msgstr "Заряджання, %1"
+
+#: package/contents/ui/Battery.qml:34
+msgid "Discharging, %1"
+msgstr "Розряджання, %1"
+
+#: package/contents/ui/Battery.qml:34
+msgid "No info"
+msgstr "Немає даних"
+
+#: package/contents/ui/CompactRepresentation.qml:48
+msgid "KDE Connect device notifications"
+msgstr "Сповіщення щодо з’єднання з пристроями KDE"
+
+#: package/contents/ui/DeviceDelegate.qml:53
+#: package/contents/ui/DeviceDelegate.qml:59
+#: package/contents/ui/DeviceDelegate.qml:64
+msgid "Browse"
+msgstr "Навігація"
+
+#: package/contents/ui/DeviceDelegate.qml:107
+msgid "Battery"
+msgstr "Акумулятор"
+
+#: package/contents/ui/DeviceDelegate.qml:122
+msgid "Notifications"
+msgstr "Сповіщення"
+
+#: package/contents/ui/kdeconnect.qml:39
+msgid "No paired devices available"
+msgstr "Не виявлено жодного пов’язаного пристрою"

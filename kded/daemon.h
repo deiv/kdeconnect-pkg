@@ -18,8 +18,8 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef DAEMON_H
-#define DAEMON_H
+#ifndef KDECONNECT_DAEMON_H
+#define KDECONNECT_DAEMON_H
 
 #include <QObject>
 #include <QSet>
@@ -35,13 +35,13 @@
 #include "backends/linkprovider.h"
 
 class Daemon
-    : public KDEDModule
+    : public QObject
 {
     Q_OBJECT
     Q_CLASSINFO("D-Bus Interface", "org.kde.kdeconnect.daemon")
 
 public:
-    Daemon(QObject *parent, const QList<QVariant>&);
+    Daemon(QObject *parent);
     ~Daemon();
 
 public Q_SLOTS:
@@ -52,8 +52,7 @@ public Q_SLOTS:
     Q_SCRIPTABLE void forceOnNetworkChange();
 
     //Returns a list of ids. The respective devices can be manipulated using the dbus path: "/modules/kdeconnect/Devices/"+id
-    Q_SCRIPTABLE QStringList devices(); //All known devices
-    Q_SCRIPTABLE QStringList visibleDevices(); //Only visible devices
+    Q_SCRIPTABLE QStringList devices(bool onlyReachable = false, bool onlyVisible = false);
 
 Q_SIGNALS:
     Q_SCRIPTABLE void deviceAdded(const QString& id);
@@ -74,7 +73,6 @@ private:
 
     // The Initializer object sets things up, and also does cleanup when it goes out of scope
     QCA::Initializer mQcaInitializer;
-
 };
 
 #endif

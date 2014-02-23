@@ -27,30 +27,57 @@ PlasmaComponents.ListItem
 {
     id: root
     property string deviceId: model.deviceId
+   
 
+   
     Column {
         width: parent.width
-        PlasmaComponents.Label {
+        
+        Row
+        {
+            PlasmaComponents.Label {
+                width: browse.visible? parent.width - browse.width : parent.width
+                horizontalAlignment: Text.AlignHCenter
+                text: display
+            }
+
+            PlasmaComponents.Button
+            {
+                Sftp {
+                    id: sftp
+                    deviceId: root.deviceId
+                }
+
+                id: browse
+                iconSource: "document-open-folder"
+                visible: sftp.available
+
+                onClicked: {
+                    sftp.browse()
+                }
+            }
+
+
+            height: browse.height
             width: parent.width
-            anchors.horizontalCenter: parent.horizontalCenter
-            horizontalAlignment: Text.AlignHCenter
-            text: display
         }
 
         //Battery
         PlasmaComponents.ListItem {
-            BatteryInterface {
-                id: batteryInterface
-                device: root.deviceId
+
+            Battery {
+                id: battery
+                deviceId: root.deviceId
             }
+
             sectionDelegate: true
-            visible: batteryInterface.available
+            visible: battery.available
             PlasmaComponents.Label {
                 //font.bold: true
                 text: i18n("Battery")
             }
             PlasmaComponents.Label {
-                text: batteryInterface.displayString
+                text: battery.displayString
                 anchors.right: parent.right
             }
         }
@@ -96,11 +123,9 @@ PlasmaComponents.ListItem
                     onClicked: dbusInterface.dismiss();
                 }
             }
-            //FIXME
-            //Repeater.onItemAdded: plasmoid.status = "NeedsAttentionStatus";
         }
 
-        //TODO: Other information could be displayed here
+        //NOTE: More information could be displayed here
 
     }
 }

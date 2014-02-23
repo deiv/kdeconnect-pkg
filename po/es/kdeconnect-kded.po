@@ -1,0 +1,230 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Eloy Cuadra <ecuadra@eloihr.net>, 2013, 2014.
+# Jose Antonio Moray Serrano <moray33@gmx.com>, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-02-17 02:14+0000\n"
+"PO-Revision-Date: 2014-02-18 15:45+0100\n"
+"Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
+"Language-Team: Spanish <kde-l10n-es@kde.org>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 1.5\n"
+
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Eloy Cuadra"
+
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "ecuadra@eloihr.net"
+
+#: device.cpp:139
+msgid "Already paired"
+msgstr "Ya está vinculado"
+
+#: device.cpp:142
+msgid "Pairing already requested for this device"
+msgstr "Ya ha solicitado vincularse a este dispositivo"
+
+#: device.cpp:146
+msgid "Device not reachable"
+msgstr "No se encuentra el dispositivo"
+
+#: device.cpp:159
+msgid "Error contacting device"
+msgstr "Ha ocurrido un error al contactar con el dispositivo"
+
+#: device.cpp:196
+msgid "Timed out"
+msgstr "Se ha agotado el tiempo"
+
+#: device.cpp:295 device.cpp:347
+msgid "Canceled by other peer"
+msgstr "Cancelado por la otra parte"
+
+#: device.cpp:311
+msgid "Received incorrect key"
+msgstr "Se ha recibido una clave incorrecta"
+
+#: device.cpp:328
+#, kde-format
+msgid "Pairing request from %1"
+msgstr "Solicitud de vinculación de %1"
+
+#: device.cpp:329
+msgid "Accept"
+msgstr "Aceptar"
+
+#: device.cpp:329
+msgid "Reject"
+msgstr "Rechazar"
+
+#: device.cpp:388
+msgid "Canceled by the user"
+msgstr "Cancelado por el usuario"
+
+#: filetransferjob.cpp:107
+msgid "Received incomplete file"
+msgstr "Se ha recibido un archivo incompleto"
+
+#: kdeconnectd.cpp:63
+msgid "kdeconnect"
+msgstr "kdeconnect"
+
+#: kdeconnectd.cpp:65
+msgid "connect devices"
+msgstr "conectar dispositivos"
+
+#: plugins/battery/batteryplugin.cpp:77
+#, kde-format
+msgctxt "device name: low battery"
+msgid "%1: low battery"
+msgstr "%1: batería baja"
+
+#: plugins/battery/batteryplugin.cpp:78
+#, kde-format
+msgid "Battery at %1%"
+msgstr "Batería al %1%"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, PauseMusicConfigUi)
+#: plugins/pausemusic/pausemusic_config.ui:17
+msgid "Pause music plugin"
+msgstr "Pausar complemento de música"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: plugins/pausemusic/pausemusic_config.ui:29
+msgid "Pause condition"
+msgstr "Condición de pausa"
+
+#. i18n: ectx: property (text), widget (QRadioButton, rad_ringing)
+#: plugins/pausemusic/pausemusic_config.ui:35
+msgid "Pause as soon as phone rings"
+msgstr "Pausar tan pronto como suene el teléfono"
+
+#. i18n: ectx: property (text), widget (QRadioButton, rad_talking)
+#: plugins/pausemusic/pausemusic_config.ui:42
+msgid "Pause only while talking"
+msgstr "Pausar solo mientras se habla"
+
+#. i18n: ectx: property (text), widget (QCheckBox, check_mute)
+#: plugins/pausemusic/pausemusic_config.ui:65
+msgid "Mute system instead of pause"
+msgstr "Silenciar el sistema en lugar de detenerlo"
+
+#: plugins/ping/pingplugin.cpp:49
+msgid "Ping!"
+msgstr "Ping"
+
+#: plugins/sftp/mounter.cpp:172
+msgid "Failed to start sshfs"
+msgstr "Ha fallado el inicio de sshfs"
+
+#: plugins/sftp/mounter.cpp:194
+msgid "Error when accessing to filesystem"
+msgstr "Error al acceder al sistema de archivos"
+
+#: plugins/sftp/mounter.cpp:205
+msgid "Failed to mount filesystem: device not responding"
+msgstr ""
+"Ha fallado el montaje del sistema de archivos: el dispositivo no responde"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, ShareConfigUi)
+#. i18n: ectx: property (windowTitle), widget (QWidget, SftpConfigUi)
+#: plugins/sftp/sftp_config.ui:17 plugins/share/share_config.ui:17
+msgid "Share plugin settings"
+msgstr "Preferencias del complemento de recursos compartidos"
+
+#. i18n: ectx: property (text), widget (QCheckBox, idle)
+#: plugins/sftp/sftp_config.ui:49
+msgid "Disconnect when idle"
+msgstr "Desconectar cuando esté inactivo"
+
+#. i18n: ectx: property (title), widget (QGroupBox, error)
+#: plugins/sftp/sftp_config.ui:59
+msgid "Error"
+msgstr "Error"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: plugins/sftp/sftp_config.ui:81
+msgid "sshfsf not found in PATH"
+msgstr "No se ha encontrado sshfsf en el PATH"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: plugins/sftp/sftp_config.ui:113
+msgid "Mountpoint:"
+msgstr "Punto de montaje:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: plugins/sftp/sftp_config.ui:144
+msgid "Timeout:"
+msgstr "Tiempo de espera:"
+
+#. i18n: ectx: property (suffix), widget (QSpinBox, timeout)
+#: plugins/sftp/sftp_config.ui:160
+msgid " min"
+msgstr " min"
+
+#: plugins/sftp/sftpplugin.cpp:170 plugins/sftp/sftpplugin.cpp:191
+#: plugins/sftp/sftpplugin.cpp:216
+#, kde-format
+msgid "Device %1"
+msgstr "Dispositivo %1"
+
+#: plugins/sftp/sftpplugin.cpp:171
+#, kde-format
+msgid "Filesystem mounted at %1"
+msgstr "Sistema de archivos montado en %1"
+
+#: plugins/sftp/sftpplugin.cpp:192
+msgid "Filesystem unmounted"
+msgstr "Sistema de archivos desmontado"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: plugins/share/share_config.ui:23
+msgid "Receiving"
+msgstr "Recibiendo"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: plugins/share/share_config.ui:31
+msgid "Save files in:"
+msgstr "Guardar archivos en:"
+
+#: plugins/share/shareplugin.cpp:132
+msgid "Transfer finished"
+msgstr "Transferencia finalizada"
+
+#: plugins/share/shareplugin.cpp:134
+msgid "Open destination folder"
+msgstr "Abrir carpeta de destino"
+
+#: plugins/telephony/telephonyplugin.cpp:41
+msgid "unknown number"
+msgstr "número desconocido"
+
+#: plugins/telephony/telephonyplugin.cpp:50
+#, kde-format
+msgid "Incoming call from %1"
+msgstr "Llamada entrante en %1"
+
+#: plugins/telephony/telephonyplugin.cpp:54
+#, kde-format
+msgid "Missed call from %1"
+msgstr "Llamada perdida en %1"
+
+#: plugins/telephony/telephonyplugin.cpp:59
+#, kde-format
+msgid "SMS from %1: %2"
+msgstr "SMS en %1: %2"
+
+#: plugins/telephony/telephonyplugin.cpp:66
+#, kde-format
+msgid "Unknown telephony event: %2"
+msgstr "Evento de telefonía desconocido: %2"

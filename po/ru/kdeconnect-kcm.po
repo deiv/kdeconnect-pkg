@@ -1,0 +1,66 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Julia Dronova <juliette.tux@gmail.com>, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-02-15 01:46+0000\n"
+"PO-Revision-Date: 2013-10-10 19:34+0400\n"
+"Last-Translator: Julia Dronova <juliette.tux@gmail.com>\n"
+"Language-Team: Russian <kde-russian@lists.kde.ru>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
+"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Lokalize 1.5\n"
+
+#: kcm.cpp:145 kcm.cpp:229
+msgid "(paired)"
+msgstr "(спарены)"
+
+#: kcm.cpp:145 kcm.cpp:201 kcm.cpp:212
+msgid "(unpaired)"
+msgstr "(разделены)"
+
+#: kcm.cpp:159
+msgid "Plugins"
+msgstr "Модули"
+
+#: kcm.cpp:214
+#, kde-format
+msgid "Error trying to pair: %1"
+msgstr "Ошибка при попытке связать: %1"
+
+#. i18n: ectx: property (text), widget (QLabel, name_label)
+#: kcm.ui:84
+msgid "Device"
+msgstr "Устройство"
+
+#. i18n: ectx: property (text), widget (QLabel, status_label)
+#: kcm.ui:97
+msgid "(status)"
+msgstr "(статус)"
+
+#. i18n: ectx: property (text), widget (QPushButton, pair_button)
+#: kcm.ui:142
+msgid "Request pair"
+msgstr "Запросить пару"
+
+#. i18n: ectx: property (text), widget (QPushButton, unpair_button)
+#: kcm.ui:155
+msgid "Unpair"
+msgstr "Разделить спаренные устройства"
+
+#. i18n: ectx: property (text), widget (QPushButton, ping_button)
+#: kcm.ui:168
+msgid "Send ping"
+msgstr "Отправить пинг"
+
+#. i18n: ectx: property (text), widget (QPushButton, browse_button)
+#: kcm.ui:175
+msgid "Browse"
+msgstr ""
