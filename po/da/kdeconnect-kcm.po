@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
 #
-# Martin Schlander <mschlander@opensuse.org>, 2013.
+# Martin Schlander <mschlander@opensuse.org>, 2013, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2014-02-15 01:46+0000\n"
-"PO-Revision-Date: 2013-11-24 16:27+0100\n"
+"PO-Revision-Date: 2014-02-23 14:32+0100\n"
 "Last-Translator: Martin Schlander <mschlander@opensuse.org>\n"
 "Language-Team: Danish <kde-i18n-doc@kde.org>\n"
 "Language: da\n"
@@ -62,4 +62,4 @@ msgstr "Send ping"
 #. i18n: ectx: property (text), widget (QPushButton, browse_button)
 #: kcm.ui:175
 msgid "Browse"
-msgstr ""
+msgstr "Gennemse"

@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-02-17 02:14+0000\n"
-"PO-Revision-Date: 2014-02-17 18:36+0100\n"
+"POT-Creation-Date: 2014-03-05 01:52+0000\n"
+"PO-Revision-Date: 2014-03-04 17:49+0100\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@bredband.net>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
 "Language: sv\n"
@@ -41,36 +41,59 @@ msgstr "Apparaten kan inte nås"
 msgid "Error contacting device"
 msgstr "Fel vid försök att kontakta apparaten"
 
-#: device.cpp:196
+#: device.cpp:199
 msgid "Timed out"
 msgstr "Tidsgräns överskriden"
 
-#: device.cpp:295 device.cpp:347
+#: device.cpp:298 device.cpp:350
 msgid "Canceled by other peer"
 msgstr "Avbruten av motparten"
 
-#: device.cpp:311
+#: device.cpp:314
 msgid "Received incorrect key"
 msgstr "Mottog felaktig nyckel"
 
-#: device.cpp:328
+#: device.cpp:331
 #, kde-format
 msgid "Pairing request from %1"
 msgstr "Begäran om ihopparning från %1"
 
-#: device.cpp:329
+#: device.cpp:332
 msgid "Accept"
 msgstr "Acceptera"
 
-#: device.cpp:329
+#: device.cpp:332
 msgid "Reject"
 msgstr "Avslå"
 
-#: device.cpp:388
+#: device.cpp:391
 msgid "Canceled by the user"
 msgstr "Avbruten av användaren"
 
-#: filetransferjob.cpp:107
+#: filetransferjob.cpp:41
+msgctxt "Device name that will appear on the jobs"
+msgid "KDE-Connect"
+msgstr "KDE-anslut"
+
+#: filetransferjob.cpp:60 filetransferjob.cpp:121
+msgid "Receiving file over KDE-Connect"
+msgstr "Tar emot fil via KDE-anslut"
+
+#: filetransferjob.cpp:61 filetransferjob.cpp:122
+msgctxt "File transfer origin"
+msgid "From"
+msgstr "Från"
+
+#: filetransferjob.cpp:68
+msgid "Incoming file exists"
+msgstr "Inkommande fil finns"
+
+#: filetransferjob.cpp:124
+msgctxt "File transfer destination"
+msgid "To"
+msgstr "Till"
+
+#: filetransferjob.cpp:197
 msgid "Received incomplete file"
 msgstr "Mottog ofullständig fil"
 
@@ -170,18 +193,18 @@ msgstr "Tidsgräns:"
 msgid " min"
 msgstr " min"
 
-#: plugins/sftp/sftpplugin.cpp:170 plugins/sftp/sftpplugin.cpp:191
-#: plugins/sftp/sftpplugin.cpp:216
+#: plugins/sftp/sftpplugin.cpp:168 plugins/sftp/sftpplugin.cpp:189
+#: plugins/sftp/sftpplugin.cpp:214
 #, kde-format
 msgid "Device %1"
 msgstr "Apparat %1"
 
-#: plugins/sftp/sftpplugin.cpp:171
+#: plugins/sftp/sftpplugin.cpp:169
 #, kde-format
 msgid "Filesystem mounted at %1"
 msgstr "Filsystem monterat som %1"
 
-#: plugins/sftp/sftpplugin.cpp:192
+#: plugins/sftp/sftpplugin.cpp:190
 msgid "Filesystem unmounted"
 msgstr "Filsystem avmonterat"
 
@@ -195,11 +218,11 @@ msgstr "Tar emot"
 msgid "Save files in:"
 msgstr "Spara filer i:"
 
-#: plugins/share/shareplugin.cpp:132
+#: plugins/share/shareplugin.cpp:135
 msgid "Transfer finished"
 msgstr "Överföring klar"
 
-#: plugins/share/shareplugin.cpp:134
+#: plugins/share/shareplugin.cpp:137
 msgid "Open destination folder"
 msgstr "Öppna målkatalog"
 

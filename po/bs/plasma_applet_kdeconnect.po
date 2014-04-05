@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: $2\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-02-17 02:14+0000\n"
+"POT-Creation-Date: 2014-03-01 01:46+0000\n"
 "PO-Revision-Date: 2014-01-31 22:39+0100\n"
 "Last-Translator: Samir Ribić <megaribi@epn.ba>\n"
 "Language-Team: none\n"
@@ -19,15 +19,15 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 
-#: package/contents/ui/Battery.qml:34
-msgid "Charging, %1"
+#: package/contents/ui/Battery.qml:36
+msgid "Charging: %1%"
 msgstr ""
 
-#: package/contents/ui/Battery.qml:34
-msgid "Discharging, %1"
+#: package/contents/ui/Battery.qml:36
+msgid "Discharging: %1%"
 msgstr ""
 
-#: package/contents/ui/Battery.qml:34
+#: package/contents/ui/Battery.qml:36
 msgid "No info"
 msgstr ""
 
@@ -35,17 +35,11 @@ msgstr ""
 msgid "KDE Connect device notifications"
 msgstr ""
 
-#: package/contents/ui/DeviceDelegate.qml:53
-#: package/contents/ui/DeviceDelegate.qml:59
-#: package/contents/ui/DeviceDelegate.qml:64
-msgid "Browse"
-msgstr ""
-
-#: package/contents/ui/DeviceDelegate.qml:107
+#: package/contents/ui/DeviceDelegate.qml:77
 msgid "Battery"
 msgstr "Baterija"
 
-#: package/contents/ui/DeviceDelegate.qml:122
+#: package/contents/ui/DeviceDelegate.qml:92
 msgid "Notifications"
 msgstr "Napomene"
 
