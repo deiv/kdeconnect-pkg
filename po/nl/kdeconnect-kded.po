@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-02-17 02:14+0000\n"
+"POT-Creation-Date: 2014-03-05 01:52+0000\n"
 "PO-Revision-Date: 2014-02-17 21:02+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: Dutch <kde-i18n-nl@kde.org>\n"
@@ -41,36 +41,59 @@ msgstr "Apparaat niet bereikbaar"
 msgid "Error contacting device"
 msgstr "Fout bij het contact maken met apparaat"
 
-#: device.cpp:196
+#: device.cpp:199
 msgid "Timed out"
 msgstr "Tijdslimiet overschreden"
 
-#: device.cpp:295 device.cpp:347
+#: device.cpp:298 device.cpp:350
 msgid "Canceled by other peer"
 msgstr "Geannuleerd door andere kant"
 
-#: device.cpp:311
+#: device.cpp:314
 msgid "Received incorrect key"
 msgstr "Onjuiste sleutel ontvangen"
 
-#: device.cpp:328
+#: device.cpp:331
 #, kde-format
 msgid "Pairing request from %1"
 msgstr "Verzoek om een paar te maken van %1"
 
-#: device.cpp:329
+#: device.cpp:332
 msgid "Accept"
 msgstr "Accepteren"
 
-#: device.cpp:329
+#: device.cpp:332
 msgid "Reject"
 msgstr "Afwijzen"
 
-#: device.cpp:388
+#: device.cpp:391
 msgid "Canceled by the user"
 msgstr "Geannuleerd door de gebruiker"
 
-#: filetransferjob.cpp:107
+#: filetransferjob.cpp:41
+msgctxt "Device name that will appear on the jobs"
+msgid "KDE-Connect"
+msgstr ""
+
+#: filetransferjob.cpp:60 filetransferjob.cpp:121
+msgid "Receiving file over KDE-Connect"
+msgstr ""
+
+#: filetransferjob.cpp:61 filetransferjob.cpp:122
+msgctxt "File transfer origin"
+msgid "From"
+msgstr ""
+
+#: filetransferjob.cpp:68
+msgid "Incoming file exists"
+msgstr ""
+
+#: filetransferjob.cpp:124
+msgctxt "File transfer destination"
+msgid "To"
+msgstr ""
+
+#: filetransferjob.cpp:197
 msgid "Received incomplete file"
 msgstr "Onvolledig bestand ontvangen"
 
@@ -170,18 +193,18 @@ msgstr "Tijdslimiet:"
 msgid " min"
 msgstr " min"
 
-#: plugins/sftp/sftpplugin.cpp:170 plugins/sftp/sftpplugin.cpp:191
-#: plugins/sftp/sftpplugin.cpp:216
+#: plugins/sftp/sftpplugin.cpp:168 plugins/sftp/sftpplugin.cpp:189
+#: plugins/sftp/sftpplugin.cpp:214
 #, kde-format
 msgid "Device %1"
 msgstr "Apparaat %1"
 
-#: plugins/sftp/sftpplugin.cpp:171
+#: plugins/sftp/sftpplugin.cpp:169
 #, kde-format
 msgid "Filesystem mounted at %1"
 msgstr "Bestandssysteem aangekoppeld op %1"
 
-#: plugins/sftp/sftpplugin.cpp:192
+#: plugins/sftp/sftpplugin.cpp:190
 msgid "Filesystem unmounted"
 msgstr "Bestandssysteem afgekoppeld"
 
@@ -195,11 +218,11 @@ msgstr "Ontvangen"
 msgid "Save files in:"
 msgstr "Bestanden opslaan in:"
 
-#: plugins/share/shareplugin.cpp:132
+#: plugins/share/shareplugin.cpp:135
 msgid "Transfer finished"
 msgstr "Overdracht is voltooid"
 
-#: plugins/share/shareplugin.cpp:134
+#: plugins/share/shareplugin.cpp:137
 msgid "Open destination folder"
 msgstr "Doelmap openen"
 

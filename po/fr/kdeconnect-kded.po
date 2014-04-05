@@ -2,15 +2,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # Joëlle Cornavin <jcorn@free.fr>, 2013.
 # Vincent PINON <vincent.pinon@st.com>, 2013.
+# Nicolas Ménard <nico.menard@gmail.com>, 2014.
+# Sebastien Renard <renard@kde.org>, 2014.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-02-17 02:14+0000\n"
-"PO-Revision-Date: 2013-12-09 13:42+0100\n"
-"Last-Translator: Vincent PINON <vincent.pinon@st.com>\n"
-"Language-Team: French <kde-francophone@kde.org>\n"
+"POT-Creation-Date: 2014-02-28 03:59+0000\n"
+"PO-Revision-Date: 2014-02-24 11:03+0100\n"
+"Last-Translator: Nicolas Ménard <nico.menard@gmail.com>\n"
+"Language-Team: French <kde-i18n-doc@kde.org>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -23,11 +25,11 @@ msgstr ""
 
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr ""
+msgstr "Nicolas MÉNARD"
 
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr ""
+msgstr "nico.menard@gmail.com"
 
 #: device.cpp:139
 msgid "Already paired"
@@ -47,7 +49,7 @@ msgstr "Erreur lors du contact du périphérique"
 
 #: device.cpp:196
 msgid "Timed out"
-msgstr "Temps imparti expiré"
+msgstr "Délai expiré"
 
 #: device.cpp:295 device.cpp:347
 msgid "Canceled by other peer"
@@ -55,7 +57,7 @@ msgstr "Annulé par l'autre homologue"
 
 #: device.cpp:311
 msgid "Received incorrect key"
-msgstr "Reçu une clé incorrecte"
+msgstr "Clé incorrecte reçue"
 
 #: device.cpp:328
 #, kde-format
@@ -76,17 +78,15 @@ msgstr "Annulé par l'utilisateur"
 
 #: filetransferjob.cpp:107
 msgid "Received incomplete file"
-msgstr "Reçu un fichier incomplet"
+msgstr "Fichier incomplet reçu"
 
 #: kdeconnectd.cpp:63
 msgid "kdeconnect"
-msgstr ""
+msgstr "kdeconnect"
 
 #: kdeconnectd.cpp:65
-#, fuzzy
-#| msgid "Error contacting device"
 msgid "connect devices"
-msgstr "Erreur lors du contact du périphérique"
+msgstr "connecter des périphériques"
 
 #: plugins/battery/batteryplugin.cpp:77
 #, kde-format
@@ -122,7 +122,7 @@ msgstr "Mettre en pause seulement en parlant"
 #. i18n: ectx: property (text), widget (QCheckBox, check_mute)
 #: plugins/pausemusic/pausemusic_config.ui:65
 msgid "Mute system instead of pause"
-msgstr ""
+msgstr "Mettre en sourdine plutôt qu'en pause"
 
 #: plugins/ping/pingplugin.cpp:49
 msgid "Ping!"
@@ -130,15 +130,16 @@ msgstr "Ping !"
 
 #: plugins/sftp/mounter.cpp:172
 msgid "Failed to start sshfs"
-msgstr ""
+msgstr "Impossible de démarrer sshfs"
 
 #: plugins/sftp/mounter.cpp:194
 msgid "Error when accessing to filesystem"
-msgstr ""
+msgstr "Erreur lors de l'accès au système de fichiers"
 
 #: plugins/sftp/mounter.cpp:205
 msgid "Failed to mount filesystem: device not responding"
 msgstr ""
+"Impossible de monter le système de fichiers : le périphérique ne répond pas"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, ShareConfigUi)
 #. i18n: ectx: property (windowTitle), widget (QWidget, SftpConfigUi)
@@ -149,49 +150,47 @@ msgstr "Paramètres du module de partage"
 #. i18n: ectx: property (text), widget (QCheckBox, idle)
 #: plugins/sftp/sftp_config.ui:49
 msgid "Disconnect when idle"
-msgstr ""
+msgstr "Déconnecter en cas d'inactivité"
 
 #. i18n: ectx: property (title), widget (QGroupBox, error)
 #: plugins/sftp/sftp_config.ui:59
 msgid "Error"
-msgstr ""
+msgstr "Erreur"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: plugins/sftp/sftp_config.ui:81
 msgid "sshfsf not found in PATH"
-msgstr ""
+msgstr "Impossible de trouver sshfsf dans le PATH"
 
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: plugins/sftp/sftp_config.ui:113
 msgid "Mountpoint:"
-msgstr ""
+msgstr "Point de montage :"
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: plugins/sftp/sftp_config.ui:144
-#, fuzzy
-#| msgid "Timed out"
 msgid "Timeout:"
-msgstr "Temps imparti expiré"
+msgstr "Délai : "
 
 #. i18n: ectx: property (suffix), widget (QSpinBox, timeout)
 #: plugins/sftp/sftp_config.ui:160
 msgid " min"
-msgstr ""
+msgstr " min"
 
-#: plugins/sftp/sftpplugin.cpp:170 plugins/sftp/sftpplugin.cpp:191
-#: plugins/sftp/sftpplugin.cpp:216
+#: plugins/sftp/sftpplugin.cpp:168 plugins/sftp/sftpplugin.cpp:189
+#: plugins/sftp/sftpplugin.cpp:214
 #, kde-format
 msgid "Device %1"
-msgstr ""
+msgstr "Périphérique %1"
 
-#: plugins/sftp/sftpplugin.cpp:171
+#: plugins/sftp/sftpplugin.cpp:169
 #, kde-format
 msgid "Filesystem mounted at %1"
-msgstr ""
+msgstr "Système de fichiers monté à %1"
 
-#: plugins/sftp/sftpplugin.cpp:192
+#: plugins/sftp/sftpplugin.cpp:190
 msgid "Filesystem unmounted"
-msgstr ""
+msgstr "Système de fichiers libéré"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #: plugins/share/share_config.ui:23

@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeconnect-kded\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-02-17 02:14+0000\n"
-"PO-Revision-Date: 2014-02-17 01:03-0300\n"
+"POT-Creation-Date: 2014-03-05 01:52+0000\n"
+"PO-Revision-Date: 2014-03-04 07:44-0300\n"
 "Last-Translator: André Marcelo Alvarenga <alvarenga@kde.org>\n"
 "Language-Team: Brazilian Portuguese <kde-i18n-pt_br@kde.org>\n"
 "Language: pt_BR\n"
@@ -42,36 +42,59 @@ msgstr "Dispositivo inacessível"
 msgid "Error contacting device"
 msgstr "Erro ao contactar o dispositivo"
 
-#: device.cpp:196
+#: device.cpp:199
 msgid "Timed out"
 msgstr "Tempo limite expirou"
 
-#: device.cpp:295 device.cpp:347
+#: device.cpp:298 device.cpp:350
 msgid "Canceled by other peer"
 msgstr "Cancelado pelo outro dispositivo"
 
-#: device.cpp:311
+#: device.cpp:314
 msgid "Received incorrect key"
 msgstr "Chave incorreta recebida"
 
-#: device.cpp:328
+#: device.cpp:331
 #, kde-format
 msgid "Pairing request from %1"
 msgstr "Solicitação de emparelhamento de %1"
 
-#: device.cpp:329
+#: device.cpp:332
 msgid "Accept"
 msgstr "Aceitar"
 
-#: device.cpp:329
+#: device.cpp:332
 msgid "Reject"
 msgstr "Rejeitar"
 
-#: device.cpp:388
+#: device.cpp:391
 msgid "Canceled by the user"
 msgstr "Cancelada pelo usuário"
 
-#: filetransferjob.cpp:107
+#: filetransferjob.cpp:41
+msgctxt "Device name that will appear on the jobs"
+msgid "KDE-Connect"
+msgstr "KDE-Connect"
+
+#: filetransferjob.cpp:60 filetransferjob.cpp:121
+msgid "Receiving file over KDE-Connect"
+msgstr "Recebendo arquivo através do KDE-Connect"
+
+#: filetransferjob.cpp:61 filetransferjob.cpp:122
+msgctxt "File transfer origin"
+msgid "From"
+msgstr "De"
+
+#: filetransferjob.cpp:68
+msgid "Incoming file exists"
+msgstr "O arquivo recebido já existe"
+
+#: filetransferjob.cpp:124
+msgctxt "File transfer destination"
+msgid "To"
+msgstr "Para"
+
+#: filetransferjob.cpp:197
 msgid "Received incomplete file"
 msgstr "Arquivo incompleto recebido"
 
@@ -172,18 +195,18 @@ msgstr "Tempo limite:"
 msgid " min"
 msgstr " min"
 
-#: plugins/sftp/sftpplugin.cpp:170 plugins/sftp/sftpplugin.cpp:191
-#: plugins/sftp/sftpplugin.cpp:216
+#: plugins/sftp/sftpplugin.cpp:168 plugins/sftp/sftpplugin.cpp:189
+#: plugins/sftp/sftpplugin.cpp:214
 #, kde-format
 msgid "Device %1"
 msgstr "Dispositivo %1"
 
-#: plugins/sftp/sftpplugin.cpp:171
+#: plugins/sftp/sftpplugin.cpp:169
 #, kde-format
 msgid "Filesystem mounted at %1"
 msgstr "Sistema de arquivos montado em %1"
 
-#: plugins/sftp/sftpplugin.cpp:192
+#: plugins/sftp/sftpplugin.cpp:190
 msgid "Filesystem unmounted"
 msgstr "Sistema de arquivos desmontado"
 
@@ -197,11 +220,11 @@ msgstr "Recebendo"
 msgid "Save files in:"
 msgstr "Salvar os arquivos em:"
 
-#: plugins/share/shareplugin.cpp:132
+#: plugins/share/shareplugin.cpp:135
 msgid "Transfer finished"
 msgstr "Transferência concluída"
 
-#: plugins/share/shareplugin.cpp:134
+#: plugins/share/shareplugin.cpp:137
 msgid "Open destination folder"
 msgstr "Abrir a pasta de destino"
 

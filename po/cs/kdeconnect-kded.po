@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-02-17 02:14+0000\n"
-"PO-Revision-Date: 2014-01-15 16:38+0100\n"
+"POT-Creation-Date: 2014-03-05 01:52+0000\n"
+"PO-Revision-Date: 2014-02-18 10:53+0100\n"
 "Last-Translator: Vít Pelčák <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
@@ -41,36 +41,59 @@ msgstr ""
 msgid "Error contacting device"
 msgstr ""
 
-#: device.cpp:196
+#: device.cpp:199
 msgid "Timed out"
 msgstr "Čas vypršel"
 
-#: device.cpp:295 device.cpp:347
+#: device.cpp:298 device.cpp:350
 msgid "Canceled by other peer"
 msgstr ""
 
-#: device.cpp:311
+#: device.cpp:314
 msgid "Received incorrect key"
 msgstr ""
 
-#: device.cpp:328
+#: device.cpp:331
 #, kde-format
 msgid "Pairing request from %1"
 msgstr ""
 
-#: device.cpp:329
+#: device.cpp:332
 msgid "Accept"
 msgstr "Přijmout"
 
-#: device.cpp:329
+#: device.cpp:332
 msgid "Reject"
 msgstr "Odmítnout"
 
-#: device.cpp:388
+#: device.cpp:391
 msgid "Canceled by the user"
 msgstr ""
 
-#: filetransferjob.cpp:107
+#: filetransferjob.cpp:41
+msgctxt "Device name that will appear on the jobs"
+msgid "KDE-Connect"
+msgstr ""
+
+#: filetransferjob.cpp:60 filetransferjob.cpp:121
+msgid "Receiving file over KDE-Connect"
+msgstr ""
+
+#: filetransferjob.cpp:61 filetransferjob.cpp:122
+msgctxt "File transfer origin"
+msgid "From"
+msgstr ""
+
+#: filetransferjob.cpp:68
+msgid "Incoming file exists"
+msgstr ""
+
+#: filetransferjob.cpp:124
+msgctxt "File transfer destination"
+msgid "To"
+msgstr ""
+
+#: filetransferjob.cpp:197
 msgid "Received incomplete file"
 msgstr ""
 
@@ -91,7 +114,7 @@ msgstr ""
 #: plugins/battery/batteryplugin.cpp:78
 #, kde-format
 msgid "Battery at %1%"
-msgstr ""
+msgstr "Baterie je na %1%"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, PauseMusicConfigUi)
 #: plugins/pausemusic/pausemusic_config.ui:17
@@ -148,7 +171,7 @@ msgstr ""
 #. i18n: ectx: property (title), widget (QGroupBox, error)
 #: plugins/sftp/sftp_config.ui:59
 msgid "Error"
-msgstr ""
+msgstr "Chyba"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: plugins/sftp/sftp_config.ui:81
@@ -158,32 +181,30 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: plugins/sftp/sftp_config.ui:113
 msgid "Mountpoint:"
-msgstr ""
+msgstr "Místo připojení:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: plugins/sftp/sftp_config.ui:144
-#, fuzzy
-#| msgid "Timed out"
 msgid "Timeout:"
-msgstr "Čas vypršel"
+msgstr "Časový limit:"
 
 #. i18n: ectx: property (suffix), widget (QSpinBox, timeout)
 #: plugins/sftp/sftp_config.ui:160
 msgid " min"
 msgstr ""
 
-#: plugins/sftp/sftpplugin.cpp:170 plugins/sftp/sftpplugin.cpp:191
-#: plugins/sftp/sftpplugin.cpp:216
+#: plugins/sftp/sftpplugin.cpp:168 plugins/sftp/sftpplugin.cpp:189
+#: plugins/sftp/sftpplugin.cpp:214
 #, kde-format
 msgid "Device %1"
 msgstr ""
 
-#: plugins/sftp/sftpplugin.cpp:171
+#: plugins/sftp/sftpplugin.cpp:169
 #, kde-format
 msgid "Filesystem mounted at %1"
 msgstr ""
 
-#: plugins/sftp/sftpplugin.cpp:192
+#: plugins/sftp/sftpplugin.cpp:190
 msgid "Filesystem unmounted"
 msgstr ""
 
@@ -197,11 +218,11 @@ msgstr "Přijímám"
 msgid "Save files in:"
 msgstr "Uložit soubory v:"
 
-#: plugins/share/shareplugin.cpp:132
+#: plugins/share/shareplugin.cpp:135
 msgid "Transfer finished"
 msgstr ""
 
-#: plugins/share/shareplugin.cpp:134
+#: plugins/share/shareplugin.cpp:137
 msgid "Open destination folder"
 msgstr ""
 

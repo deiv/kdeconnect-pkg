@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeconnect-plasmoid\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-02-17 02:14+0000\n"
-"PO-Revision-Date: 2014-02-15 15:51+0000\n"
+"POT-Creation-Date: 2014-03-01 01:46+0000\n"
+"PO-Revision-Date: 2014-03-01 11:24+0000\n"
 "Last-Translator: José Nuno Coelho Pires <zepires@gmail.com>\n"
 "Language-Team: Portuguese <kde-i18n-pt@kde.org>\n"
 "Language: \n"
@@ -13,15 +13,15 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-POFile-SpellExtra: Connect\n"
 
-#: package/contents/ui/Battery.qml:34
-msgid "Charging, %1"
-msgstr "A carregar, %1"
+#: package/contents/ui/Battery.qml:36
+msgid "Charging: %1%"
+msgstr "A carregar: %1%"
 
-#: package/contents/ui/Battery.qml:34
-msgid "Discharging, %1"
-msgstr "A descarregar, %1"
+#: package/contents/ui/Battery.qml:36
+msgid "Discharging: %1%"
+msgstr "A descarregar: %1%"
 
-#: package/contents/ui/Battery.qml:34
+#: package/contents/ui/Battery.qml:36
 msgid "No info"
 msgstr "Sem informação"
 
@@ -29,17 +29,11 @@ msgstr "Sem informação"
 msgid "KDE Connect device notifications"
 msgstr "Notificações dos dispositivos do KDE Connect"
 
-#: package/contents/ui/DeviceDelegate.qml:53
-#: package/contents/ui/DeviceDelegate.qml:59
-#: package/contents/ui/DeviceDelegate.qml:64
-msgid "Browse"
-msgstr "Escolher"
-
-#: package/contents/ui/DeviceDelegate.qml:107
+#: package/contents/ui/DeviceDelegate.qml:77
 msgid "Battery"
 msgstr "Bateria"
 
-#: package/contents/ui/DeviceDelegate.qml:122
+#: package/contents/ui/DeviceDelegate.qml:92
 msgid "Notifications"
 msgstr "Notificações"
 

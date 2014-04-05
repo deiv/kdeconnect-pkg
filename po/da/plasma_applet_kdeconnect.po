@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
 #
-# Martin Schlander <mschlander@opensuse.org>, 2013.
+# Martin Schlander <mschlander@opensuse.org>, 2013, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-02-17 02:14+0000\n"
-"PO-Revision-Date: 2013-11-24 16:26+0100\n"
+"POT-Creation-Date: 2014-03-01 01:46+0000\n"
+"PO-Revision-Date: 2014-03-05 19:28+0100\n"
 "Last-Translator: Martin Schlander <mschlander@opensuse.org>\n"
 "Language-Team: Danish <kde-i18n-doc@kde.org>\n"
 "Language: da\n"
@@ -17,33 +17,27 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Lokalize 1.5\n"
 
-#: package/contents/ui/Battery.qml:34
-msgid "Charging, %1"
-msgstr ""
+#: package/contents/ui/Battery.qml:36
+msgid "Charging: %1%"
+msgstr "Lader op: %1%"
 
-#: package/contents/ui/Battery.qml:34
-msgid "Discharging, %1"
-msgstr ""
+#: package/contents/ui/Battery.qml:36
+msgid "Discharging: %1%"
+msgstr "Aflader: %1%"
 
-#: package/contents/ui/Battery.qml:34
+#: package/contents/ui/Battery.qml:36
 msgid "No info"
-msgstr ""
+msgstr "Ingen info"
 
 #: package/contents/ui/CompactRepresentation.qml:48
 msgid "KDE Connect device notifications"
-msgstr ""
+msgstr "Enhedsbekendtgørelser fra KDE Connect"
 
-#: package/contents/ui/DeviceDelegate.qml:53
-#: package/contents/ui/DeviceDelegate.qml:59
-#: package/contents/ui/DeviceDelegate.qml:64
-msgid "Browse"
-msgstr ""
-
-#: package/contents/ui/DeviceDelegate.qml:107
+#: package/contents/ui/DeviceDelegate.qml:77
 msgid "Battery"
 msgstr "Batteri"
 
-#: package/contents/ui/DeviceDelegate.qml:122
+#: package/contents/ui/DeviceDelegate.qml:92
 msgid "Notifications"
 msgstr "Bekendtgørelser"
 
