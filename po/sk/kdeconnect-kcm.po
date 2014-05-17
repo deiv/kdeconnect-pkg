@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeconnect-kcm\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-02-15 01:46+0000\n"
+"POT-Creation-Date: 2014-04-06 02:05+0000\n"
 "PO-Revision-Date: 2014-02-16 19:16+0100\n"
 "Last-Translator: Roman Paholík <wizzardsk@gmail.com>\n"
 "Language-Team: Slovak <kde-sk@linux.sk>\n"
@@ -15,19 +15,19 @@ msgstr ""
 "X-Generator: Lokalize 1.5\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 
-#: kcm.cpp:145 kcm.cpp:229
+#: kcm.cpp:143 kcm.cpp:227
 msgid "(paired)"
 msgstr "(spárované)"
 
-#: kcm.cpp:145 kcm.cpp:201 kcm.cpp:212
+#: kcm.cpp:143 kcm.cpp:199 kcm.cpp:210
 msgid "(unpaired)"
 msgstr "(nespárované)"
 
-#: kcm.cpp:159
+#: kcm.cpp:157
 msgid "Plugins"
 msgstr "Pluginy"
 
-#: kcm.cpp:214
+#: kcm.cpp:212
 #, kde-format
 msgid "Error trying to pair: %1"
 msgstr "Chyba pokusu o spárovanie: %1"
@@ -56,8 +56,3 @@ msgstr "Odpárovať"
 #: kcm.ui:168
 msgid "Send ping"
 msgstr "Poslať ping"
-
-#. i18n: ectx: property (text), widget (QPushButton, browse_button)
-#: kcm.ui:175
-msgid "Browse"
-msgstr "Prehľadávať"

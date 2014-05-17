@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-02-15 01:46+0000\n"
+"POT-Creation-Date: 2014-04-06 02:05+0000\n"
 "PO-Revision-Date: 2014-02-15 16:53+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: Dutch <kde-i18n-nl@kde.org>\n"
@@ -17,19 +17,19 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Lokalize 1.5\n"
 
-#: kcm.cpp:145 kcm.cpp:229
+#: kcm.cpp:143 kcm.cpp:227
 msgid "(paired)"
 msgstr "(gepaard)"
 
-#: kcm.cpp:145 kcm.cpp:201 kcm.cpp:212
+#: kcm.cpp:143 kcm.cpp:199 kcm.cpp:210
 msgid "(unpaired)"
 msgstr "(niet gepaard)"
 
-#: kcm.cpp:159
+#: kcm.cpp:157
 msgid "Plugins"
 msgstr "Plug-ins"
 
-#: kcm.cpp:214
+#: kcm.cpp:212
 #, kde-format
 msgid "Error trying to pair: %1"
 msgstr "Fout bij het maken van een paar: %1"
@@ -58,8 +58,3 @@ msgstr "Paar uit elkaar halen"
 #: kcm.ui:168
 msgid "Send ping"
 msgstr "Ping verzenden"
-
-#. i18n: ectx: property (text), widget (QPushButton, browse_button)
-#: kcm.ui:175
-msgid "Browse"
-msgstr "Bladeren"

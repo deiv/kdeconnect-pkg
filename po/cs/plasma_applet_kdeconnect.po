@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2014-03-01 01:46+0000\n"
-"PO-Revision-Date: 2014-01-15 16:38+0100\n"
+"PO-Revision-Date: 2014-03-17 13:52+0100\n"
 "Last-Translator: Vít Pelčák <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
@@ -19,19 +19,19 @@ msgstr ""
 
 #: package/contents/ui/Battery.qml:36
 msgid "Charging: %1%"
-msgstr ""
+msgstr "Nabíjí se: %1%"
 
 #: package/contents/ui/Battery.qml:36
 msgid "Discharging: %1%"
-msgstr ""
+msgstr "Vybíjí se: %1%"
 
 #: package/contents/ui/Battery.qml:36
 msgid "No info"
-msgstr ""
+msgstr "Žádné informace"
 
 #: package/contents/ui/CompactRepresentation.qml:48
 msgid "KDE Connect device notifications"
-msgstr ""
+msgstr "Oznamování zařízení KDE Connect"
 
 #: package/contents/ui/DeviceDelegate.qml:77
 msgid "Battery"

@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2014-03-05 01:52+0000\n"
-"PO-Revision-Date: 2014-02-22 21:33+0100\n"
+"PO-Revision-Date: 2014-05-04 17:50+0200\n"
 "Last-Translator: Balázs Úr <urbalazs@gmail.com>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
@@ -73,25 +73,25 @@ msgstr "Megszakítva a felhasználó által"
 #: filetransferjob.cpp:41
 msgctxt "Device name that will appear on the jobs"
 msgid "KDE-Connect"
-msgstr ""
+msgstr "KDE-csatlakozás"
 
 #: filetransferjob.cpp:60 filetransferjob.cpp:121
 msgid "Receiving file over KDE-Connect"
-msgstr ""
+msgstr "Fájl fogadása a KDE-csatlakozáson keresztül"
 
 #: filetransferjob.cpp:61 filetransferjob.cpp:122
 msgctxt "File transfer origin"
 msgid "From"
-msgstr ""
+msgstr "Feladó"
 
 #: filetransferjob.cpp:68
 msgid "Incoming file exists"
-msgstr ""
+msgstr "A beérkező fájl létezik"
 
 #: filetransferjob.cpp:124
 msgctxt "File transfer destination"
 msgid "To"
-msgstr ""
+msgstr "Címzett"
 
 #: filetransferjob.cpp:197
 msgid "Received incomplete file"

@@ -1,0 +1,43 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: kdeconnect-plasmoid\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-03-01 01:46+0000\n"
+"PO-Revision-Date: 2013-09-13 00:14-0700\n"
+"Last-Translator: Japanese KDE translation team <Kdeveloper@kde.gr.jp>\n"
+"Language-Team: Japanese <Kdeveloper@kde.gr.jp>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Accelerator-Marker: &\n"
+"X-Text-Markup: kde4\n"
+
+#: package/contents/ui/Battery.qml:36
+msgid "Charging: %1%"
+msgstr ""
+
+#: package/contents/ui/Battery.qml:36
+msgid "Discharging: %1%"
+msgstr ""
+
+#: package/contents/ui/Battery.qml:36
+msgid "No info"
+msgstr ""
+
+#: package/contents/ui/CompactRepresentation.qml:48
+msgid "KDE Connect device notifications"
+msgstr ""
+
+#: package/contents/ui/DeviceDelegate.qml:77
+msgid "Battery"
+msgstr ""
+
+#: package/contents/ui/DeviceDelegate.qml:92
+msgid "Notifications"
+msgstr ""
+
+#: package/contents/ui/kdeconnect.qml:39
+msgid "No paired devices available"
+msgstr ""

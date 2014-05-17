@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2014-03-01 01:46+0000\n"
-"PO-Revision-Date: 2014-02-22 21:35+0100\n"
+"PO-Revision-Date: 2014-03-19 22:31+0100\n"
 "Last-Translator: Balázs Úr <urbalazs@gmail.com>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
@@ -18,16 +18,12 @@ msgstr ""
 "X-Generator: Lokalize 1.5\n"
 
 #: package/contents/ui/Battery.qml:36
-#, fuzzy
-#| msgid "Charging, %1"
 msgid "Charging: %1%"
-msgstr "Töltés, %1"
+msgstr "Töltés, %1%"
 
 #: package/contents/ui/Battery.qml:36
-#, fuzzy
-#| msgid "Discharging, %1"
 msgid "Discharging: %1%"
-msgstr "Kisülés, %1"
+msgstr "Kisülés, %1%"
 
 #: package/contents/ui/Battery.qml:36
 msgid "No info"

@@ -1,0 +1,45 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Park Shinjo <peremen@gmail.com>, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-03-01 01:46+0000\n"
+"PO-Revision-Date: 2014-03-10 01:35+0900\n"
+"Last-Translator: Park Shinjo <peremen@gmail.com>\n"
+"Language-Team: Korean <kde@peremen.name>\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: package/contents/ui/Battery.qml:36
+msgid "Charging: %1%"
+msgstr "충전 중: %1%"
+
+#: package/contents/ui/Battery.qml:36
+msgid "Discharging: %1%"
+msgstr "방전 중: %1%"
+
+#: package/contents/ui/Battery.qml:36
+msgid "No info"
+msgstr "정보 없음"
+
+#: package/contents/ui/CompactRepresentation.qml:48
+msgid "KDE Connect device notifications"
+msgstr "KDE Connect 장치 알림"
+
+#: package/contents/ui/DeviceDelegate.qml:77
+msgid "Battery"
+msgstr "배터리"
+
+#: package/contents/ui/DeviceDelegate.qml:92
+msgid "Notifications"
+msgstr "알림"
+
+#: package/contents/ui/kdeconnect.qml:39
+msgid "No paired devices available"
+msgstr "연결된 장치 없음"

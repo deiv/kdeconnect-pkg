@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: kdeconnect-kded\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2014-03-05 01:52+0000\n"
-"PO-Revision-Date: 2014-02-18 19:56+0100\n"
+"PO-Revision-Date: 2014-03-10 20:30+0100\n"
 "Last-Translator: Roman Paholík <wizzardsk@gmail.com>\n"
 "Language-Team: Slovak <kde-sk@linux.sk>\n"
 "Language: sk\n"
@@ -71,25 +71,25 @@ msgstr "Zrušené používateľom"
 #: filetransferjob.cpp:41
 msgctxt "Device name that will appear on the jobs"
 msgid "KDE-Connect"
-msgstr ""
+msgstr "KDE-Connect"
 
 #: filetransferjob.cpp:60 filetransferjob.cpp:121
 msgid "Receiving file over KDE-Connect"
-msgstr ""
+msgstr "Prijímanie súboru cez KDE-Connect"
 
 #: filetransferjob.cpp:61 filetransferjob.cpp:122
 msgctxt "File transfer origin"
 msgid "From"
-msgstr ""
+msgstr "Od"
 
 #: filetransferjob.cpp:68
 msgid "Incoming file exists"
-msgstr ""
+msgstr "Prichádzajúci súbor existuje"
 
 #: filetransferjob.cpp:124
 msgctxt "File transfer destination"
 msgid "To"
-msgstr ""
+msgstr "Pre"
 
 #: filetransferjob.cpp:197
 msgid "Received incomplete file"

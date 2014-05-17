@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-02-28 03:59+0000\n"
-"PO-Revision-Date: 2014-02-24 11:03+0100\n"
+"POT-Creation-Date: 2014-03-05 01:52+0000\n"
+"PO-Revision-Date: 2014-03-25 15:19+0100\n"
 "Last-Translator: Nicolas Ménard <nico.menard@gmail.com>\n"
 "Language-Team: French <kde-i18n-doc@kde.org>\n"
 "Language: fr\n"
@@ -47,36 +47,59 @@ msgstr "Périphérique non accessible"
 msgid "Error contacting device"
 msgstr "Erreur lors du contact du périphérique"
 
-#: device.cpp:196
+#: device.cpp:199
 msgid "Timed out"
 msgstr "Délai expiré"
 
-#: device.cpp:295 device.cpp:347
+#: device.cpp:298 device.cpp:350
 msgid "Canceled by other peer"
 msgstr "Annulé par l'autre homologue"
 
-#: device.cpp:311
+#: device.cpp:314
 msgid "Received incorrect key"
 msgstr "Clé incorrecte reçue"
 
-#: device.cpp:328
+#: device.cpp:331
 #, kde-format
 msgid "Pairing request from %1"
 msgstr "Demande d'appariement provenant de %1"
 
-#: device.cpp:329
+#: device.cpp:332
 msgid "Accept"
 msgstr "Accepter"
 
-#: device.cpp:329
+#: device.cpp:332
 msgid "Reject"
 msgstr "Rejeter"
 
-#: device.cpp:388
+#: device.cpp:391
 msgid "Canceled by the user"
 msgstr "Annulé par l'utilisateur"
 
-#: filetransferjob.cpp:107
+#: filetransferjob.cpp:41
+msgctxt "Device name that will appear on the jobs"
+msgid "KDE-Connect"
+msgstr "KDE-Connect"
+
+#: filetransferjob.cpp:60 filetransferjob.cpp:121
+msgid "Receiving file over KDE-Connect"
+msgstr "Réception d'un fichier via KDE-Connect"
+
+#: filetransferjob.cpp:61 filetransferjob.cpp:122
+msgctxt "File transfer origin"
+msgid "From"
+msgstr "Depuis"
+
+#: filetransferjob.cpp:68
+msgid "Incoming file exists"
+msgstr "Le fichier entrant existe"
+
+#: filetransferjob.cpp:124
+msgctxt "File transfer destination"
+msgid "To"
+msgstr "À"
+
+#: filetransferjob.cpp:197
 msgid "Received incomplete file"
 msgstr "Fichier incomplet reçu"
 
@@ -186,7 +209,7 @@ msgstr "Périphérique %1"
 #: plugins/sftp/sftpplugin.cpp:169
 #, kde-format
 msgid "Filesystem mounted at %1"
-msgstr "Système de fichiers monté à %1"
+msgstr "Système de fichiers monté à %1"
 
 #: plugins/sftp/sftpplugin.cpp:190
 msgid "Filesystem unmounted"
@@ -202,11 +225,11 @@ msgstr "Réception"
 msgid "Save files in:"
 msgstr "Enregistrer les fichiers dans :"
 
-#: plugins/share/shareplugin.cpp:132
+#: plugins/share/shareplugin.cpp:135
 msgid "Transfer finished"
 msgstr "Transfert terminé"
 
-#: plugins/share/shareplugin.cpp:134
+#: plugins/share/shareplugin.cpp:137
 msgid "Open destination folder"
 msgstr "Ouvrir le dossier de destination"
 
