@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
 #
-# Sergiu Bivol <sergiu@ase.md>, 2013.
+# Sergiu Bivol <sergiu@ase.md>, 2013, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2014-03-01 01:46+0000\n"
-"PO-Revision-Date: 2013-10-24 14:20+0300\n"
+"PO-Revision-Date: 2014-03-25 17:10+0200\n"
 "Last-Translator: Sergiu Bivol <sergiu@ase.md>\n"
 "Language-Team: Romanian <kde-i18n-ro@kde.org>\n"
 "Language: ro\n"
@@ -20,23 +20,23 @@ msgstr ""
 
 #: package/contents/ui/Battery.qml:36
 msgid "Charging: %1%"
-msgstr ""
+msgstr "Se încarcă: %1%"
 
 #: package/contents/ui/Battery.qml:36
 msgid "Discharging: %1%"
-msgstr ""
+msgstr "Se descarcă: %1%"
 
 #: package/contents/ui/Battery.qml:36
 msgid "No info"
-msgstr ""
+msgstr "Fără informații"
 
 #: package/contents/ui/CompactRepresentation.qml:48
 msgid "KDE Connect device notifications"
-msgstr ""
+msgstr "Notificări de dispozitiv KDE Connect"
 
 #: package/contents/ui/DeviceDelegate.qml:77
 msgid "Battery"
-msgstr ""
+msgstr "Acumulator"
 
 #: package/contents/ui/DeviceDelegate.qml:92
 msgid "Notifications"

@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2014-03-01 01:46+0000\n"
-"PO-Revision-Date: 2014-02-24 12:04+0100\n"
+"PO-Revision-Date: 2014-03-25 15:33+0100\n"
 "Last-Translator: Nicolas Ménard <nico.menard@gmail.com>\n"
 "Language-Team: French <kde-i18n-doc@kde.org>\n"
 "Language: fr\n"
@@ -24,11 +24,11 @@ msgstr ""
 
 #: package/contents/ui/Battery.qml:36
 msgid "Charging: %1%"
-msgstr ""
+msgstr "En charge: %1%"
 
 #: package/contents/ui/Battery.qml:36
 msgid "Discharging: %1%"
-msgstr ""
+msgstr "En décharge: %1%"
 
 #: package/contents/ui/Battery.qml:36
 msgid "No info"

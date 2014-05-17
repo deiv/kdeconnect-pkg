@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-02-15 01:46+0000\n"
+"POT-Creation-Date: 2014-04-06 02:05+0000\n"
 "PO-Revision-Date: 2014-02-17 11:20+0100\n"
 "Last-Translator: Nicolas Ménard <nico.menard@gmail.com>\n"
 "Language-Team: French <kde-i18n-doc@kde.org>\n"
@@ -21,19 +21,19 @@ msgstr ""
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"
 
-#: kcm.cpp:145 kcm.cpp:229
+#: kcm.cpp:143 kcm.cpp:227
 msgid "(paired)"
 msgstr "(apparié)"
 
-#: kcm.cpp:145 kcm.cpp:201 kcm.cpp:212
+#: kcm.cpp:143 kcm.cpp:199 kcm.cpp:210
 msgid "(unpaired)"
 msgstr "(non apparié)"
 
-#: kcm.cpp:159
+#: kcm.cpp:157
 msgid "Plugins"
 msgstr "Modules externes"
 
-#: kcm.cpp:214
+#: kcm.cpp:212
 #, kde-format
 msgid "Error trying to pair: %1"
 msgstr "Erreur lors de la tentative d'appariement : %1"
@@ -62,8 +62,3 @@ msgstr "Désapparier"
 #: kcm.ui:168
 msgid "Send ping"
 msgstr "Envoyer une commande « ping »"
-
-#. i18n: ectx: property (text), widget (QPushButton, browse_button)
-#: kcm.ui:175
-msgid "Browse"
-msgstr "Visualiser"

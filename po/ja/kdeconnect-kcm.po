@@ -1,0 +1,57 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: kdeconnect-kcm\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-06 02:05+0000\n"
+"PO-Revision-Date: 2013-09-13 00:14-0700\n"
+"Last-Translator: Japanese KDE translation team <Kdeveloper@kde.gr.jp>\n"
+"Language-Team: Japanese <Kdeveloper@kde.gr.jp>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Accelerator-Marker: &\n"
+"X-Text-Markup: kde4\n"
+
+#: kcm.cpp:143 kcm.cpp:227
+msgid "(paired)"
+msgstr ""
+
+#: kcm.cpp:143 kcm.cpp:199 kcm.cpp:210
+msgid "(unpaired)"
+msgstr ""
+
+#: kcm.cpp:157
+msgid "Plugins"
+msgstr ""
+
+#: kcm.cpp:212
+#, kde-format
+msgid "Error trying to pair: %1"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, name_label)
+#: kcm.ui:84
+msgid "Device"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, status_label)
+#: kcm.ui:97
+msgid "(status)"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QPushButton, pair_button)
+#: kcm.ui:142
+msgid "Request pair"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QPushButton, unpair_button)
+#: kcm.ui:155
+msgid "Unpair"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QPushButton, ping_button)
+#: kcm.ui:168
+msgid "Send ping"
+msgstr ""

@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2014-03-05 01:52+0000\n"
-"PO-Revision-Date: 2014-02-17 21:02+0100\n"
+"PO-Revision-Date: 2014-03-24 09:46+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: Dutch <kde-i18n-nl@kde.org>\n"
 "Language: nl\n"
@@ -73,25 +73,25 @@ msgstr "Geannuleerd door de gebruiker"
 #: filetransferjob.cpp:41
 msgctxt "Device name that will appear on the jobs"
 msgid "KDE-Connect"
-msgstr ""
+msgstr "KDE-Connect"
 
 #: filetransferjob.cpp:60 filetransferjob.cpp:121
 msgid "Receiving file over KDE-Connect"
-msgstr ""
+msgstr "Bezig bestand te ontvangen via KDE-Connect"
 
 #: filetransferjob.cpp:61 filetransferjob.cpp:122
 msgctxt "File transfer origin"
 msgid "From"
-msgstr ""
+msgstr "Vanaf"
 
 #: filetransferjob.cpp:68
 msgid "Incoming file exists"
-msgstr ""
+msgstr "Inkomend bestand bestaat al"
 
 #: filetransferjob.cpp:124
 msgctxt "File transfer destination"
 msgid "To"
-msgstr ""
+msgstr "Naar"
 
 #: filetransferjob.cpp:197
 msgid "Received incomplete file"

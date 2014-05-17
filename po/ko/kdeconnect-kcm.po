@@ -1,0 +1,59 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Park Shinjo <peremen@gmail.com>, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-04-06 02:05+0000\n"
+"PO-Revision-Date: 2014-03-10 00:43+0900\n"
+"Last-Translator: Park Shinjo <peremen@gmail.com>\n"
+"Language-Team: Korean <kde@peremen.name>\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: kcm.cpp:143 kcm.cpp:227
+msgid "(paired)"
+msgstr "(페어링됨)"
+
+#: kcm.cpp:143 kcm.cpp:199 kcm.cpp:210
+msgid "(unpaired)"
+msgstr "(페어링 해제됨)"
+
+#: kcm.cpp:157
+msgid "Plugins"
+msgstr "플러그인"
+
+#: kcm.cpp:212
+#, kde-format
+msgid "Error trying to pair: %1"
+msgstr "페어링 중 오류 발생: %1"
+
+#. i18n: ectx: property (text), widget (QLabel, name_label)
+#: kcm.ui:84
+msgid "Device"
+msgstr "장치"
+
+#. i18n: ectx: property (text), widget (QLabel, status_label)
+#: kcm.ui:97
+msgid "(status)"
+msgstr "(상태)"
+
+#. i18n: ectx: property (text), widget (QPushButton, pair_button)
+#: kcm.ui:142
+msgid "Request pair"
+msgstr "페어링 요청"
+
+#. i18n: ectx: property (text), widget (QPushButton, unpair_button)
+#: kcm.ui:155
+msgid "Unpair"
+msgstr "페어링 해제"
+
+#. i18n: ectx: property (text), widget (QPushButton, ping_button)
+#: kcm.ui:168
+msgid "Send ping"
+msgstr "핑 보내기"
