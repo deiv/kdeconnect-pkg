@@ -3,6 +3,7 @@ kdeconnect (0.5.2.1-1) unstable; urgency=low
   * New upstream version
   * Drop 'remove-xdg-open-shebang' patch
   * Point Vcs headers to debian git repository
+  * Update copyright file
 
  -- David Suárez <david.sephirot@gmail.com>  Sun, 18 May 2014 15:50:33 +0200
 
