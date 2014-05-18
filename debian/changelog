@@ -1,3 +1,11 @@
+kdeconnect (0.5.2.1-1) unstable; urgency=low
+
+  * New upstream version
+  * Drop 'remove-xdg-open-shebang' patch
+  * Point Vcs headers to debian git repository
+
+ -- David Suárez <david.sephirot@gmail.com>  Sun, 18 May 2014 15:50:33 +0200
+
 kdeconnect (0.4.2-2) unstable; urgency=low
 
   * Add libqca2-plugin-gnupg and libqca2-plugin-ossl runtime depends.
