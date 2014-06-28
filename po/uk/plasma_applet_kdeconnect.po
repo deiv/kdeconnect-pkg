@@ -4,7 +4,7 @@
 # Yuri Chornoivan <yurchor@ukr.net>, 2014.
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
+"Project-Id-Version: plasma_applet_kdeconnect\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2014-03-01 01:46+0000\n"
 "PO-Revision-Date: 2014-03-01 07:58+0200\n"

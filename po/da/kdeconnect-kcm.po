@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-04-06 02:05+0000\n"
+"POT-Creation-Date: 2014-06-15 02:00+0000\n"
 "PO-Revision-Date: 2014-02-23 14:32+0100\n"
 "Last-Translator: Martin Schlander <mschlander@opensuse.org>\n"
 "Language-Team: Danish <kde-i18n-doc@kde.org>\n"
@@ -17,19 +17,19 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Lokalize 1.5\n"
 
-#: kcm.cpp:143 kcm.cpp:227
+#: kcm.cpp:144 kcm.cpp:228
 msgid "(paired)"
 msgstr "(parret)"
 
-#: kcm.cpp:143 kcm.cpp:199 kcm.cpp:210
+#: kcm.cpp:144 kcm.cpp:200 kcm.cpp:211
 msgid "(unpaired)"
 msgstr "(ikke parret)"
 
-#: kcm.cpp:157
+#: kcm.cpp:158
 msgid "Plugins"
 msgstr "Plugins"
 
-#: kcm.cpp:212
+#: kcm.cpp:213
 #, kde-format
 msgid "Error trying to pair: %1"
 msgstr "Fejl ved parring: %1"

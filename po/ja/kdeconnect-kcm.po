@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeconnect-kcm\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-04-06 02:05+0000\n"
+"POT-Creation-Date: 2014-06-15 02:00+0000\n"
 "PO-Revision-Date: 2013-09-13 00:14-0700\n"
 "Last-Translator: Japanese KDE translation team <Kdeveloper@kde.gr.jp>\n"
 "Language-Team: Japanese <Kdeveloper@kde.gr.jp>\n"
@@ -14,19 +14,19 @@ msgstr ""
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"
 
-#: kcm.cpp:143 kcm.cpp:227
+#: kcm.cpp:144 kcm.cpp:228
 msgid "(paired)"
 msgstr ""
 
-#: kcm.cpp:143 kcm.cpp:199 kcm.cpp:210
+#: kcm.cpp:144 kcm.cpp:200 kcm.cpp:211
 msgid "(unpaired)"
 msgstr ""
 
-#: kcm.cpp:157
+#: kcm.cpp:158
 msgid "Plugins"
 msgstr ""
 
-#: kcm.cpp:212
+#: kcm.cpp:213
 #, kde-format
 msgid "Error trying to pair: %1"
 msgstr ""

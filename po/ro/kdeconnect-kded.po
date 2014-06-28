@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-03-05 01:52+0000\n"
+"POT-Creation-Date: 2014-06-18 01:56+0000\n"
 "PO-Revision-Date: 2013-10-24 14:20+0300\n"
 "Last-Translator: Sergiu Bivol <sergiu@ase.md>\n"
 "Language-Team: Romanian <kde-i18n-ro@kde.org>\n"
@@ -26,230 +26,36 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr ""
 
-#: device.cpp:139
-msgid "Already paired"
-msgstr "Împerecheat deja"
-
-#: device.cpp:142
-msgid "Pairing already requested for this device"
-msgstr ""
-
-#: device.cpp:146
-msgid "Device not reachable"
-msgstr ""
-
-#: device.cpp:159
-msgid "Error contacting device"
-msgstr ""
-
-#: device.cpp:199
-msgid "Timed out"
-msgstr "A expirat"
-
-#: device.cpp:298 device.cpp:350
-msgid "Canceled by other peer"
-msgstr ""
-
-#: device.cpp:314
-msgid "Received incorrect key"
-msgstr ""
-
-#: device.cpp:331
-#, kde-format
-msgid "Pairing request from %1"
-msgstr ""
-
-#: device.cpp:332
-msgid "Accept"
-msgstr "Acceptă"
-
-#: device.cpp:332
-msgid "Reject"
-msgstr "Refuză"
-
-#: device.cpp:391
-msgid "Canceled by the user"
-msgstr ""
-
-#: filetransferjob.cpp:41
-msgctxt "Device name that will appear on the jobs"
-msgid "KDE-Connect"
-msgstr ""
-
-#: filetransferjob.cpp:60 filetransferjob.cpp:121
-msgid "Receiving file over KDE-Connect"
-msgstr ""
-
-#: filetransferjob.cpp:61 filetransferjob.cpp:122
-msgctxt "File transfer origin"
-msgid "From"
-msgstr ""
-
-#: filetransferjob.cpp:68
-msgid "Incoming file exists"
-msgstr ""
-
-#: filetransferjob.cpp:124
-msgctxt "File transfer destination"
-msgid "To"
-msgstr ""
-
-#: filetransferjob.cpp:197
-msgid "Received incomplete file"
-msgstr ""
-
 #: kdeconnectd.cpp:63
 msgid "kdeconnect"
 msgstr ""
 
 #: kdeconnectd.cpp:65
-msgid "connect devices"
+msgid "Connect your devices and KDE"
 msgstr ""
 
-#: plugins/battery/batteryplugin.cpp:77
-#, kde-format
-msgctxt "device name: low battery"
-msgid "%1: low battery"
-msgstr "%1: acumulator scăzut"
 
-#: plugins/battery/batteryplugin.cpp:78
-#, fuzzy, kde-format
-#| msgid "Battery at 14%"
-msgid "Battery at %1%"
-msgstr "Acumulator la 14%"
 
-#. i18n: ectx: property (windowTitle), widget (QWidget, PauseMusicConfigUi)
-#: plugins/pausemusic/pausemusic_config.ui:17
-msgid "Pause music plugin"
-msgstr ""
 
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: plugins/pausemusic/pausemusic_config.ui:29
-msgid "Pause condition"
-msgstr ""
 
-#. i18n: ectx: property (text), widget (QRadioButton, rad_ringing)
-#: plugins/pausemusic/pausemusic_config.ui:35
-msgid "Pause as soon as phone rings"
-msgstr ""
 
-#. i18n: ectx: property (text), widget (QRadioButton, rad_talking)
-#: plugins/pausemusic/pausemusic_config.ui:42
-msgid "Pause only while talking"
-msgstr ""
 
-#. i18n: ectx: property (text), widget (QCheckBox, check_mute)
-#: plugins/pausemusic/pausemusic_config.ui:65
-msgid "Mute system instead of pause"
-msgstr ""
 
-#: plugins/ping/pingplugin.cpp:49
-msgid "Ping!"
-msgstr "Ping!"
 
-#: plugins/sftp/mounter.cpp:172
-msgid "Failed to start sshfs"
-msgstr ""
 
-#: plugins/sftp/mounter.cpp:194
-msgid "Error when accessing to filesystem"
-msgstr ""
 
-#: plugins/sftp/mounter.cpp:205
-msgid "Failed to mount filesystem: device not responding"
-msgstr ""
 
-#. i18n: ectx: property (windowTitle), widget (QWidget, ShareConfigUi)
-#. i18n: ectx: property (windowTitle), widget (QWidget, SftpConfigUi)
-#: plugins/sftp/sftp_config.ui:17 plugins/share/share_config.ui:17
-msgid "Share plugin settings"
-msgstr ""
 
-#. i18n: ectx: property (text), widget (QCheckBox, idle)
-#: plugins/sftp/sftp_config.ui:49
-msgid "Disconnect when idle"
-msgstr ""
 
-#. i18n: ectx: property (title), widget (QGroupBox, error)
-#: plugins/sftp/sftp_config.ui:59
-msgid "Error"
-msgstr ""
 
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: plugins/sftp/sftp_config.ui:81
-msgid "sshfsf not found in PATH"
-msgstr ""
 
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: plugins/sftp/sftp_config.ui:113
-msgid "Mountpoint:"
-msgstr ""
 
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: plugins/sftp/sftp_config.ui:144
 #, fuzzy
-#| msgid "Timed out"
-msgid "Timeout:"
-msgstr "A expirat"
 
-#. i18n: ectx: property (suffix), widget (QSpinBox, timeout)
-#: plugins/sftp/sftp_config.ui:160
-msgid " min"
-msgstr ""
 
-#: plugins/sftp/sftpplugin.cpp:168 plugins/sftp/sftpplugin.cpp:189
-#: plugins/sftp/sftpplugin.cpp:214
-#, kde-format
-msgid "Device %1"
-msgstr ""
 
-#: plugins/sftp/sftpplugin.cpp:169
-#, kde-format
-msgid "Filesystem mounted at %1"
-msgstr ""
 
-#: plugins/sftp/sftpplugin.cpp:190
-msgid "Filesystem unmounted"
-msgstr ""
 
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: plugins/share/share_config.ui:23
-msgid "Receiving"
-msgstr ""
 
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: plugins/share/share_config.ui:31
-msgid "Save files in:"
-msgstr ""
 
-#: plugins/share/shareplugin.cpp:135
-msgid "Transfer finished"
-msgstr "Transfer încheiat"
-
-#: plugins/share/shareplugin.cpp:137
-msgid "Open destination folder"
-msgstr "Deschide dosarul destinație"
-
-#: plugins/telephony/telephonyplugin.cpp:41
-msgid "unknown number"
-msgstr "număr necunoscut"
-
-#: plugins/telephony/telephonyplugin.cpp:50
-#, kde-format
-msgid "Incoming call from %1"
-msgstr "Apel de intrare de la %1"
-
-#: plugins/telephony/telephonyplugin.cpp:54
-#, kde-format
-msgid "Missed call from %1"
-msgstr "Apel pierdut de la %1"
-
-#: plugins/telephony/telephonyplugin.cpp:59
-#, kde-format
-msgid "SMS from %1: %2"
-msgstr "SMS de la %1: %2"
-
-#: plugins/telephony/telephonyplugin.cpp:66
-#, kde-format
-msgid "Unknown telephony event: %2"
-msgstr "Eveniment telefonic necunoscut: %2"
+#, fuzzy

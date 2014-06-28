@@ -2,13 +2,14 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Eloy Cuadra <ecuadra@eloihr.net>, 2013.
+# Victor Rodrigo Cordoba <vrcordoba@gmail.com>, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2014-03-01 01:46+0000\n"
-"PO-Revision-Date: 2013-09-18 22:52+0200\n"
-"Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
+"PO-Revision-Date: 2014-04-05 17:59+0200\n"
+"Last-Translator: Victor Rodrigo Cordoba <vrcordoba@gmail.com>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
@@ -19,23 +20,23 @@ msgstr ""
 
 #: package/contents/ui/Battery.qml:36
 msgid "Charging: %1%"
-msgstr ""
+msgstr "Cargando: %1%"
 
 #: package/contents/ui/Battery.qml:36
 msgid "Discharging: %1%"
-msgstr ""
+msgstr "Descargando: %1%"
 
 #: package/contents/ui/Battery.qml:36
 msgid "No info"
-msgstr ""
+msgstr "Sin información disponible"
 
 #: package/contents/ui/CompactRepresentation.qml:48
 msgid "KDE Connect device notifications"
-msgstr ""
+msgstr "Notificaciones de dispositivos de KDE Connect"
 
 #: package/contents/ui/DeviceDelegate.qml:77
 msgid "Battery"
-msgstr ""
+msgstr "Batería"
 
 #: package/contents/ui/DeviceDelegate.qml:92
 msgid "Notifications"

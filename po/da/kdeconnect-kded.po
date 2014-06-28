@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-03-05 01:52+0000\n"
+"POT-Creation-Date: 2014-06-18 01:56+0000\n"
 "PO-Revision-Date: 2014-03-05 19:27+0100\n"
 "Last-Translator: Martin Schlander <mschlander@opensuse.org>\n"
 "Language-Team: Danish <kde-i18n-doc@kde.org>\n"
@@ -25,227 +25,108 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "mschlander@opensuse.org"
 
-#: device.cpp:139
-msgid "Already paired"
-msgstr "Allerede parret"
-
-#: device.cpp:142
-msgid "Pairing already requested for this device"
-msgstr "Allerede anmodet om parring med denne enhed"
-
-#: device.cpp:146
-msgid "Device not reachable"
-msgstr "Enheden kan ikke nås"
-
-#: device.cpp:159
-msgid "Error contacting device"
-msgstr "Fejl ved kontakt til enhed"
-
-#: device.cpp:199
-msgid "Timed out"
-msgstr "Tidsudløb"
-
-#: device.cpp:298 device.cpp:350
-msgid "Canceled by other peer"
-msgstr "Annulleret af modpart"
-
-#: device.cpp:314
-msgid "Received incorrect key"
-msgstr "Modtog forkert nøgle"
-
-#: device.cpp:331
-#, kde-format
-msgid "Pairing request from %1"
-msgstr "Parringsanmodning fra %1"
-
-#: device.cpp:332
-msgid "Accept"
-msgstr "Acceptér"
-
-#: device.cpp:332
-msgid "Reject"
-msgstr "Afvis"
-
-#: device.cpp:391
-msgid "Canceled by the user"
-msgstr "Annulleret af brugeren"
-
-#: filetransferjob.cpp:41
-msgctxt "Device name that will appear on the jobs"
-msgid "KDE-Connect"
-msgstr "KDE-Connect"
-
-#: filetransferjob.cpp:60 filetransferjob.cpp:121
-msgid "Receiving file over KDE-Connect"
-msgstr "Modtagelse af fil over KDE-Connect"
-
-#: filetransferjob.cpp:61 filetransferjob.cpp:122
-msgctxt "File transfer origin"
-msgid "From"
-msgstr "Fra"
-
-#: filetransferjob.cpp:68
-msgid "Incoming file exists"
-msgstr "Indkommende fil findes"
-
-#: filetransferjob.cpp:124
-msgctxt "File transfer destination"
-msgid "To"
-msgstr "Til"
-
-#: filetransferjob.cpp:197
-msgid "Received incomplete file"
-msgstr "Modtog ukomplet fil"
-
 #: kdeconnectd.cpp:63
 msgid "kdeconnect"
 msgstr "kdeconnect"
 
 #: kdeconnectd.cpp:65
-msgid "connect devices"
+#, fuzzy
+#| msgid "connect devices"
+msgid "Connect your devices and KDE"
 msgstr "forbind enheder"
 
-#: plugins/battery/batteryplugin.cpp:77
-#, kde-format
-msgctxt "device name: low battery"
-msgid "%1: low battery"
-msgstr "%1: lavt batteri"
 
-#: plugins/battery/batteryplugin.cpp:78
-#, kde-format
-msgid "Battery at %1%"
-msgstr "Batteri på %1%"
 
-#. i18n: ectx: property (windowTitle), widget (QWidget, PauseMusicConfigUi)
-#: plugins/pausemusic/pausemusic_config.ui:17
-msgid "Pause music plugin"
-msgstr "Plugin til at sætte musik på pause"
 
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: plugins/pausemusic/pausemusic_config.ui:29
-msgid "Pause condition"
-msgstr "Betingelse for pause"
 
-#. i18n: ectx: property (text), widget (QRadioButton, rad_ringing)
-#: plugins/pausemusic/pausemusic_config.ui:35
-msgid "Pause as soon as phone rings"
-msgstr "Sæt på pause når telefonen ringer"
 
-#. i18n: ectx: property (text), widget (QRadioButton, rad_talking)
-#: plugins/pausemusic/pausemusic_config.ui:42
-msgid "Pause only while talking"
-msgstr "Sæt kun på pause når der tales"
 
-#. i18n: ectx: property (text), widget (QCheckBox, check_mute)
-#: plugins/pausemusic/pausemusic_config.ui:65
-msgid "Mute system instead of pause"
-msgstr "Sæt systemet på lydløs i stedet for pause"
 
-#: plugins/ping/pingplugin.cpp:49
-msgid "Ping!"
-msgstr "Ping!"
 
-#: plugins/sftp/mounter.cpp:172
-msgid "Failed to start sshfs"
-msgstr "kunne ikke starte sshfs"
 
-#: plugins/sftp/mounter.cpp:194
-msgid "Error when accessing to filesystem"
-msgstr "Fejl ved tilgang til filsystemet"
 
-#: plugins/sftp/mounter.cpp:205
-msgid "Failed to mount filesystem: device not responding"
-msgstr "Kunne ikke montere filsystemet: Enheden svarer ikke"
 
-#. i18n: ectx: property (windowTitle), widget (QWidget, ShareConfigUi)
-#. i18n: ectx: property (windowTitle), widget (QWidget, SftpConfigUi)
-#: plugins/sftp/sftp_config.ui:17 plugins/share/share_config.ui:17
-msgid "Share plugin settings"
-msgstr "Indstilling af deling-plugin"
 
-#. i18n: ectx: property (text), widget (QCheckBox, idle)
-#: plugins/sftp/sftp_config.ui:49
-msgid "Disconnect when idle"
-msgstr "Afbryd forbindelse når inaktiv"
 
-#. i18n: ectx: property (title), widget (QGroupBox, error)
-#: plugins/sftp/sftp_config.ui:59
-msgid "Error"
-msgstr "Fejl"
 
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: plugins/sftp/sftp_config.ui:81
-msgid "sshfsf not found in PATH"
-msgstr "sshfsf ikke fundet i PATH"
 
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: plugins/sftp/sftp_config.ui:113
-msgid "Mountpoint:"
-msgstr "Monteringspunkt:"
 
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: plugins/sftp/sftp_config.ui:144
-msgid "Timeout:"
-msgstr "Tidsudløb:"
 
-#. i18n: ectx: property (suffix), widget (QSpinBox, timeout)
-#: plugins/sftp/sftp_config.ui:160
-msgid " min"
-msgstr " min"
 
-#: plugins/sftp/sftpplugin.cpp:168 plugins/sftp/sftpplugin.cpp:189
-#: plugins/sftp/sftpplugin.cpp:214
-#, kde-format
-msgid "Device %1"
-msgstr "Enhed %1"
 
-#: plugins/sftp/sftpplugin.cpp:169
-#, kde-format
-msgid "Filesystem mounted at %1"
-msgstr "Filsystem monteret i %1"
 
-#: plugins/sftp/sftpplugin.cpp:190
-msgid "Filesystem unmounted"
-msgstr "Filsystem afmonteret"
 
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: plugins/share/share_config.ui:23
-msgid "Receiving"
-msgstr "Modtager"
 
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: plugins/share/share_config.ui:31
-msgid "Save files in:"
-msgstr "Gem filer i:"
 
-#: plugins/share/shareplugin.cpp:135
-msgid "Transfer finished"
-msgstr "Overførsel gennemført"
 
-#: plugins/share/shareplugin.cpp:137
-msgid "Open destination folder"
-msgstr "Åbn destinationsmappe"
 
-#: plugins/telephony/telephonyplugin.cpp:41
-msgid "unknown number"
-msgstr "ukendt nummer"
 
-#: plugins/telephony/telephonyplugin.cpp:50
-#, kde-format
-msgid "Incoming call from %1"
-msgstr "Indkommende opkald fra %1"
 
-#: plugins/telephony/telephonyplugin.cpp:54
-#, kde-format
-msgid "Missed call from %1"
-msgstr "Ubesvaret opkald fra %1"
 
-#: plugins/telephony/telephonyplugin.cpp:59
-#, kde-format
-msgid "SMS from %1: %2"
-msgstr "SMS fra %1: %2"
 
-#: plugins/telephony/telephonyplugin.cpp:66
-#, kde-format
-msgid "Unknown telephony event: %2"
-msgstr "Ukendt telefonihændelse: %2"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#, fuzzy
