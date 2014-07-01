@@ -1,7 +1,8 @@
-kdeconnect: package-name-doesnt-match-sonames libkdeconnect1
+kdeconnect: package-name-doesnt-match-sonames libkdeconnectcore1 libkdeconnectinterfaces1
 
 # no '-dev' pkg provided
-kdeconnect: no-symbols-control-file usr/lib/libkdeconnect.so.1.0.1
+kdeconnect: no-symbols-control-file usr/lib/libkdeconnectcore.so.1.0.1
+kdeconnect: no-symbols-control-file usr/lib/libkdeconnectinterfaces.so.1.0.1
 
 # kcmshell4 is included in kde-runtime package
 kdeconnect: desktop-command-not-in-package usr/share/applications/kde4/kdeconnect.desktop kcmshell4
