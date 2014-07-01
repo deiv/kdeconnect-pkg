@@ -8,6 +8,7 @@ Build-Depends: cmake,
                libqca2-dev,
                libqca2-plugin-ossl,
                libqjson-dev,
+               libxtst-dev,
                pkg-kde-tools
 Standards-Version: 3.9.5
 Homepage: https://projects.kde.org/projects/playground/base/kdeconnect-kde
