@@ -1,6 +1,6 @@
 kdeconnect (0.7-1) unstable; urgency=medium
 
-  * New upstream version
+  * New upstream version (Closes: #753391)
   * Add 'provide-versioned-so-for-kdeconnectcore' patch
   * Update lintian overrides
   * Change urgency to medium
