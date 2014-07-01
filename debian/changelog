@@ -1,3 +1,14 @@
+kdeconnect (0.7-1) unstable; urgency=medium
+
+  * New upstream version
+  * Add 'provide-versioned-so-for-kdeconnectcore' patch
+  * Update lintian overrides
+  * Change urgency to medium
+  * debian/rules: add more development files to remove
+  * debian/control: add libxtst-dev build depend
+
+ -- David Suárez <david.sephirot@gmail.com>  Tue, 01 Jul 2014 18:11:53 +0200
+
 kdeconnect (0.5.2.1-1) unstable; urgency=low
 
   * New upstream version
