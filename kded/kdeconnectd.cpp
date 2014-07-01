@@ -28,7 +28,7 @@
 #include <KAboutData>
 #include <KCmdLineArgs>
 
-#include "daemon.h"
+#include "core/daemon.h"
 
 static int sigtermfd[2];
 const static char deadbeef = 1;
@@ -62,11 +62,13 @@ int main(int argc, char* argv[])
     KAboutData aboutData("kdeconnect", "kdeconnect-kded",
                          ki18n("kdeconnect"),
                          "0.1",
-                         ki18n("connect devices"),
+                         ki18n("Connect your devices and KDE"),
                          KAboutData::License_GPL,
                          KLocalizedString(),
                          KLocalizedString(),
                          "http://albertvaka.wordpress.com");
+
+    aboutData.setOrganizationDomain("kde.org");
 
     KCmdLineArgs::init(argc, argv, &aboutData);
     

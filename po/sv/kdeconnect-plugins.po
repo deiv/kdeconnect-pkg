@@ -1,0 +1,154 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Stefan Asserhäll <stefan.asserhall@bredband.net>, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-06-18 01:56+0000\n"
+"PO-Revision-Date: 2014-06-18 20:18+0200\n"
+"Last-Translator: Stefan Asserhäll <stefan.asserhall@bredband.net>\n"
+"Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 1.4\n"
+
+#: battery/batteryplugin.cpp:77
+#, kde-format
+msgctxt "device name: low battery"
+msgid "%1: low battery"
+msgstr "%1: låg batteriladdning"
+
+#: battery/batteryplugin.cpp:78
+#, kde-format
+msgid "Battery at %1%"
+msgstr "Batteriet vid %1 %"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, PauseMusicConfigUi)
+#: pausemusic/pausemusic_config.ui:17
+msgid "Pause music plugin"
+msgstr "Pausa musikinsticksprogram"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: pausemusic/pausemusic_config.ui:29
+msgid "Pause condition"
+msgstr "Pausvillkor"
+
+#. i18n: ectx: property (text), widget (QRadioButton, rad_ringing)
+#: pausemusic/pausemusic_config.ui:35
+msgid "Pause as soon as phone rings"
+msgstr "Pausa så fort telefonen ringer"
+
+#. i18n: ectx: property (text), widget (QRadioButton, rad_talking)
+#: pausemusic/pausemusic_config.ui:42
+msgid "Pause only while talking"
+msgstr "Pausa bara under samtal"
+
+#. i18n: ectx: property (text), widget (QCheckBox, check_mute)
+#: pausemusic/pausemusic_config.ui:65
+msgid "Mute system instead of pause"
+msgstr "Tysta systemet istället för paus"
+
+#: ping/pingplugin.cpp:50
+msgid "Ping!"
+msgstr "Ping!"
+
+#: sftp/mounter.cpp:172
+msgid "Failed to start sshfs"
+msgstr "Misslyckades starta sshfs"
+
+#: sftp/mounter.cpp:194
+msgid "Error when accessing to filesystem"
+msgstr "Fel vid åtkomst av filsystem"
+
+#: sftp/mounter.cpp:205
+msgid "Failed to mount filesystem: device not responding"
+msgstr "Misslyckades montera filsystem: apparaten svarar inte"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, ShareConfigUi)
+#. i18n: ectx: property (windowTitle), widget (QWidget, SftpConfigUi)
+#: sftp/sftp_config.ui:17 share/share_config.ui:17
+msgid "Share plugin settings"
+msgstr "Dela insticksprogrammets inställningar"
+
+#. i18n: ectx: property (title), widget (QGroupBox, error)
+#: sftp/sftp_config.ui:23
+msgid "Error"
+msgstr "Fel"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: sftp/sftp_config.ui:45
+msgid "sshfs not found in PATH"
+msgstr "Hittade inte sshfs i PATH"
+
+#. i18n: ectx: property (text), widget (QCheckBox, idle)
+#: sftp/sftp_config.ui:86
+msgid "Disconnect when idle"
+msgstr "Koppla ner om overksam"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: sftp/sftp_config.ui:115
+msgid "Timeout:"
+msgstr "Tidsgräns:"
+
+#. i18n: ectx: property (suffix), widget (QSpinBox, timeout)
+#: sftp/sftp_config.ui:131
+msgid " min"
+msgstr " min"
+
+#: sftp/sftpplugin.cpp:196
+#, kde-format
+msgid "Device %1"
+msgstr "Enhet %1"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: share/share_config.ui:23
+msgid "Receiving"
+msgstr "Tar emot"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: share/share_config.ui:31
+msgid "Save files in:"
+msgstr "Spara filer i:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: share/share_config.ui:53
+#, no-c-format, kde-format
+msgid "%1  in the path will be replaced with the specific device name."
+msgstr "%1 i sökvägen kommer att ersättas med det specifika enhetsnamnet."
+
+#: share/shareplugin.cpp:135
+msgid "Transfer finished"
+msgstr "Överföring klar"
+
+#: share/shareplugin.cpp:137
+msgid "Open destination folder"
+msgstr "Öppna målkatalog"
+
+#: telephony/telephonyplugin.cpp:41
+msgid "unknown number"
+msgstr "okänt nummer"
+
+#: telephony/telephonyplugin.cpp:50
+#, kde-format
+msgid "Incoming call from %1"
+msgstr "Inkommande samtal från %1"
+
+#: telephony/telephonyplugin.cpp:54
+#, kde-format
+msgid "Missed call from %1"
+msgstr "Missat samtal från %1"
+
+#: telephony/telephonyplugin.cpp:59
+#, kde-format
+msgid "SMS from %1: %2"
+msgstr "SMS från %1: %2"
+
+#: telephony/telephonyplugin.cpp:66
+#, kde-format
+msgid "Unknown telephony event: %2"
+msgstr "Okänd telefonhändelse: %2"

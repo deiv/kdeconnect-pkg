@@ -1,0 +1,90 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Stefan Asserhäll <stefan.asserhall@bredband.net>, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-06-18 01:56+0000\n"
+"PO-Revision-Date: 2014-06-18 20:18+0200\n"
+"Last-Translator: Stefan Asserhäll <stefan.asserhall@bredband.net>\n"
+"Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 1.4\n"
+
+#: device.cpp:168
+msgid "Already paired"
+msgstr "Redan ihopparade"
+
+#: device.cpp:171
+msgid "Pairing already requested for this device"
+msgstr "Ihopparning redan begärd för apparaten"
+
+#: device.cpp:175
+msgid "Device not reachable"
+msgstr "Apparaten kan inte nås"
+
+#: device.cpp:188
+msgid "Error contacting device"
+msgstr "Fel vid försök att kontakta apparaten"
+
+#: device.cpp:226
+msgid "Timed out"
+msgstr "Tidsgräns överskriden"
+
+#: device.cpp:325 device.cpp:377
+msgid "Canceled by other peer"
+msgstr "Avbruten av motparten"
+
+#: device.cpp:341
+msgid "Received incorrect key"
+msgstr "Mottog felaktig nyckel"
+
+#: device.cpp:358
+#, kde-format
+msgid "Pairing request from %1"
+msgstr "Begäran om ihopparning från %1"
+
+#: device.cpp:359
+msgid "Accept"
+msgstr "Acceptera"
+
+#: device.cpp:359
+msgid "Reject"
+msgstr "Avslå"
+
+#: device.cpp:419
+msgid "Canceled by the user"
+msgstr "Avbruten av användaren"
+
+#: filetransferjob.cpp:41
+msgctxt "Device name that will appear on the jobs"
+msgid "KDE-Connect"
+msgstr "KDE-anslut"
+
+#: filetransferjob.cpp:60 filetransferjob.cpp:121
+msgid "Receiving file over KDE-Connect"
+msgstr "Tar emot fil via KDE-anslut"
+
+#: filetransferjob.cpp:61 filetransferjob.cpp:122
+msgctxt "File transfer origin"
+msgid "From"
+msgstr "Från"
+
+#: filetransferjob.cpp:68
+msgid "Incoming file exists"
+msgstr "Inkommande fil finns"
+
+#: filetransferjob.cpp:124
+msgctxt "File transfer destination"
+msgid "To"
+msgstr "Till"
+
+#: filetransferjob.cpp:197
+msgid "Received incomplete file"
+msgstr "Mottog ofullständig fil"

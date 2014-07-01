@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-04-06 02:05+0000\n"
+"POT-Creation-Date: 2014-06-15 02:00+0000\n"
 "PO-Revision-Date: 2013-10-10 19:34+0400\n"
 "Last-Translator: Julia Dronova <juliette.tux@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
@@ -18,19 +18,19 @@ msgstr ""
 "%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Lokalize 1.5\n"
 
-#: kcm.cpp:143 kcm.cpp:227
+#: kcm.cpp:144 kcm.cpp:228
 msgid "(paired)"
 msgstr "(спарены)"
 
-#: kcm.cpp:143 kcm.cpp:199 kcm.cpp:210
+#: kcm.cpp:144 kcm.cpp:200 kcm.cpp:211
 msgid "(unpaired)"
 msgstr "(разделены)"
 
-#: kcm.cpp:157
+#: kcm.cpp:158
 msgid "Plugins"
 msgstr "Модули"
 
-#: kcm.cpp:212
+#: kcm.cpp:213
 #, kde-format
 msgid "Error trying to pair: %1"
 msgstr "Ошибка при попытке связать: %1"

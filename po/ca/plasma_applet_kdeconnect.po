@@ -1,0 +1,48 @@
+# Translation of plasma_applet_kdeconnect.po to Catalan
+# Copyright (C) 2014 This_file_is_part_of_KDE
+# This file is distributed under the license LGPL version 2.1 or
+# version 3 or later versions approved by the membership of KDE e.V.
+#
+# Antoni Bella Pérez <antonibella5@orange.es>, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: plasma_applet_kdeconnect\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-03-01 01:46+0000\n"
+"PO-Revision-Date: 2014-06-05 18:48+0200\n"
+"Last-Translator: Antoni Bella Pérez <antonibella5@orange.es>\n"
+"Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
+"Language: ca\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 1.5\n"
+
+#: package/contents/ui/Battery.qml:36
+msgid "Charging: %1%"
+msgstr "Càrrega: %1%"
+
+#: package/contents/ui/Battery.qml:36
+msgid "Discharging: %1%"
+msgstr "Descàrrega: %1%"
+
+#: package/contents/ui/Battery.qml:36
+msgid "No info"
+msgstr "Sense informació"
+
+#: package/contents/ui/CompactRepresentation.qml:48
+msgid "KDE Connect device notifications"
+msgstr "Notificacions del dispositiu pel KDE Connect"
+
+#: package/contents/ui/DeviceDelegate.qml:77
+msgid "Battery"
+msgstr "Bateria"
+
+#: package/contents/ui/DeviceDelegate.qml:92
+msgid "Notifications"
+msgstr "Notificacions"
+
+#: package/contents/ui/kdeconnect.qml:39
+msgid "No paired devices available"
+msgstr "No hi ha dispositius aparellats disponibles"

@@ -1,0 +1,72 @@
+# Translation of kdeconnect-cli.po to Brazilian Portuguese
+# Copyright (C) 2014 This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# André Marcelo Alvarenga <alvarenga@kde.org>, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: kdeconnect-cli\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-06-24 01:52+0000\n"
+"PO-Revision-Date: 2014-06-24 08:32-0300\n"
+"Last-Translator: André Marcelo Alvarenga <alvarenga@kde.org>\n"
+"Language-Team: Brazilian Portuguese <kde-i18n-pt_br@kde.org>\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Lokalize 1.5\n"
+
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "André Marcelo Alvarenga"
+
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "alvarenga@kde.org"
+
+#: kdeconnect-cli.cpp:33
+msgid "KDE Connect CLI tool"
+msgstr "Ferramenta da linha de comando do KDE-Connect"
+
+#: kdeconnect-cli.cpp:34
+msgid "(C) 2013 Aleix Pol Gonzalez"
+msgstr "(C) 2013 Aleix Pol Gonzalez"
+
+#: kdeconnect-cli.cpp:35
+msgid "Aleix Pol Gonzalez"
+msgstr "Aleix Pol Gonzalez"
+
+#: kdeconnect-cli.cpp:39
+msgid "List all devices"
+msgstr "Listar todos os dispositivos"
+
+#: kdeconnect-cli.cpp:40
+msgid "Share a file to a said device"
+msgstr "Compartilhar um arquivo para um determinado dispositivo"
+
+#: kdeconnect-cli.cpp:41
+msgid "Request pairing to a said device"
+msgstr "Solicitar o emparelhamento a um determinado dispositivo"
+
+#: kdeconnect-cli.cpp:42
+msgid "Stop pairing to a said device"
+msgstr "Parar o emparelhamento de um determinado dispositivo"
+
+#: kdeconnect-cli.cpp:43
+msgid "Device ID"
+msgstr "ID do dispositivo"
+
+#: kdeconnect-cli.cpp:61
+msgid "No device specified"
+msgstr "Nenhum dispositivo indicado"
+
+#: kdeconnect-cli.cpp:73
+#, kde-format
+msgid "Couldn't share %1"
+msgstr "Não foi possível compartilhar o %1"
+
+#: kdeconnect-cli.cpp:91
+msgid "Nothing to be done with the device"
+msgstr "Não há nada a ser feito com o dispositivo"

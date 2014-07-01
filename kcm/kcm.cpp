@@ -35,7 +35,8 @@
 #include <KStandardDirs>
 
 #include "ui_kcm.h"
-#include "libkdeconnect/dbusinterfaces.h"
+#include "interfaces/dbusinterfaces.h"
+#include "interfaces/devicesmodel.h"
 #include "devicessortproxymodel.h"
 #include "kdebugnamespace.h"
 
@@ -249,5 +250,6 @@ void KdeConnectKcm::save()
 void KdeConnectKcm::sendPing()
 {
     if (!currentDevice) return;
-    currentDevice->sendPing();
+    QDBusMessage msg = QDBusMessage::createMethodCall("org.kde.kdeconnect", "/modules/kdeconnect/devices/"+currentDevice->id()+"/ping", "org.kde.kdeconnect.device.ping", "sendPing");
+    QDBusConnection::sessionBus().call(msg);
 }
