@@ -20,6 +20,7 @@ Architecture: any
 Depends: libqca2,
          libqca2-plugin-gnupg,
          libqca2-plugin-ossl,
+         sshfs,
          ${misc:Depends},
          ${shlibs:Depends}
 Description: connect smartphones to your KDE Plasma Workspace
