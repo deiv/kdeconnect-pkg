@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeconnect-filetiemaction\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-06-18 01:56+0000\n"
+"POT-Creation-Date: 2014-06-28 01:55+0000\n"
 "PO-Revision-Date: 2014-06-19 08:58+0200\n"
 "Last-Translator: Roman Paholik <wizzardsk@gmail.com>\n"
 "Language-Team: Slovak <kde-sk@linux.sk>\n"
@@ -15,11 +15,11 @@ msgstr ""
 "X-Generator: Lokalize 1.5\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 
-#: sendfileitemaction.cpp:66
+#: sendfileitemaction.cpp:67
 msgid "Send via KDE Connect"
 msgstr "Poslať cez KDE Connect"
 
-#: sendfileitemaction.cpp:73
+#: sendfileitemaction.cpp:74
 #, kde-format
 msgid "Send to '%1' via KDE Connect"
 msgstr "Poslať pre '%1' cez KDE Connect"

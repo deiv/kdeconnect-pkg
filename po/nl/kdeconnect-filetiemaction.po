@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-06-18 01:56+0000\n"
+"POT-Creation-Date: 2014-06-28 01:55+0000\n"
 "PO-Revision-Date: 2014-06-18 10:21+0200\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: Dutch <kde-i18n-nl@kde.org>\n"
@@ -17,11 +17,11 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Lokalize 1.5\n"
 
-#: sendfileitemaction.cpp:66
+#: sendfileitemaction.cpp:67
 msgid "Send via KDE Connect"
 msgstr "Via KDE Connect verzenden"
 
-#: sendfileitemaction.cpp:73
+#: sendfileitemaction.cpp:74
 #, kde-format
 msgid "Send to '%1' via KDE Connect"
 msgstr "Naar '%1' verzenden via KDE Connect"

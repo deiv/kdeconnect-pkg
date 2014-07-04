@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: l 10n\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-06-15 02:00+0000\n"
+"POT-Creation-Date: 2014-07-01 02:07+0000\n"
 "PO-Revision-Date: 2014-03-15 02:50+0200\n"
 "Last-Translator: Liudas Ališauskas <liudas@aksioma.lt>\n"
 "Language-Team: Lithuanian <kde-i18n-lt@kde.org>\n"
@@ -20,19 +20,19 @@ msgstr ""
 "%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3);\n"
 "X-Generator: Lokalize 1.5\n"
 
-#: kcm.cpp:144 kcm.cpp:228
+#: kcm.cpp:145 kcm.cpp:229
 msgid "(paired)"
 msgstr "(suporuotas)"
 
-#: kcm.cpp:144 kcm.cpp:200 kcm.cpp:211
+#: kcm.cpp:145 kcm.cpp:201 kcm.cpp:212
 msgid "(unpaired)"
 msgstr "(nesuporuotas)"
 
-#: kcm.cpp:158
+#: kcm.cpp:159
 msgid "Plugins"
 msgstr "Įskiepiai"
 
-#: kcm.cpp:213
+#: kcm.cpp:214
 #, kde-format
 msgid "Error trying to pair: %1"
 msgstr "Klaida bandant suporuoti: %1"

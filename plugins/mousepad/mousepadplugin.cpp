@@ -21,45 +21,72 @@
 #include "mousepadplugin.h"
 
 #include <core/networkpackage.h>
-#include <QApplication>
 #include <X11/extensions/XTest.h>
 
 K_PLUGIN_FACTORY( KdeConnectPluginFactory, registerPlugin< MousepadPlugin >(); )
 K_EXPORT_PLUGIN( KdeConnectPluginFactory("kdeconnect_mousepad", "kdeconnect-plugins") )
 
-#define LEFT_MOUSE_BUTTON 1 // Source: http://bharathisubramanian.wordpress.com/2010/04/01/x11-fake-mouse-events-generation-using-xtest/
+// Source: http://bharathisubramanian.wordpress.com/2010/04/01/x11-fake-mouse-events-generation-using-xtest/
 
 MousepadPlugin::MousepadPlugin(QObject* parent, const QVariantList& args)
-       : KdeConnectPlugin(parent, args)
+    : KdeConnectPlugin(parent, args), m_display(0)
 {
-    
+
+}
+
+MousepadPlugin::~MousepadPlugin()
+{
+    if (m_display) {
+        XCloseDisplay(m_display);
+        m_display = 0;
+    }
 }
 
 bool MousepadPlugin::receivePackage(const NetworkPackage& np)
 {
     float dx = np.get<float>("dx", 0);
     float dy = np.get<float>("dy", 0);
-    QPoint point = QCursor::pos();
-    QCursor::setPos(point.x() + (int)dx, point.y() + (int)dy);
-    
+
     bool isSingleClick = np.get<bool>("singleclick", false);
     bool isDoubleClick = np.get<bool>("doubleclick", false);
-    
-    if (isSingleClick || isDoubleClick) {
-	Display *display = XOpenDisplay(NULL);
-	if(display) {
-	    if (isSingleClick) {
-		XTestFakeButtonEvent(display, LEFT_MOUSE_BUTTON, true, CurrentTime);
-		XTestFakeButtonEvent(display, LEFT_MOUSE_BUTTON, false, CurrentTime);
-	    } else if (isDoubleClick) {
-		XTestFakeButtonEvent(display, LEFT_MOUSE_BUTTON, true, CurrentTime);
-		XTestFakeButtonEvent(display, LEFT_MOUSE_BUTTON, false, CurrentTime);
-		XTestFakeButtonEvent(display, LEFT_MOUSE_BUTTON, true, CurrentTime);
-		XTestFakeButtonEvent(display, LEFT_MOUSE_BUTTON, false, CurrentTime);
-	    }
-	    XFlush(display);
-	}
-	XCloseDisplay(display);
+    bool isMiddleClick = np.get<bool>("middleclick", false);
+    bool isRightClick = np.get<bool>("rightclick", false);
+    bool isScroll = np.get<bool>("scroll", false);
+
+    if (isSingleClick || isDoubleClick || isMiddleClick || isRightClick || isScroll) {
+        if(!m_display) {
+            m_display = XOpenDisplay(NULL);
+        }
+
+        if(m_display) {
+            if (isSingleClick) {
+                XTestFakeButtonEvent(m_display, LeftMouseButton, true, CurrentTime);
+                XTestFakeButtonEvent(m_display, LeftMouseButton, false, CurrentTime);
+            } else if (isDoubleClick) {
+                XTestFakeButtonEvent(m_display, LeftMouseButton, true, CurrentTime);
+                XTestFakeButtonEvent(m_display, LeftMouseButton, false, CurrentTime);
+                XTestFakeButtonEvent(m_display, LeftMouseButton, true, CurrentTime);
+                XTestFakeButtonEvent(m_display, LeftMouseButton, false, CurrentTime);
+            } else if (isMiddleClick) {
+                XTestFakeButtonEvent(m_display, MiddleMouseButton, true, CurrentTime);
+                XTestFakeButtonEvent(m_display, MiddleMouseButton, false, CurrentTime);
+            } else if (isRightClick) {
+                XTestFakeButtonEvent(m_display, RightMouseButton, true, CurrentTime);
+                XTestFakeButtonEvent(m_display, RightMouseButton, false, CurrentTime);
+            } else if( isScroll ) {
+                if (dy < 0) {
+                    XTestFakeButtonEvent(m_display, MouseWheelDown, true, CurrentTime);
+                    XTestFakeButtonEvent(m_display, MouseWheelDown, false, CurrentTime);
+                } else if (dy > 0) {
+                    XTestFakeButtonEvent(m_display, MouseWheelUp, true, CurrentTime);
+                    XTestFakeButtonEvent(m_display, MouseWheelUp, false, CurrentTime);
+                }
+            }
+            XFlush(m_display);
+        }
+    } else {
+        QPoint point = QCursor::pos();
+        QCursor::setPos(point.x() + (int)dx, point.y() + (int)dy);
     }
     return true;
 }

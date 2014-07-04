@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeconnect-kcm\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-06-15 02:00+0000\n"
+"POT-Creation-Date: 2014-07-01 02:07+0000\n"
 "PO-Revision-Date: 2014-02-16 19:16+0100\n"
 "Last-Translator: Roman Paholík <wizzardsk@gmail.com>\n"
 "Language-Team: Slovak <kde-sk@linux.sk>\n"
@@ -15,19 +15,19 @@ msgstr ""
 "X-Generator: Lokalize 1.5\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 
-#: kcm.cpp:144 kcm.cpp:228
+#: kcm.cpp:145 kcm.cpp:229
 msgid "(paired)"
 msgstr "(spárované)"
 
-#: kcm.cpp:144 kcm.cpp:200 kcm.cpp:211
+#: kcm.cpp:145 kcm.cpp:201 kcm.cpp:212
 msgid "(unpaired)"
 msgstr "(nespárované)"
 
-#: kcm.cpp:158
+#: kcm.cpp:159
 msgid "Plugins"
 msgstr "Pluginy"
 
-#: kcm.cpp:213
+#: kcm.cpp:214
 #, kde-format
 msgid "Error trying to pair: %1"
 msgstr "Chyba pokusu o spárovanie: %1"

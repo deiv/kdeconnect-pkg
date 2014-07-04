@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeconnect-plugins\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-06-18 01:56+0000\n"
+"POT-Creation-Date: 2014-06-28 01:55+0000\n"
 "PO-Revision-Date: 2014-06-19 09:00+0200\n"
 "Last-Translator: Roman Paholik <wizzardsk@gmail.com>\n"
 "Language-Team: Slovak <kde-sk@linux.sk>\n"
@@ -51,7 +51,7 @@ msgstr "Pozastaviť iba počas hovoru"
 msgid "Mute system instead of pause"
 msgstr "Stlmiť systém namiesto pozastavenia"
 
-#: ping/pingplugin.cpp:50
+#: ping/pingplugin.cpp:51
 msgid "Ping!"
 msgstr "Ping!"
 
