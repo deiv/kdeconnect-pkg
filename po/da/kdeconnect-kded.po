@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2014-06-18 01:56+0000\n"
-"PO-Revision-Date: 2014-03-05 19:27+0100\n"
+"PO-Revision-Date: 2014-06-28 17:23+0200\n"
 "Last-Translator: Martin Schlander <mschlander@opensuse.org>\n"
 "Language-Team: Danish <kde-i18n-doc@kde.org>\n"
 "Language: da\n"
@@ -30,10 +30,8 @@ msgid "kdeconnect"
 msgstr "kdeconnect"
 
 #: kdeconnectd.cpp:65
-#, fuzzy
-#| msgid "connect devices"
 msgid "Connect your devices and KDE"
-msgstr "forbind enheder"
+msgstr "Forbind dine enheder med KDE"
 
 
 

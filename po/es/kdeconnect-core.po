@@ -1,0 +1,90 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Victor Rodrigo Cordoba <vrcordoba@gmail.com>, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-06-18 01:56+0000\n"
+"PO-Revision-Date: 2014-06-20 16:28+0200\n"
+"Last-Translator: Victor Rodrigo Cordoba <vrcordoba@gmail.com>\n"
+"Language-Team: Spanish <kde-l10n-es@kde.org>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 1.5\n"
+
+#: device.cpp:168
+msgid "Already paired"
+msgstr "Ya conectado"
+
+#: device.cpp:171
+msgid "Pairing already requested for this device"
+msgstr "Conexión ya solicitada para este dispositivo"
+
+#: device.cpp:175
+msgid "Device not reachable"
+msgstr "Dispositivo no accesible"
+
+#: device.cpp:188
+msgid "Error contacting device"
+msgstr "Error al contactar con el dispositivo"
+
+#: device.cpp:226
+msgid "Timed out"
+msgstr "Se alcanzó el tiempo máximo de espera"
+
+#: device.cpp:325 device.cpp:377
+msgid "Canceled by other peer"
+msgstr "Cancelado por otro par"
+
+#: device.cpp:341
+msgid "Received incorrect key"
+msgstr "Se recibió una clave incorrecta"
+
+#: device.cpp:358
+#, kde-format
+msgid "Pairing request from %1"
+msgstr "Petición de conexión por parte de %1"
+
+#: device.cpp:359
+msgid "Accept"
+msgstr "Aceptar"
+
+#: device.cpp:359
+msgid "Reject"
+msgstr "Rechazar"
+
+#: device.cpp:419
+msgid "Canceled by the user"
+msgstr "Cancelado por el usuario"
+
+#: filetransferjob.cpp:41
+msgctxt "Device name that will appear on the jobs"
+msgid "KDE-Connect"
+msgstr "KDE-Connect"
+
+#: filetransferjob.cpp:60 filetransferjob.cpp:121
+msgid "Receiving file over KDE-Connect"
+msgstr "Recibiendo archivo a través de KDE-Connect"
+
+#: filetransferjob.cpp:61 filetransferjob.cpp:122
+msgctxt "File transfer origin"
+msgid "From"
+msgstr "Desde"
+
+#: filetransferjob.cpp:68
+msgid "Incoming file exists"
+msgstr "El archivo entrante ya existe"
+
+#: filetransferjob.cpp:124
+msgctxt "File transfer destination"
+msgid "To"
+msgstr "Hacia"
+
+#: filetransferjob.cpp:197
+msgid "Received incomplete file"
+msgstr "Se recibió un archivo incompleto"

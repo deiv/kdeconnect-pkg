@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeconnect-plugins\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-06-18 01:56+0000\n"
+"POT-Creation-Date: 2014-06-28 01:55+0000\n"
 "PO-Revision-Date: 2014-06-19 17:35+0200\n"
 "Last-Translator: Antoni Bella Pérez <antonibella5@yahoo.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -55,7 +55,7 @@ msgstr "Pausa només mentre es parla"
 msgid "Mute system instead of pause"
 msgstr "Silencia el sistema en lloc de fer una pausa"
 
-#: ping/pingplugin.cpp:50
+#: ping/pingplugin.cpp:51
 msgid "Ping!"
 msgstr "Ping!"
 

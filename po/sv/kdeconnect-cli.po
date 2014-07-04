@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-06-24 01:52+0000\n"
-"PO-Revision-Date: 2014-06-24 17:58+0200\n"
+"POT-Creation-Date: 2014-07-01 02:07+0000\n"
+"PO-Revision-Date: 2014-07-01 18:28+0200\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@bredband.net>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
 "Language: sv\n"
@@ -25,47 +25,55 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "stefan.asserhall@bredband.net"
 
-#: kdeconnect-cli.cpp:33
+#: kdeconnect-cli.cpp:34
 msgid "KDE Connect CLI tool"
 msgstr "KDE-anslut kommandoradsverktyg"
 
-#: kdeconnect-cli.cpp:34
+#: kdeconnect-cli.cpp:35
 msgid "(C) 2013 Aleix Pol Gonzalez"
 msgstr "© 2013 Aleix Pol Gonzalez"
 
-#: kdeconnect-cli.cpp:35
+#: kdeconnect-cli.cpp:36
 msgid "Aleix Pol Gonzalez"
 msgstr "Aleix Pol Gonzalez"
 
-#: kdeconnect-cli.cpp:39
+#: kdeconnect-cli.cpp:40
 msgid "List all devices"
 msgstr "Lista alla enheter"
 
-#: kdeconnect-cli.cpp:40
+#: kdeconnect-cli.cpp:41
 msgid "Share a file to a said device"
 msgstr "Dela en fil med sagda enhet"
 
-#: kdeconnect-cli.cpp:41
+#: kdeconnect-cli.cpp:42
 msgid "Request pairing to a said device"
 msgstr "Begär ihopparning med sagda enhet"
 
-#: kdeconnect-cli.cpp:42
+#: kdeconnect-cli.cpp:43
 msgid "Stop pairing to a said device"
 msgstr "Stoppa ihopparning med sagda enhet"
 
-#: kdeconnect-cli.cpp:43
+#: kdeconnect-cli.cpp:44
+msgid "Sends a ping to said device"
+msgstr "Skicka ping till sagd enhet"
+
+#: kdeconnect-cli.cpp:45
+msgid "Display the notifications on a said device"
+msgstr "Visar underrättelser på sagd enhet"
+
+#: kdeconnect-cli.cpp:46
 msgid "Device ID"
 msgstr "Enhetsidentifierare"
 
-#: kdeconnect-cli.cpp:61
+#: kdeconnect-cli.cpp:73
 msgid "No device specified"
 msgstr "Ingen enhet angiven"
 
-#: kdeconnect-cli.cpp:73
+#: kdeconnect-cli.cpp:85
 #, kde-format
 msgid "Couldn't share %1"
 msgstr "Kunde inte dela %1"
 
-#: kdeconnect-cli.cpp:91
+#: kdeconnect-cli.cpp:114
 msgid "Nothing to be done with the device"
 msgstr "Ingenting att utföra med enheten"

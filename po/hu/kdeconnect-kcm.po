@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-06-15 02:00+0000\n"
+"POT-Creation-Date: 2014-07-01 02:07+0000\n"
 "PO-Revision-Date: 2014-02-16 18:49+0100\n"
 "Last-Translator: Balázs Úr <urbalazs@gmail.com>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
@@ -17,19 +17,19 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Lokalize 1.5\n"
 
-#: kcm.cpp:144 kcm.cpp:228
+#: kcm.cpp:145 kcm.cpp:229
 msgid "(paired)"
 msgstr "(párosítva)"
 
-#: kcm.cpp:144 kcm.cpp:200 kcm.cpp:211
+#: kcm.cpp:145 kcm.cpp:201 kcm.cpp:212
 msgid "(unpaired)"
 msgstr "(leválasztva)"
 
-#: kcm.cpp:158
+#: kcm.cpp:159
 msgid "Plugins"
 msgstr "Bővítmények"
 
-#: kcm.cpp:213
+#: kcm.cpp:214
 #, kde-format
 msgid "Error trying to pair: %1"
 msgstr "Hiba a párosítási kísérletkor: %1"
