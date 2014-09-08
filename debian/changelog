@@ -1,3 +1,11 @@
+kdeconnect (0.7.2-1) unstable; urgency=medium
+
+  * New upstream version.
+  * Drop patch 'provide-versioned-so-for-kdeconnectcore'.
+  * Add sshfs as a runtime dependency (Closes: #754300).
+
+ -- David Suárez <david.sephirot@gmail.com>  Mon, 08 Sep 2014 20:27:20 +0200
+
 kdeconnect (0.7-1) unstable; urgency=medium
 
   * New upstream version. (Closes: #753391)
