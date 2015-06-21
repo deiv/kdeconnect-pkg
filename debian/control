@@ -20,8 +20,7 @@ Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/kde-extras/kdeconnect.g
 Package: kdeconnect
 Architecture: any
 Depends: libqca2,
-         libqca2-plugin-gnupg,
-         libqca2-plugin-ossl,
+         libqca2-plugins,
          sshfs,
          ${misc:Depends},
          ${shlibs:Depends}
