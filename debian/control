@@ -12,7 +12,7 @@ Build-Depends: cmake,
                pkg-kde-tools,
                libfakekey-dev,
                libdbus-1-dev
-Standards-Version: 3.9.5
+Standards-Version: 3.9.6
 Homepage: https://projects.kde.org/projects/playground/base/kdeconnect-kde
 Vcs-Git: git://anonscm.debian.org/pkg-kde/kde-extras/kdeconnect.git
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/kde-extras/kdeconnect.git;a=summary
