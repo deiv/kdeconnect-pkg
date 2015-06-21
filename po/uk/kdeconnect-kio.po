@@ -1,12 +1,14 @@
-# Copyright (C) YEAR This_file_is_part_of_KDE
-# This file is distributed under the same license as the PACKAGE package.
+# Translation of kdeconnect-kio.po to Ukrainian
+# Copyright (C) 2014 This_file_is_part_of_KDE
+# This file is distributed under the license LGPL version 2.1 or
+# version 3 or later versions approved by the membership of KDE e.V.
 #
 # Yuri Chornoivan <yurchor@ukr.net>, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: kdeconnect-kio\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-02-15 01:46+0000\n"
+"POT-Creation-Date: 2014-10-11 01:54+0000\n"
 "PO-Revision-Date: 2014-02-15 09:07+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
@@ -34,22 +36,14 @@ msgstr "kiokdeconnect"
 msgid "Listing devices..."
 msgstr "Побудова списку пристроїв…"
 
-#: kiokdeconnect.cpp:130
+#: kiokdeconnect.cpp:131
 msgid "Accessing device..."
 msgstr "Отримання доступу до пристрою…"
 
-#: kiokdeconnect.cpp:145
+#: kiokdeconnect.cpp:144
 msgid "Could not mount device filesystem"
 msgstr "Не вдалося змонтувати файлову систему на пристрої"
 
-#: kiokdeconnect.cpp:160
-msgid "Camera pictures"
-msgstr "Зображення з фотоапарата"
-
-#: kiokdeconnect.cpp:169
-msgid "All files"
-msgstr "Усі файли"
-
-#: kiokdeconnect.cpp:194
+#: kiokdeconnect.cpp:189
 msgid "Could not contact background service."
 msgstr "Не вдалося встановити зв’язок із фоновою службою."

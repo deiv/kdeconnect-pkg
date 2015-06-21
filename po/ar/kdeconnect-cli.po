@@ -1,0 +1,92 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Safa Alfulaij <safa1996alfulaij@gmail.com>, 2015.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-11-11 02:05+0000\n"
+"PO-Revision-Date: 2015-01-11 19:12+0300\n"
+"Last-Translator: Safa Alfulaij <safa1996alfulaij@gmail.com>\n"
+"Language-Team: Arabic <kde-i18n-doc@kde.org>\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+"X-Generator: Lokalize 1.5\n"
+
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "صفا الفليج"
+
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "safa1996alfulaij@gmail.com"
+
+#: kdeconnect-cli.cpp:34
+msgid "KDE Connect CLI tool"
+msgstr "أداة سطر أوامر لكدي المتّصل"
+
+#: kdeconnect-cli.cpp:35
+msgid "(C) 2013 Aleix Pol Gonzalez"
+msgstr ""
+
+#: kdeconnect-cli.cpp:36
+msgid "Aleix Pol Gonzalez"
+msgstr ""
+
+#: kdeconnect-cli.cpp:37
+msgid "Albert Vaca Cintora"
+msgstr ""
+
+#: kdeconnect-cli.cpp:41
+msgid "List all devices."
+msgstr "اسرد كلّ الأجهزة."
+
+#: kdeconnect-cli.cpp:42
+msgid "Search for devices in the network and re-establish connections."
+msgstr "ابحث عن الأجهزة في الشّبكة وأعد إنشاء الاتّصالات."
+
+#: kdeconnect-cli.cpp:43
+msgid "Request pairing to a said device."
+msgstr "اطلب الاقتران بجهاز ما."
+
+#: kdeconnect-cli.cpp:44
+msgid "Stop pairing to a said device."
+msgstr "أزل الاقتران بجهاز ما."
+
+#: kdeconnect-cli.cpp:45
+msgid "Send a ping to said device."
+msgstr "أرسل وخزة إلى جهاز ما."
+
+#: kdeconnect-cli.cpp:46
+msgid "Same as ping but you can customize the message shown."
+msgstr "نفس ping لكنّك تستطيع تخصيص الرّسالة الظّاهرة."
+
+#: kdeconnect-cli.cpp:47
+msgid "Share a file to a said device."
+msgstr "شارك ملفًّا مع جهاز ما."
+
+#: kdeconnect-cli.cpp:48
+msgid "Display the notifications on a said device."
+msgstr "اعرض الإخطارات في جهاز ما."
+
+#: kdeconnect-cli.cpp:50
+msgid "Device ID."
+msgstr "معرّف الجهاز."
+
+#: kdeconnect-cli.cpp:80
+msgid "No device specified"
+msgstr "لم يحدّد أيّ جهاز"
+
+#: kdeconnect-cli.cpp:92
+#, kde-format
+msgid "Couldn't share %1"
+msgstr "تعذّرت مشاركة %1"
+
+#: kdeconnect-cli.cpp:125
+msgid "Nothing to be done with the device"
+msgstr "لا شيء لفعله مع الجهاز"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-02-15 01:46+0000\n"
+"POT-Creation-Date: 2014-10-11 01:54+0000\n"
 "PO-Revision-Date: 2014-03-23 06:42+0100\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
@@ -34,22 +34,14 @@ msgstr "kiokdeconnect"
 msgid "Listing devices..."
 msgstr "Wyszczególnianie urządzeń..."
 
-#: kiokdeconnect.cpp:130
+#: kiokdeconnect.cpp:131
 msgid "Accessing device..."
 msgstr "Uzyskiwanie dostępu do urządzenia..."
 
-#: kiokdeconnect.cpp:145
+#: kiokdeconnect.cpp:144
 msgid "Could not mount device filesystem"
 msgstr "Nie można zamontować systemu plików urządzenia"
 
-#: kiokdeconnect.cpp:160
-msgid "Camera pictures"
-msgstr "Zdjęcia z aparatu"
-
-#: kiokdeconnect.cpp:169
-msgid "All files"
-msgstr "Wszystkie pliki"
-
-#: kiokdeconnect.cpp:194
+#: kiokdeconnect.cpp:189
 msgid "Could not contact background service."
 msgstr "Nie można połączyć z usługą w tle."

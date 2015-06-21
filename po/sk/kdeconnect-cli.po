@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeconnect-cli\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-07-01 02:07+0000\n"
-"PO-Revision-Date: 2014-06-19 08:59+0200\n"
+"POT-Creation-Date: 2014-11-11 02:05+0000\n"
+"PO-Revision-Date: 2014-11-16 09:20+0100\n"
 "Last-Translator: Roman Paholik <wizzardsk@gmail.com>\n"
 "Language-Team: Slovak <kde-sk@linux.sk>\n"
 "Language: sk\n"
@@ -35,43 +35,55 @@ msgstr "(C) 2013 Aleix Pol Gonzalez"
 msgid "Aleix Pol Gonzalez"
 msgstr "Aleix Pol Gonzalez"
 
-#: kdeconnect-cli.cpp:40
-msgid "List all devices"
-msgstr "Vypísať všetky zariadenia"
+#: kdeconnect-cli.cpp:37
+msgid "Albert Vaca Cintora"
+msgstr "Albert Vaca Cintora"
 
 #: kdeconnect-cli.cpp:41
-msgid "Share a file to a said device"
-msgstr ""
+msgid "List all devices."
+msgstr "Vypísať všetky zariadenia."
 
 #: kdeconnect-cli.cpp:42
-msgid "Request pairing to a said device"
-msgstr ""
+msgid "Search for devices in the network and re-establish connections."
+msgstr "Hľadať zariadenia v sieti a znovu ich pripojiť."
 
 #: kdeconnect-cli.cpp:43
-msgid "Stop pairing to a said device"
-msgstr ""
+msgid "Request pairing to a said device."
+msgstr "Vyžiadať párovanie na dané zariadenie."
 
 #: kdeconnect-cli.cpp:44
-msgid "Sends a ping to said device"
-msgstr ""
+msgid "Stop pairing to a said device."
+msgstr "Zastaviť párovanie na dané zariadenie."
 
 #: kdeconnect-cli.cpp:45
-msgid "Display the notifications on a said device"
-msgstr ""
+msgid "Send a ping to said device."
+msgstr "Poslať ping na dané zariadenie."
 
 #: kdeconnect-cli.cpp:46
-msgid "Device ID"
-msgstr "ID zariadenia"
+msgid "Same as ping but you can customize the message shown."
+msgstr "Rovnaké ako ping, ale môžete si prispôsobiť zobrazenú správu."
 
-#: kdeconnect-cli.cpp:73
+#: kdeconnect-cli.cpp:47
+msgid "Share a file to a said device."
+msgstr "Zdieľať súbor na dané zariadenie."
+
+#: kdeconnect-cli.cpp:48
+msgid "Display the notifications on a said device."
+msgstr "Zobraziť oznámenia na danom zariadení."
+
+#: kdeconnect-cli.cpp:50
+msgid "Device ID."
+msgstr "ID zariadenia."
+
+#: kdeconnect-cli.cpp:80
 msgid "No device specified"
 msgstr "Neurčené zariadenie"
 
-#: kdeconnect-cli.cpp:85
+#: kdeconnect-cli.cpp:92
 #, kde-format
 msgid "Couldn't share %1"
-msgstr ""
+msgstr "Nemôžem zdieľať %1"
 
-#: kdeconnect-cli.cpp:114
+#: kdeconnect-cli.cpp:125
 msgid "Nothing to be done with the device"
 msgstr "Nič sa nedá robiť so zariadením"

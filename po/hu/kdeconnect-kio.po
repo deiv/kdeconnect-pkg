@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-02-15 01:46+0000\n"
+"POT-Creation-Date: 2014-10-11 01:54+0000\n"
 "PO-Revision-Date: 2014-02-16 19:46+0100\n"
 "Last-Translator: Balázs Úr <urbalazs@gmail.com>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
@@ -33,22 +33,14 @@ msgstr "kiokdeconnect"
 msgid "Listing devices..."
 msgstr "Eszközök listázása…"
 
-#: kiokdeconnect.cpp:130
+#: kiokdeconnect.cpp:131
 msgid "Accessing device..."
 msgstr "Hozzáférés az eszközhöz…"
 
-#: kiokdeconnect.cpp:145
+#: kiokdeconnect.cpp:144
 msgid "Could not mount device filesystem"
 msgstr "Nem sikerült csatolni az eszköz fájlrendszerét"
 
-#: kiokdeconnect.cpp:160
-msgid "Camera pictures"
-msgstr "Fényképezőgép képek"
-
-#: kiokdeconnect.cpp:169
-msgid "All files"
-msgstr "Minden fájl"
-
-#: kiokdeconnect.cpp:194
+#: kiokdeconnect.cpp:189
 msgid "Could not contact background service."
 msgstr "Nem sikerült csatlakozni a háttérszolgáltatáshoz."

@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeconnect-core\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-06-18 01:56+0000\n"
+"POT-Creation-Date: 2015-01-22 02:01+0000\n"
 "PO-Revision-Date: 2014-06-19 08:59+0200\n"
 "Last-Translator: Roman Paholik <wizzardsk@gmail.com>\n"
 "Language-Team: Slovak <kde-sk@linux.sk>\n"
@@ -15,74 +15,69 @@ msgstr ""
 "X-Generator: Lokalize 1.5\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 
-#: device.cpp:168
+#: device.cpp:186
 msgid "Already paired"
 msgstr "Už spárované"
 
-#: device.cpp:171
+#: device.cpp:189
 msgid "Pairing already requested for this device"
 msgstr "Párovanie už vyžiadané pre toto zariadenie"
 
-#: device.cpp:175
+#: device.cpp:193
 msgid "Device not reachable"
 msgstr "Zariadenie nedosiahnuteľné"
 
-#: device.cpp:188
+#: device.cpp:206
 msgid "Error contacting device"
 msgstr "Chyba kontaktovania zariadenia"
 
-#: device.cpp:226
+#: device.cpp:244
 msgid "Timed out"
 msgstr "Časový limit vypršal"
 
-#: device.cpp:325 device.cpp:377
+#: device.cpp:343 device.cpp:395
 msgid "Canceled by other peer"
 msgstr "Zrušené iným klientom"
 
-#: device.cpp:341
+#: device.cpp:359
 msgid "Received incorrect key"
 msgstr "Získaný nesprávny kľúč"
 
-#: device.cpp:358
+#: device.cpp:376
 #, kde-format
 msgid "Pairing request from %1"
 msgstr "Požiadavka spárovania od %1"
 
-#: device.cpp:359
+#: device.cpp:377
 msgid "Accept"
 msgstr "Prijať"
 
-#: device.cpp:359
+#: device.cpp:377
 msgid "Reject"
 msgstr "Odmietnuť"
 
-#: device.cpp:419
+#: device.cpp:437
 msgid "Canceled by the user"
 msgstr "Zrušené používateľom"
 
-#: filetransferjob.cpp:41
-msgctxt "Device name that will appear on the jobs"
-msgid "KDE-Connect"
-msgstr "KDE-Connect"
-
-#: filetransferjob.cpp:60 filetransferjob.cpp:121
+#: filetransferjob.cpp:59 filetransferjob.cpp:120
 msgid "Receiving file over KDE-Connect"
 msgstr "Prijímanie súboru cez KDE-Connect"
 
-#: filetransferjob.cpp:61 filetransferjob.cpp:122
+#: filetransferjob.cpp:60 filetransferjob.cpp:121
 msgctxt "File transfer origin"
 msgid "From"
 msgstr "Od"
 
-#: filetransferjob.cpp:68
+#: filetransferjob.cpp:67
 msgid "Incoming file exists"
 msgstr "Prichádzajúci súbor existuje"
 
-#: filetransferjob.cpp:124
+#: filetransferjob.cpp:123
 msgctxt "File transfer destination"
 msgid "To"
 msgstr "Pre"
 
-#: filetransferjob.cpp:197
+#: filetransferjob.cpp:196
 msgid "Received incomplete file"
 msgstr "Prijatý nekompletný súbor"

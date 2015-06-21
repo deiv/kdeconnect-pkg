@@ -3,14 +3,14 @@
 # This file is distributed under the license LGPL version 2.1 or
 # version 3 or later versions approved by the membership of KDE e.V.
 #
-# Antoni Bella Pérez <antonibella5@orange.es>, 2014.
+# Antoni Bella Pérez <antonibella5@yahoo.com>, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: kdeconnect-kio\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-02-15 01:46+0000\n"
+"POT-Creation-Date: 2014-10-11 01:54+0000\n"
 "PO-Revision-Date: 2014-06-05 21:57+0200\n"
-"Last-Translator: Antoni Bella Pérez <antonibella5@orange.es>\n"
+"Last-Translator: Antoni Bella Pérez <antonibella5@yahoo.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
@@ -25,7 +25,7 @@ msgstr "Antoni Bella Pérez"
 
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "antonibella5@orange.es"
+msgstr "antonibella5@yahoo.com"
 
 #: kiokdeconnect.cpp:39
 msgid "kiokdeconnect"
@@ -35,22 +35,14 @@ msgstr "kiokdeconnect"
 msgid "Listing devices..."
 msgstr "S'estan llistant els dispositius..."
 
-#: kiokdeconnect.cpp:130
+#: kiokdeconnect.cpp:131
 msgid "Accessing device..."
 msgstr "S'està accedint al dispositiu..."
 
-#: kiokdeconnect.cpp:145
+#: kiokdeconnect.cpp:144
 msgid "Could not mount device filesystem"
 msgstr "No s'ha pogut muntar el sistema de fitxers del dispositiu"
 
-#: kiokdeconnect.cpp:160
-msgid "Camera pictures"
-msgstr "Imatges de la càmera"
-
-#: kiokdeconnect.cpp:169
-msgid "All files"
-msgstr "Tots els fitxers"
-
-#: kiokdeconnect.cpp:194
+#: kiokdeconnect.cpp:189
 msgid "Could not contact background service."
 msgstr "No s'ha pogut contactar usant el servei en segon pla."

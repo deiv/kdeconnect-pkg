@@ -6,7 +6,6 @@ set(KDECONNECT_VERSION_PATCH 1)
 set(KDECONNECT_VERSION "${KDECONNECT_VERSION_MAJOR}.${KDECONNECT_VERSION_MINOR}.${KDECONNECT_VERSION_PATCH}")
 
 include_directories(
-    ${KDE4_KIO_LIBS}
     ${QJSON_INCLUDE_DIR}
     ${CMAKE_CURRENT_BINARY_DIR}
     ${QCA2_INCLUDE_DIR}
@@ -24,6 +23,7 @@ set(kded_kdeconnect_SRCS
     kdeconnectplugin.cpp
     pluginloader.cpp
 
+    dbushelper.cpp
     networkpackage.cpp
     filetransferjob.cpp
     daemon.cpp
@@ -48,7 +48,7 @@ LINK_PRIVATE
 target_include_directories(kdeconnectcore PUBLIC ${CMAKE_CURRENT_BINARY_DIR})
 generate_export_header(kdeconnectcore EXPORT_FILE_NAME ${CMAKE_CURRENT_BINARY_DIR}/kdeconnectcore_export.h BASE_NAME KDEConnectCore)
 
-include(macros)
+include(DbusInterfaceMacros)
 
 generate_and_install_dbus_interface(
     kdeconnectcore

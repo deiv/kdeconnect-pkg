@@ -1,14 +1,14 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
+# Vincenzo Reale <smart2128@baslug.org>, 2014.
 #
-# Mauro Panzeri <damonhill82@gmail.com>, 2013.
 msgid ""
 msgstr ""
 "Project-Id-Version: kdeconnect-kded\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2014-06-18 01:56+0000\n"
-"PO-Revision-Date: 2013-11-04 12:43+0100\n"
-"Last-Translator: Mauro Panzeri <damonhill82@gmail.com>\n"
+"PO-Revision-Date: 2014-12-08 19:37+0100\n"
+"Last-Translator: Vincenzo Reale <smart2128@baslug.org>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
@@ -19,21 +19,19 @@ msgstr ""
 
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr ""
+msgstr "Vincenzo Reale"
 
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr ""
+msgstr "smart2128@baslug.org"
 
 #: kdeconnectd.cpp:63
 msgid "kdeconnect"
-msgstr ""
+msgstr "kdeconnect"
 
 #: kdeconnectd.cpp:65
-#, fuzzy
-#| msgid "Error contacting device"
 msgid "Connect your devices and KDE"
-msgstr "Errore durante la comunicazione con il dispositivo"
+msgstr "Connetti i tuoi dispositivi e KDE"
 
 
 

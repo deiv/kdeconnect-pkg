@@ -1,21 +1,23 @@
-# Copyright (C) YEAR This_file_is_part_of_KDE
-# This file is distributed under the same license as the PACKAGE package.
+# Translation of kdeconnect-plugins.po to Ukrainian
+# Copyright (C) 2014-2015 This_file_is_part_of_KDE
+# This file is distributed under the license LGPL version 2.1 or
+# version 3 or later versions approved by the membership of KDE e.V.
 #
-# Yuri Chornoivan <yurchor@ukr.net>, 2014.
+# Yuri Chornoivan <yurchor@ukr.net>, 2014, 2015.
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
+"Project-Id-Version: kdeconnect-plugins\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-06-28 01:55+0000\n"
-"PO-Revision-Date: 2014-06-18 08:01+0300\n"
+"POT-Creation-Date: 2015-01-22 02:01+0000\n"
+"PO-Revision-Date: 2015-01-07 09:23+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
+"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Lokalize 1.5\n"
 
 #: battery/batteryplugin.cpp:77
@@ -35,38 +37,48 @@ msgid "Pause music plugin"
 msgstr "Додаток призупинення відтворення"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: pausemusic/pausemusic_config.ui:29
-msgid "Pause condition"
-msgstr "Умова призупинення"
+#: pausemusic/pausemusic_config.ui:32
+msgid "Condition"
+msgstr "Умова"
 
 #. i18n: ectx: property (text), widget (QRadioButton, rad_ringing)
-#: pausemusic/pausemusic_config.ui:35
+#: pausemusic/pausemusic_config.ui:38
 msgid "Pause as soon as phone rings"
 msgstr "Призупиняти, щойно надійде телефонний дзвінок"
 
 #. i18n: ectx: property (text), widget (QRadioButton, rad_talking)
-#: pausemusic/pausemusic_config.ui:42
+#: pausemusic/pausemusic_config.ui:45
 msgid "Pause only while talking"
 msgstr "Призупинити лише на час розмови"
 
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: pausemusic/pausemusic_config.ui:61
+msgid "Actions"
+msgstr "Дії"
+
+#. i18n: ectx: property (text), widget (QCheckBox, check_pause)
+#: pausemusic/pausemusic_config.ui:67
+msgid "Pause media players"
+msgstr "Призупинити відтворення мультимедійних даних"
+
 #. i18n: ectx: property (text), widget (QCheckBox, check_mute)
-#: pausemusic/pausemusic_config.ui:65
-msgid "Mute system instead of pause"
-msgstr "Вимкнути звук замість призупинення"
+#: pausemusic/pausemusic_config.ui:74
+msgid "Mute system sound"
+msgstr "Вимкнути звук у системі"
 
 #: ping/pingplugin.cpp:51
 msgid "Ping!"
 msgstr "Перевірити!"
 
-#: sftp/mounter.cpp:172
+#: sftp/mounter.cpp:176
 msgid "Failed to start sshfs"
 msgstr "Не вдалося запустити sshfs"
 
-#: sftp/mounter.cpp:194
+#: sftp/mounter.cpp:198
 msgid "Error when accessing to filesystem"
 msgstr "Помилка під час спроби доступу до файлової системи"
 
-#: sftp/mounter.cpp:205
+#: sftp/mounter.cpp:209
 msgid "Failed to mount filesystem: device not responding"
 msgstr "Не вдалося змонтувати файлову систему: пристрій не відповідає"
 
@@ -101,7 +113,15 @@ msgstr "Час очікування:"
 msgid " min"
 msgstr " хв"
 
-#: sftp/sftpplugin.cpp:196
+#: sftp/sftpplugin.cpp:160
+msgid "All files"
+msgstr "Усі файли"
+
+#: sftp/sftpplugin.cpp:161
+msgid "Camera pictures"
+msgstr "Знімки фотоапарата"
+
+#: sftp/sftpplugin.cpp:208
 #, kde-format
 msgid "Device %1"
 msgstr "Пристрій %1"
@@ -149,7 +169,11 @@ msgstr "Пропущено дзвінок від %1"
 msgid "SMS from %1: %2"
 msgstr "SMS від %1: %2"
 
-#: telephony/telephonyplugin.cpp:66
+#: telephony/telephonyplugin.cpp:68
 #, kde-format
 msgid "Unknown telephony event: %2"
 msgstr "Невідома подія телефонії: %2"
+
+#: telephony/telephonyplugin.cpp:81
+msgid "Mute call"
+msgstr "Вимкнути звук"

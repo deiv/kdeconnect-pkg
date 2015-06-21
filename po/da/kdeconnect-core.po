@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-06-18 01:56+0000\n"
+"POT-Creation-Date: 2015-01-22 02:01+0000\n"
 "PO-Revision-Date: 2014-06-28 17:22+0200\n"
 "Last-Translator: Martin Schlander <mschlander@opensuse.org>\n"
 "Language-Team: Danish <kde-i18n-doc@kde.org>\n"
@@ -14,77 +14,72 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Lokalize 1.5\n"
 
-#: device.cpp:168
+#: device.cpp:186
 msgid "Already paired"
 msgstr "Allerede parret"
 
-#: device.cpp:171
+#: device.cpp:189
 msgid "Pairing already requested for this device"
 msgstr "Allerede anmodet om parring med denne enhed"
 
-#: device.cpp:175
+#: device.cpp:193
 msgid "Device not reachable"
 msgstr "Enheden kan ikke nås"
 
-#: device.cpp:188
+#: device.cpp:206
 msgid "Error contacting device"
 msgstr "Fejl ved kontakt til enhed"
 
-#: device.cpp:226
+#: device.cpp:244
 msgid "Timed out"
 msgstr "Tidsudløb"
 
-#: device.cpp:325 device.cpp:377
+#: device.cpp:343 device.cpp:395
 msgid "Canceled by other peer"
 msgstr "Annulleret af modpart"
 
-#: device.cpp:341
+#: device.cpp:359
 msgid "Received incorrect key"
 msgstr "Modtog forkert nøgle"
 
-#: device.cpp:358
+#: device.cpp:376
 #, kde-format
 msgid "Pairing request from %1"
 msgstr "Parringsanmodning fra %1"
 
-#: device.cpp:359
+#: device.cpp:377
 msgid "Accept"
 msgstr "Acceptér"
 
-#: device.cpp:359
+#: device.cpp:377
 msgid "Reject"
 msgstr "Afvis"
 
-#: device.cpp:419
+#: device.cpp:437
 msgid "Canceled by the user"
 msgstr "Annulleret af brugeren"
 
-#: filetransferjob.cpp:41
-msgctxt "Device name that will appear on the jobs"
-msgid "KDE-Connect"
-msgstr "KDE-Connect"
-
-#: filetransferjob.cpp:60 filetransferjob.cpp:121
+#: filetransferjob.cpp:59 filetransferjob.cpp:120
 msgid "Receiving file over KDE-Connect"
 msgstr "Modtagelse af fil over KDE-Connect"
 
-#: filetransferjob.cpp:61 filetransferjob.cpp:122
+#: filetransferjob.cpp:60 filetransferjob.cpp:121
 msgctxt "File transfer origin"
 msgid "From"
 msgstr "Fra"
 
-#: filetransferjob.cpp:68
+#: filetransferjob.cpp:67
 msgid "Incoming file exists"
 msgstr "Den indkommende fil findes allerede"
 
-#: filetransferjob.cpp:124
+#: filetransferjob.cpp:123
 msgctxt "File transfer destination"
 msgid "To"
 msgstr "Til"
 
-#: filetransferjob.cpp:197
+#: filetransferjob.cpp:196
 msgid "Received incomplete file"
 msgstr "Modtog ukomplet fil"
