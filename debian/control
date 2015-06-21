@@ -15,7 +15,7 @@ Build-Depends: cmake,
 Standards-Version: 3.9.6
 Homepage: https://projects.kde.org/projects/playground/base/kdeconnect-kde
 Vcs-Git: git://anonscm.debian.org/pkg-kde/kde-extras/kdeconnect.git
-Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/kde-extras/kdeconnect.git;a=summary
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-kde/kde-extras/kdeconnect.git
 
 Package: kdeconnect
 Architecture: any
