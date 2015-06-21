@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-02-15 01:46+0000\n"
+"POT-Creation-Date: 2014-10-11 01:54+0000\n"
 "PO-Revision-Date: 2014-02-15 09:01+0100\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@bredband.net>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
@@ -33,22 +33,14 @@ msgstr "KDE Anslut I/O-slav"
 msgid "Listing devices..."
 msgstr "Listar apparater..."
 
-#: kiokdeconnect.cpp:130
+#: kiokdeconnect.cpp:131
 msgid "Accessing device..."
 msgstr "Åtkomst av apparat..."
 
-#: kiokdeconnect.cpp:145
+#: kiokdeconnect.cpp:144
 msgid "Could not mount device filesystem"
 msgstr "Kunde inte montera apparatens filsystem"
 
-#: kiokdeconnect.cpp:160
-msgid "Camera pictures"
-msgstr "Kamerabilder"
-
-#: kiokdeconnect.cpp:169
-msgid "All files"
-msgstr "Alla filer"
-
-#: kiokdeconnect.cpp:194
+#: kiokdeconnect.cpp:189
 msgid "Could not contact background service."
 msgstr "Kunde inte kontakta bakgrundstjänst."

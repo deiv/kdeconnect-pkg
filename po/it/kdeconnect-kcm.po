@@ -1,14 +1,15 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
-#
 # Mauro Panzeri <damonhill82@gmail.com>, 2013.
+# Vincenzo Reale <smart2128@baslug.org>, 2014.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: kdeconnect-kcm\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-07-01 02:07+0000\n"
-"PO-Revision-Date: 2013-11-04 12:02+0100\n"
-"Last-Translator: Mauro Panzeri <damonhill82@gmail.com>\n"
+"POT-Creation-Date: 2014-08-12 02:06+0000\n"
+"PO-Revision-Date: 2014-12-08 19:37+0100\n"
+"Last-Translator: Vincenzo Reale <smart2128@baslug.org>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
@@ -17,44 +18,49 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Lokalize 1.5\n"
 
-#: kcm.cpp:145 kcm.cpp:229
+#: kcm.cpp:152 kcm.cpp:236
 msgid "(paired)"
 msgstr "(associato)"
 
-#: kcm.cpp:145 kcm.cpp:201 kcm.cpp:212
+#: kcm.cpp:152 kcm.cpp:208 kcm.cpp:219
 msgid "(unpaired)"
 msgstr "(disassociato)"
 
-#: kcm.cpp:159
+#: kcm.cpp:166
 msgid "Plugins"
 msgstr "Estensioni"
 
-#: kcm.cpp:214
+#: kcm.cpp:221
 #, kde-format
 msgid "Error trying to pair: %1"
 msgstr "Errore durante l'associazione: %1"
 
+#. i18n: ectx: property (text), widget (QPushButton, refresh_button)
+#: kcm.ui:41
+msgid "Refresh"
+msgstr "Aggiorna"
+
 #. i18n: ectx: property (text), widget (QLabel, name_label)
-#: kcm.ui:84
+#: kcm.ui:88
 msgid "Device"
 msgstr "Dispositivo"
 
 #. i18n: ectx: property (text), widget (QLabel, status_label)
-#: kcm.ui:97
+#: kcm.ui:101
 msgid "(status)"
 msgstr "(stato)"
 
 #. i18n: ectx: property (text), widget (QPushButton, pair_button)
-#: kcm.ui:142
+#: kcm.ui:146
 msgid "Request pair"
 msgstr "Richiedi l'associazione"
 
 #. i18n: ectx: property (text), widget (QPushButton, unpair_button)
-#: kcm.ui:155
+#: kcm.ui:159
 msgid "Unpair"
 msgstr "Disassocia"
 
 #. i18n: ectx: property (text), widget (QPushButton, ping_button)
-#: kcm.ui:168
+#: kcm.ui:172
 msgid "Send ping"
 msgstr "Invia ping"

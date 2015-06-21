@@ -1,0 +1,92 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Frederik Schwarzer <schwarzer@kde.org>, 2014.
+# Burkhard Lück <lueck@hube-lueck.de>, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-11-11 02:05+0000\n"
+"PO-Revision-Date: 2014-11-11 08:52+0100\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 1.5\n"
+
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Burkhard Lück"
+
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "lueck@hube-lueck.de"
+
+#: kdeconnect-cli.cpp:34
+msgid "KDE Connect CLI tool"
+msgstr "KDE-Connect-Dienstprogramm für die Befehlszeile"
+
+#: kdeconnect-cli.cpp:35
+msgid "(C) 2013 Aleix Pol Gonzalez"
+msgstr "(C) 2013 Aleix Pol Gonzalez"
+
+#: kdeconnect-cli.cpp:36
+msgid "Aleix Pol Gonzalez"
+msgstr "Aleix Pol Gonzalez"
+
+#: kdeconnect-cli.cpp:37
+msgid "Albert Vaca Cintora"
+msgstr "Albert Vaca Cintora"
+
+#: kdeconnect-cli.cpp:41
+msgid "List all devices."
+msgstr "Listet alle Geräte"
+
+#: kdeconnect-cli.cpp:42
+msgid "Search for devices in the network and re-establish connections."
+msgstr "Nach Geräten im Netzwerk suchen und Verbindungen wiederherstellen."
+
+#: kdeconnect-cli.cpp:43
+msgid "Request pairing to a said device."
+msgstr "Verbindung für ein genanntes Gerät anfordern."
+
+#: kdeconnect-cli.cpp:44
+msgid "Stop pairing to a said device."
+msgstr "Verbindung für ein genanntes Gerät trennen."
+
+#: kdeconnect-cli.cpp:45
+msgid "Send a ping to said device."
+msgstr "Ping an ein genanntes Gerät senden."
+
+#: kdeconnect-cli.cpp:46
+msgid "Same as ping but you can customize the message shown."
+msgstr "Wie beim Ping, aber Sie können die angezeigte Nachricht anpassen."
+
+#: kdeconnect-cli.cpp:47
+msgid "Share a file to a said device."
+msgstr "Eine Datei für ein genanntes Gerät freigeben."
+
+#: kdeconnect-cli.cpp:48
+msgid "Display the notifications on a said device."
+msgstr "Benachrichtigungen auf einem genannten Gerät anzeigen."
+
+#: kdeconnect-cli.cpp:50
+msgid "Device ID."
+msgstr "Geräte-Kennung"
+
+#: kdeconnect-cli.cpp:80
+msgid "No device specified"
+msgstr "Kein Gerät angegeben"
+
+#: kdeconnect-cli.cpp:92
+#, kde-format
+msgid "Couldn't share %1"
+msgstr "%1 kann nicht freigegeben werden"
+
+#: kdeconnect-cli.cpp:125
+msgid "Nothing to be done with the device"
+msgstr "Für dieses Gerät gibt es nichts zu tun"

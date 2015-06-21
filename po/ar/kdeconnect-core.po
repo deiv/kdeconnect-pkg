@@ -1,0 +1,86 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Safa Alfulaij <safa1996alfulaij@gmail.com>, 2015.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2015-01-22 02:01+0000\n"
+"PO-Revision-Date: 2015-01-11 19:09+0300\n"
+"Last-Translator: Safa Alfulaij <safa1996alfulaij@gmail.com>\n"
+"Language-Team: Arabic <kde-i18n-doc@kde.org>\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+"X-Generator: Lokalize 1.5\n"
+
+#: device.cpp:186
+msgid "Already paired"
+msgstr "مقترن بالفعل"
+
+#: device.cpp:189
+msgid "Pairing already requested for this device"
+msgstr "طُلب الاقتران بهذا الجهاز بالفعل"
+
+#: device.cpp:193
+msgid "Device not reachable"
+msgstr "الجهاز غير قابل الوصول"
+
+#: device.cpp:206
+msgid "Error contacting device"
+msgstr "خطأ في الاتّصال بالجهاز"
+
+#: device.cpp:244
+msgid "Timed out"
+msgstr "انتهت المهلة"
+
+#: device.cpp:343 device.cpp:395
+msgid "Canceled by other peer"
+msgstr "ألغاه ندّ آخر"
+
+#: device.cpp:359
+msgid "Received incorrect key"
+msgstr "استُقبل مفتاح غير صحيح"
+
+#: device.cpp:376
+#, kde-format
+msgid "Pairing request from %1"
+msgstr "طلب اقتران من %1"
+
+#: device.cpp:377
+msgid "Accept"
+msgstr "اقبل"
+
+#: device.cpp:377
+msgid "Reject"
+msgstr "ارفض"
+
+#: device.cpp:437
+msgid "Canceled by the user"
+msgstr "ألغاه المستخدم"
+
+#: filetransferjob.cpp:59 filetransferjob.cpp:120
+msgid "Receiving file over KDE-Connect"
+msgstr "يستلم ملفًّا عبر كدي المتّصل"
+
+#: filetransferjob.cpp:60 filetransferjob.cpp:121
+msgctxt "File transfer origin"
+msgid "From"
+msgstr "من"
+
+#: filetransferjob.cpp:67
+msgid "Incoming file exists"
+msgstr "الملفّ القادم موجود"
+
+#: filetransferjob.cpp:123
+msgctxt "File transfer destination"
+msgid "To"
+msgstr "إلى"
+
+#: filetransferjob.cpp:196
+msgid "Received incomplete file"
+msgstr "استُقبل ملفّ غير مكتمل"

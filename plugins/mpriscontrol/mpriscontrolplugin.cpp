@@ -20,7 +20,6 @@
 
 #include "mpriscontrolplugin.h"
 
-
 #include <QDBusArgument>
 #include <QDBusConnection>
 #include <QDBusInterface>
@@ -84,6 +83,19 @@ void MprisControlPlugin::addPlayer(const QString& service)
     OrgFreedesktopDBusPropertiesInterface* freedesktopInterface = new OrgFreedesktopDBusPropertiesInterface(service, "/org/mpris/MediaPlayer2", QDBusConnection::sessionBus(), this);
     connect(freedesktopInterface, SIGNAL(PropertiesChanged(QString, QVariantMap, QStringList)), this, SLOT(propertiesChanged(QString, QVariantMap)));
 
+    OrgMprisMediaPlayer2PlayerInterface* mprisInterface0  = new OrgMprisMediaPlayer2PlayerInterface(service, "/org/mpris/MediaPlayer2", QDBusConnection::sessionBus());
+    connect(mprisInterface0, SIGNAL(Seeked(qlonglong)), this, SLOT(seeked(qlonglong)));
+}
+
+void MprisControlPlugin::seeked(qlonglong position){
+    kDebug(debugArea()) << "Seeked in player";
+    NetworkPackage np(PACKAGE_TYPE_MPRIS);
+    np.set("pos", position/1000); //Send milis instead of nanos
+    OrgFreedesktopDBusPropertiesInterface* interface = (OrgFreedesktopDBusPropertiesInterface*)sender();
+    const QString& service = interface->service();
+    const QString& player = playerList.key(service);
+    np.set("player", player);
+    sendPackage(np);
 }
 
 void MprisControlPlugin::propertiesChanged(const QString& propertyInterface, const QVariantMap& properties)
@@ -112,6 +124,13 @@ void MprisControlPlugin::propertiesChanged(const QString& propertyInterface, con
             np.set("nowPlaying",nowPlaying);
             somethingToSend = true;
         }
+        if (nowPlayingMap.contains("mpris:length")) {
+            if (nowPlayingMap.contains("mpris:length")) {
+                long long length = nowPlayingMap["mpris:length"].toLongLong();
+                np.set("length",length/1000); //milis to nanos
+            }
+            somethingToSend = true;
+        }
 
     }
     if (properties.contains("PlaybackStatus")) {
@@ -125,6 +144,12 @@ void MprisControlPlugin::propertiesChanged(const QString& propertyInterface, con
         const QString& service = interface->service();
         const QString& player = playerList.key(service);
         np.set("player", player);
+        // Always also update the position
+        OrgMprisMediaPlayer2PlayerInterface mprisInterface(playerList[player], "/org/mpris/MediaPlayer2", QDBusConnection::sessionBus());
+        if (mprisInterface.canSeek()) {
+            long long pos = mprisInterface.position();
+            np.set("pos", pos/1000); //Send milis instead of nanos
+        }
         sendPackage(np);
     }
 }
@@ -158,7 +183,7 @@ bool MprisControlPlugin::receivePackage (const NetworkPackage& np)
     if (np.has("action")) {
         const QString& action = np.get<QString>("action");
         kDebug(debugArea()) << "Calling action" << action << "in" << playerList[player];
-        //TODO: Check for valid actions
+        //TODO: Check for valid actions, currently we trust anything the other end sends us
         mprisInterface.call(action);
     }
     if (np.has("setVolume")) {
@@ -172,6 +197,13 @@ bool MprisControlPlugin::receivePackage (const NetworkPackage& np)
         mprisInterface.Seek(offset);
     }
 
+    if (np.has("SetPosition")){
+        qlonglong position = np.get<qlonglong>("SetPosition",0)*1000;
+        qlonglong seek = position - mprisInterface.position();
+        kDebug(debugArea()) << "Setting position by seeking" << seek << "to" << playerList[player];
+        mprisInterface.Seek(seek);
+    }
+
     //Send something read from the mpris interface
     NetworkPackage answer(PACKAGE_TYPE_MPRIS);
     bool somethingToSend = false;
@@ -181,7 +213,12 @@ bool MprisControlPlugin::receivePackage (const NetworkPackage& np)
         QString nowPlaying = nowPlayingMap["xesam:title"].toString();
         if (nowPlayingMap.contains("xesam:artist")) {
             nowPlaying = nowPlayingMap["xesam:artist"].toString() + " - " + nowPlaying;
+        }if (nowPlayingMap.contains("mpris:length")) {
+            qlonglong length = nowPlayingMap["mpris:length"].toLongLong();
+            answer.set("length",length/1000);
         }
+        qlonglong pos = mprisInterface.position();
+        answer.set("pos", pos/1000);
 
         answer.set("nowPlaying",nowPlaying);
 

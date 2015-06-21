@@ -1,0 +1,46 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+# Tommi Nieminen <translator@legisign.org>, 2014.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-10-11 01:54+0000\n"
+"PO-Revision-Date: 2014-10-31 22:33+0200\n"
+"Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
+"Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 1.5\n"
+
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Tommi Nieminen"
+
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "translator@legisign.org"
+
+#: kiokdeconnect.cpp:39
+msgid "kiokdeconnect"
+msgstr "kiokdeconnect"
+
+#: kiokdeconnect.cpp:93
+msgid "Listing devices..."
+msgstr "Luetellaan laitteita…"
+
+#: kiokdeconnect.cpp:131
+msgid "Accessing device..."
+msgstr "Otetaan yhteyttä laitteeseen…"
+
+#: kiokdeconnect.cpp:144
+msgid "Could not mount device filesystem"
+msgstr "Laitteen tiedostojärjestelmää ei voitu liittää"
+
+#: kiokdeconnect.cpp:189
+msgid "Could not contact background service."
+msgstr "Taustapalveluun ei saatu yhteyttä."

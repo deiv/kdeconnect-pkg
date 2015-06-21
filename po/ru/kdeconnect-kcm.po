@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-07-01 02:07+0000\n"
+"POT-Creation-Date: 2014-08-12 02:06+0000\n"
 "PO-Revision-Date: 2013-10-10 19:34+0400\n"
 "Last-Translator: Julia Dronova <juliette.tux@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
@@ -18,44 +18,49 @@ msgstr ""
 "%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Lokalize 1.5\n"
 
-#: kcm.cpp:145 kcm.cpp:229
+#: kcm.cpp:152 kcm.cpp:236
 msgid "(paired)"
 msgstr "(спарены)"
 
-#: kcm.cpp:145 kcm.cpp:201 kcm.cpp:212
+#: kcm.cpp:152 kcm.cpp:208 kcm.cpp:219
 msgid "(unpaired)"
 msgstr "(разделены)"
 
-#: kcm.cpp:159
+#: kcm.cpp:166
 msgid "Plugins"
 msgstr "Модули"
 
-#: kcm.cpp:214
+#: kcm.cpp:221
 #, kde-format
 msgid "Error trying to pair: %1"
 msgstr "Ошибка при попытке связать: %1"
 
+#. i18n: ectx: property (text), widget (QPushButton, refresh_button)
+#: kcm.ui:41
+msgid "Refresh"
+msgstr ""
+
 #. i18n: ectx: property (text), widget (QLabel, name_label)
-#: kcm.ui:84
+#: kcm.ui:88
 msgid "Device"
 msgstr "Устройство"
 
 #. i18n: ectx: property (text), widget (QLabel, status_label)
-#: kcm.ui:97
+#: kcm.ui:101
 msgid "(status)"
 msgstr "(статус)"
 
 #. i18n: ectx: property (text), widget (QPushButton, pair_button)
-#: kcm.ui:142
+#: kcm.ui:146
 msgid "Request pair"
 msgstr "Запросить пару"
 
 #. i18n: ectx: property (text), widget (QPushButton, unpair_button)
-#: kcm.ui:155
+#: kcm.ui:159
 msgid "Unpair"
 msgstr "Разделить спаренные устройства"
 
 #. i18n: ectx: property (text), widget (QPushButton, ping_button)
-#: kcm.ui:168
+#: kcm.ui:172
 msgid "Send ping"
 msgstr "Отправить пинг"

@@ -36,7 +36,7 @@ class LinkProvider
 
 public:
 
-    const static int PRIORITY_LOW = 0;      //eg: 3g
+    const static int PRIORITY_LOW = 0;      //eg: 3g internet
     const static int PRIORITY_MEDIUM = 50;  //eg: internet
     const static int PRIORITY_HIGH = 100;   //eg: lan
 
@@ -52,7 +52,7 @@ public Q_SLOTS:
     virtual void onNetworkChange(QNetworkSession::State state) = 0;
 
 Q_SIGNALS:
-    //NOTE: The provider will to destroy the DeviceLink when it's no longer accessible,
+    //NOTE: The provider will destroy the DeviceLink when it's no longer accessible,
     //      and every user should listen to the destroyed signal to remove its references.
     //      That's the reason because there is no "onConnectionLost".
     void onConnectionReceived(const NetworkPackage& identityPackage, DeviceLink*) const;

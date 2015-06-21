@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeconnect-plugins\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-06-28 01:55+0000\n"
-"PO-Revision-Date: 2014-06-18 10:25+0100\n"
+"POT-Creation-Date: 2015-01-22 02:01+0000\n"
+"PO-Revision-Date: 2015-01-07 09:34+0000\n"
 "Last-Translator: José Nuno Coelho Pires <zepires@gmail.com>\n"
 "Language-Team: Portuguese <kde-i18n-pt@kde.org>\n"
 "Language: \n"
@@ -16,6 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-POFile-SpellExtra: min sshfs\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #: battery/batteryplugin.cpp:77
 #, kde-format
@@ -34,38 +35,48 @@ msgid "Pause music plugin"
 msgstr "'Plugin' de pausa da música"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: pausemusic/pausemusic_config.ui:29
-msgid "Pause condition"
-msgstr "Condição de pausa"
+#: pausemusic/pausemusic_config.ui:32
+msgid "Condition"
+msgstr "Condição"
 
 #. i18n: ectx: property (text), widget (QRadioButton, rad_ringing)
-#: pausemusic/pausemusic_config.ui:35
+#: pausemusic/pausemusic_config.ui:38
 msgid "Pause as soon as phone rings"
 msgstr "Pausar assim que o telefone tocar"
 
 #. i18n: ectx: property (text), widget (QRadioButton, rad_talking)
-#: pausemusic/pausemusic_config.ui:42
+#: pausemusic/pausemusic_config.ui:45
 msgid "Pause only while talking"
 msgstr "Pausar apenas enquanto falar"
 
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: pausemusic/pausemusic_config.ui:61
+msgid "Actions"
+msgstr "Acções"
+
+#. i18n: ectx: property (text), widget (QCheckBox, check_pause)
+#: pausemusic/pausemusic_config.ui:67
+msgid "Pause media players"
+msgstr "Pausar os leitores multimédia"
+
 #. i18n: ectx: property (text), widget (QCheckBox, check_mute)
-#: pausemusic/pausemusic_config.ui:65
-msgid "Mute system instead of pause"
-msgstr "Silenciar o sistema em vez de pausar"
+#: pausemusic/pausemusic_config.ui:74
+msgid "Mute system sound"
+msgstr "Silenciar o som do sistema"
 
 #: ping/pingplugin.cpp:51
 msgid "Ping!"
 msgstr "Contacto!"
 
-#: sftp/mounter.cpp:172
+#: sftp/mounter.cpp:176
 msgid "Failed to start sshfs"
 msgstr "Não foi possível iniciar o 'sshfs'"
 
-#: sftp/mounter.cpp:194
+#: sftp/mounter.cpp:198
 msgid "Error when accessing to filesystem"
 msgstr "Ocorreu um erro ao aceder ao sistema de ficheiros"
 
-#: sftp/mounter.cpp:205
+#: sftp/mounter.cpp:209
 msgid "Failed to mount filesystem: device not responding"
 msgstr ""
 "Não foi possível montar o sistema de ficheiros: o dispositivo não responde"
@@ -101,7 +112,15 @@ msgstr "Tempo-limite:"
 msgid " min"
 msgstr " min"
 
-#: sftp/sftpplugin.cpp:196
+#: sftp/sftpplugin.cpp:160
+msgid "All files"
+msgstr "Todos os ficheiros"
+
+#: sftp/sftpplugin.cpp:161
+msgid "Camera pictures"
+msgstr "Fotografias"
+
+#: sftp/sftpplugin.cpp:208
 #, kde-format
 msgid "Device %1"
 msgstr "Dispositivo %1"
@@ -150,7 +169,11 @@ msgstr "Chamada perdida de %1"
 msgid "SMS from %1: %2"
 msgstr "SMS de %1: %2"
 
-#: telephony/telephonyplugin.cpp:66
+#: telephony/telephonyplugin.cpp:68
 #, kde-format
 msgid "Unknown telephony event: %2"
 msgstr "Evento de telefonia desconhecido: %2"
+
+#: telephony/telephonyplugin.cpp:81
+msgid "Mute call"
+msgstr "Silenciar a chamada"

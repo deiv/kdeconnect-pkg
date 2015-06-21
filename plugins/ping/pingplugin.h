@@ -25,6 +25,8 @@
 
 #include <core/kdeconnectplugin.h>
 
+#define PACKAGE_TYPE_PING QLatin1String("kdeconnect.ping")
+
 class KDE_EXPORT PingPlugin
     : public KdeConnectPlugin
 {
@@ -36,6 +38,7 @@ public:
     virtual ~PingPlugin();
     
     Q_SCRIPTABLE void sendPing();
+    Q_SCRIPTABLE void sendPing(const QString& customMessage);
 
 public Q_SLOTS:
     virtual bool receivePackage(const NetworkPackage& np);

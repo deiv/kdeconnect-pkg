@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-02-15 01:46+0000\n"
+"POT-Creation-Date: 2014-10-11 01:54+0000\n"
 "PO-Revision-Date: 2014-02-24 14:13+0100\n"
 "Last-Translator: Nicolas Ménard <nico.menard@gmail.com>\n"
 "Language-Team: French <kde-i18n-doc@kde.org>\n"
@@ -36,22 +36,14 @@ msgstr "kiokdeconnect"
 msgid "Listing devices..."
 msgstr "Recherche de périphériques..."
 
-#: kiokdeconnect.cpp:130
+#: kiokdeconnect.cpp:131
 msgid "Accessing device..."
 msgstr "Accès au périphérique..."
 
-#: kiokdeconnect.cpp:145
+#: kiokdeconnect.cpp:144
 msgid "Could not mount device filesystem"
 msgstr "Impossible de monter le système de fichiers du périphérique"
 
-#: kiokdeconnect.cpp:160
-msgid "Camera pictures"
-msgstr "Photos"
-
-#: kiokdeconnect.cpp:169
-msgid "All files"
-msgstr "Tous les fichiers"
-
-#: kiokdeconnect.cpp:194
+#: kiokdeconnect.cpp:189
 msgid "Could not contact background service."
 msgstr "Impossible de contacter le service d'arrière plan."

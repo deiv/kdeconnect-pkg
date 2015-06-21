@@ -53,8 +53,9 @@ struct SftpPlugin::Pimpl
 
 SftpPlugin::SftpPlugin(QObject *parent, const QVariantList &args)
     : KdeConnectPlugin(parent, args)
-    , m_d(new Pimpl)
+    , m_d(new Pimpl())
 { 
+    deviceId = device()->id();
     addToDolphin();
     kDebug(debugArea()) << "Created device:" << device()->name();
 }
@@ -64,20 +65,19 @@ SftpPlugin::~SftpPlugin()
     QDBusConnection::sessionBus().unregisterObject(dbusPath(), QDBusConnection::UnregisterTree);
     removeFromDolphin();    
     unmount();
-    kDebug(debugArea()) << "Destroyed device:" << device()->name();
 }
 
 void SftpPlugin::addToDolphin()
 {
     removeFromDolphin();
-    KUrl kioUrl("kdeconnect://"+device()->id()+"/");
+    KUrl kioUrl("kdeconnect://"+deviceId+"/");
     m_d->placesModel.addPlace(device()->name(), kioUrl, "kdeconnect");
     kDebug(debugArea()) << "add to dolphin";
 }
 
 void SftpPlugin::removeFromDolphin()
 {
-    KUrl kioUrl("kdeconnect://"+device()->id()+"/");
+    KUrl kioUrl("kdeconnect://"+deviceId+"/");
     QModelIndex index = m_d->placesModel.closestItem(kioUrl);
     while (index.row() != -1) {
         m_d->placesModel.removePlace(index);
@@ -134,20 +134,32 @@ bool SftpPlugin::startBrowsing()
 {
     if (mountAndWait()) {
         //return new KRun(KUrl::fromLocalFile(mountPoint()), 0);
-        return new KRun(KUrl::fromPathOrUrl("kdeconnect://"+device()->id()), 0);
+        return new KRun(KUrl::fromPathOrUrl("kdeconnect://"+deviceId), 0);
     }
     return false;
 }
 
 bool SftpPlugin::receivePackage(const NetworkPackage& np)
 {
-    if (!(fields_c - np.body().keys().toSet()).isEmpty())
-    {
+    if (!(fields_c - np.body().keys().toSet()).isEmpty()) {
         // package is invalid
         return false;
     }
     
     Q_EMIT packageReceived(np);
+
+    remoteDirectories.clear();
+    if (np.has("multiPaths")) {
+        QStringList paths = np.get<QStringList>("multiPaths",QStringList());
+        QStringList names = np.get<QStringList>("pathNames",QStringList());
+        int size = qMin<int>(names.size(), paths.size());
+        for (int i = 0; i < size; i++) {
+            remoteDirectories.insert(mountPoint() + paths.at(i), names.at(i));
+        }
+    } else {
+        remoteDirectories.insert(mountPoint(), i18n("All files"));
+        remoteDirectories.insert(mountPoint() + "/DCIM/Camera", i18n("Camera pictures"));
+    }
 
     return true;
 }
@@ -155,7 +167,7 @@ bool SftpPlugin::receivePackage(const NetworkPackage& np)
 QString SftpPlugin::mountPoint()
 {
     const QString mountDir = KStandardDirs::locateLocal("appdata", "", true, KComponentData("kdeconnect", "kdeconnect"));
-    return QDir(mountDir).absoluteFilePath(device()->id());
+    return QDir(mountDir).absoluteFilePath(deviceId);
 }
 
 void SftpPlugin::onMounted()
@@ -196,4 +208,10 @@ void SftpPlugin::knotify(int type, const QString& text, const QPixmap& icon) con
       , i18n("Device %1", device()->name()), text, icon, 0
       , KNotification::CloseOnTimeout);
 }
+
+QVariantMap SftpPlugin::getDirectories()
+{
+    return remoteDirectories;
+}
+
 

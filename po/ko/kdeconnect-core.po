@@ -1,0 +1,85 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+# Park Shinjo <kde@peremen.name>, 2015.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2015-01-22 02:01+0000\n"
+"PO-Revision-Date: 2015-01-02 01:01+0900\n"
+"Last-Translator: Park Shinjo <kde@peremen.name>\n"
+"Language-Team: Korean <kde@peremen.name>\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Lokalize 1.5\n"
+
+#: device.cpp:186
+msgid "Already paired"
+msgstr "이미 페어링됨"
+
+#: device.cpp:189
+msgid "Pairing already requested for this device"
+msgstr "이 장치의 페어링이 이미 요청됨"
+
+#: device.cpp:193
+msgid "Device not reachable"
+msgstr "장치에 접근할 수 없음"
+
+#: device.cpp:206
+msgid "Error contacting device"
+msgstr "장치와 통신하는 중 오류 발생"
+
+#: device.cpp:244
+msgid "Timed out"
+msgstr "시간 초과됨"
+
+#: device.cpp:343 device.cpp:395
+msgid "Canceled by other peer"
+msgstr "다른 쪽에서 취소함"
+
+#: device.cpp:359
+msgid "Received incorrect key"
+msgstr "잘못된 키 받음"
+
+#: device.cpp:376
+#, kde-format
+msgid "Pairing request from %1"
+msgstr "%1에서 페어링 요청 보냄"
+
+#: device.cpp:377
+msgid "Accept"
+msgstr "수락"
+
+#: device.cpp:377
+msgid "Reject"
+msgstr "거부"
+
+#: device.cpp:437
+msgid "Canceled by the user"
+msgstr "사용자가 취소함"
+
+#: filetransferjob.cpp:59 filetransferjob.cpp:120
+msgid "Receiving file over KDE-Connect"
+msgstr "KDE-Connect로 파일 받는 중"
+
+#: filetransferjob.cpp:60 filetransferjob.cpp:121
+msgctxt "File transfer origin"
+msgid "From"
+msgstr "보냄"
+
+#: filetransferjob.cpp:67
+msgid "Incoming file exists"
+msgstr "들어오는 파일 있음"
+
+#: filetransferjob.cpp:123
+msgctxt "File transfer destination"
+msgid "To"
+msgstr "받음"
+
+#: filetransferjob.cpp:196
+msgid "Received incomplete file"
+msgstr "완전하지 않은 파일 받음"

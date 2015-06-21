@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-07-01 02:07+0000\n"
+"POT-Creation-Date: 2014-08-12 02:06+0000\n"
 "PO-Revision-Date: 2014-03-25 16:46+0200\n"
 "Last-Translator: Sergiu Bivol <sergiu@ase.md>\n"
 "Language-Team: Romanian <kde-i18n-ro@kde.org>\n"
@@ -18,44 +18,49 @@ msgstr ""
 "20)) ? 1 : 2;\n"
 "X-Generator: Lokalize 1.5\n"
 
-#: kcm.cpp:145 kcm.cpp:229
+#: kcm.cpp:152 kcm.cpp:236
 msgid "(paired)"
 msgstr "(asociat)"
 
-#: kcm.cpp:145 kcm.cpp:201 kcm.cpp:212
+#: kcm.cpp:152 kcm.cpp:208 kcm.cpp:219
 msgid "(unpaired)"
 msgstr "(neasociat)"
 
-#: kcm.cpp:159
+#: kcm.cpp:166
 msgid "Plugins"
 msgstr "Extensii"
 
-#: kcm.cpp:214
+#: kcm.cpp:221
 #, kde-format
 msgid "Error trying to pair: %1"
 msgstr "Eroare la încercarea de asociere: %1"
 
+#. i18n: ectx: property (text), widget (QPushButton, refresh_button)
+#: kcm.ui:41
+msgid "Refresh"
+msgstr ""
+
 #. i18n: ectx: property (text), widget (QLabel, name_label)
-#: kcm.ui:84
+#: kcm.ui:88
 msgid "Device"
 msgstr "Dispozitiv"
 
 #. i18n: ectx: property (text), widget (QLabel, status_label)
-#: kcm.ui:97
+#: kcm.ui:101
 msgid "(status)"
 msgstr "(stare)"
 
 #. i18n: ectx: property (text), widget (QPushButton, pair_button)
-#: kcm.ui:142
+#: kcm.ui:146
 msgid "Request pair"
 msgstr "Cere asocierea"
 
 #. i18n: ectx: property (text), widget (QPushButton, unpair_button)
-#: kcm.ui:155
+#: kcm.ui:159
 msgid "Unpair"
 msgstr "Dezasociază"
 
 #. i18n: ectx: property (text), widget (QPushButton, ping_button)
-#: kcm.ui:168
+#: kcm.ui:172
 msgid "Send ping"
 msgstr "Trimite ping"

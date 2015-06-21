@@ -2,13 +2,14 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Burkhard Lück <lueck@hube-lueck.de>, 2013, 2014.
+# Frederik Schwarzer <schwarzer@kde.org>, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2014-06-18 01:56+0000\n"
-"PO-Revision-Date: 2014-03-04 07:25+0100\n"
-"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"PO-Revision-Date: 2014-07-18 22:34+0200\n"
+"Last-Translator: Frederik Schwarzer <schwarzer@kde.org>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
@@ -30,10 +31,8 @@ msgid "kdeconnect"
 msgstr "KdeConnect"
 
 #: kdeconnectd.cpp:65
-#, fuzzy
-#| msgid "connect devices"
 msgid "Connect your devices and KDE"
-msgstr "Geräte verbinden"
+msgstr "Verbinden Sie Ihre Geräte mit KDE"
 
 
 

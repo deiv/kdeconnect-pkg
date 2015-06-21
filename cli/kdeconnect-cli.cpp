@@ -25,25 +25,29 @@
 #include <interfaces/devicesmodel.h>
 #include <interfaces/notificationsmodel.h>
 #include <interfaces/dbusinterfaces.h>
-#include <iostream>
 #include <QDBusMessage>
 #include <QDBusConnection>
+#include <QTextStream>
 
 int main(int argc, char** argv)
 {
     KAboutData about("kdeconnect-cli", "kdeconnect-cli", ki18n(("kdeconnect-cli")), "1.0", ki18n("KDE Connect CLI tool"),
                      KAboutData::License_GPL, ki18n("(C) 2013 Aleix Pol Gonzalez"));
     about.addAuthor( ki18n("Aleix Pol Gonzalez"), KLocalizedString(), "aleixpol@kde.org" );
+    about.addAuthor( ki18n("Albert Vaca Cintora"), KLocalizedString(), "albertvaka@gmail.com" );
     KCmdLineArgs::init(argc, argv, &about);
     KCmdLineOptions options;
     options.add("l")
-           .add("list-devices", ki18n("List all devices"));
-    options.add("share <path>", ki18n("Share a file to a said device"));
-    options.add("pair", ki18n("Request pairing to a said device"));
-    options.add("unpair", ki18n("Stop pairing to a said device"));
-    options.add("ping", ki18n("Sends a ping to said device"));
-    options.add("list-notifications", ki18n("Display the notifications on a said device"));
-    options.add("device <dev>", ki18n("Device ID"));
+           .add("list-devices", ki18n("List all devices."));
+    options.add("refresh", ki18n("Search for devices in the network and re-establish connections."));
+    options.add("pair", ki18n("Request pairing to a said device."));
+    options.add("unpair", ki18n("Stop pairing to a said device."));
+    options.add("ping", ki18n("Send a ping to said device."));
+    options.add("ping-msg <message>", ki18n("Same as ping but you can customize the message shown."));
+    options.add("share <path>", ki18n("Share a file to a said device."));
+    options.add("list-notifications", ki18n("Display the notifications on a said device."));
+    options.add("d")
+           .add("device <dev>", ki18n("Device ID."));
     KCmdLineArgs::addCmdLineOptions( options );
     KCmdLineArgs* args = KCmdLineArgs::parsedArgs();
     KApplication app;
@@ -63,10 +67,13 @@ int main(int argc, char** argv)
                     statusInfo = "(paired and reachable)";
                     break;
             }
-            std::cout << "- " << idx.data(Qt::DisplayRole).toString().toStdString()
-                      << ": " << idx.data(DevicesModel::IdModelRole).toString().toStdString() << ' ' << statusInfo.toStdString() << std::endl;
+            QTextStream(stdout) << "- " << idx.data(Qt::DisplayRole).toString()
+                      << ": " << idx.data(DevicesModel::IdModelRole).toString() << ' ' << statusInfo << endl;
         }
-        std::cout << devices.rowCount() << " devices found" << std::endl;
+        QTextStream(stdout) << devices.rowCount() << " devices found" << endl;
+    } else if(args->isSet("refresh")) {
+        QDBusMessage msg = QDBusMessage::createMethodCall("org.kde.kdeconnect", "/modules/kdeconnect", "org.kde.kdeconnect.daemon", "forceOnNetworkChange");
+        QDBusConnection::sessionBus().call(msg);
     } else {
         QString device;
         if(!args->isSet("device")) {
@@ -75,7 +82,7 @@ int main(int argc, char** argv)
         device = args->getOption("device");
         QUrl url;
         if(args->isSet("share")) {
-            url = args->makeURL(args->getOption("share").toLatin1());
+            url = args->makeURL(args->getOption("share").toUtf8());
             args->clear();
             if(!url.isEmpty() && !device.isEmpty()) {
                 QDBusMessage msg = QDBusMessage::createMethodCall("org.kde.kdeconnect", "/modules/kdeconnect/devices/"+device+"/share", "org.kde.kdeconnect.device.share", "shareUrl");
@@ -86,7 +93,7 @@ int main(int argc, char** argv)
         } else if(args->isSet("pair")) {
             DeviceDbusInterface dev(device);
             if(dev.isPaired())
-                std::cout << "Already paired" << std::endl;
+                QTextStream(stdout) << "Already paired" << endl;
             else {
                 QDBusPendingReply<void> req = dev.requestPair();
                 req.waitForFinished();
@@ -94,21 +101,25 @@ int main(int argc, char** argv)
         } else if(args->isSet("unpair")) {
             DeviceDbusInterface dev(device);
             if(!dev.isPaired())
-                std::cout << "Already not paired" << std::endl;
+                QTextStream(stdout) << "Already not paired" << endl;
             else {
                 QDBusPendingReply<void> req = dev.unpair();
                 req.waitForFinished();
             }
-        } else if(args->isSet("ping")) {
+        } else if(args->isSet("ping") || args->isSet("ping-msg")) {
             QDBusMessage msg = QDBusMessage::createMethodCall("org.kde.kdeconnect", "/modules/kdeconnect/devices/"+device+"/ping", "org.kde.kdeconnect.device.ping", "sendPing");
+            if (args->isSet("ping-msg")) {
+                QString message = args->getOption("ping-msg");
+                msg.setArguments(QVariantList() << message);
+            }
             QDBusConnection::sessionBus().call(msg);
         } else if(args->isSet("list-notifications")) {
             NotificationsModel notifications;
             notifications.setDeviceId(device);
             for(int i=0, rows=notifications.rowCount(); i<rows; ++i) {
                 QModelIndex idx = notifications.index(i);
-                std::cout << "- " << idx.data(NotificationsModel::AppNameModelRole).toString().toStdString()
-                << ": " << idx.data(NotificationsModel::NameModelRole).toString().toStdString() << std::endl;
+                QTextStream(stdout) << "- " << idx.data(NotificationsModel::AppNameModelRole).toString()
+                << ": " << idx.data(NotificationsModel::NameModelRole).toString() << endl;
             }
         } else {
             KCmdLineArgs::usageError(i18n("Nothing to be done with the device"));

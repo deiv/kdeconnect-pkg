@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeconnect-kio\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-02-15 01:46+0000\n"
+"POT-Creation-Date: 2014-10-11 01:54+0000\n"
 "PO-Revision-Date: 2014-02-16 19:16+0100\n"
 "Last-Translator: Roman Paholík <wizzardsk@gmail.com>\n"
 "Language-Team: Slovak <kde-sk@linux.sk>\n"
@@ -31,22 +31,14 @@ msgstr "kiokdeconnect"
 msgid "Listing devices..."
 msgstr "Vypisovanie zariadení..."
 
-#: kiokdeconnect.cpp:130
+#: kiokdeconnect.cpp:131
 msgid "Accessing device..."
 msgstr "Pristupujem k zariadeniu..."
 
-#: kiokdeconnect.cpp:145
+#: kiokdeconnect.cpp:144
 msgid "Could not mount device filesystem"
 msgstr "Nemôžem pripojiť súborový systém zariadenia"
 
-#: kiokdeconnect.cpp:160
-msgid "Camera pictures"
-msgstr "Obrázky fotoaparátu"
-
-#: kiokdeconnect.cpp:169
-msgid "All files"
-msgstr "Všetky súbory"
-
-#: kiokdeconnect.cpp:194
+#: kiokdeconnect.cpp:189
 msgid "Could not contact background service."
 msgstr "Nemôžem kontaktovať službu pozadia."

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-02-15 01:46+0000\n"
+"POT-Creation-Date: 2014-10-11 01:54+0000\n"
 "PO-Revision-Date: 2014-03-25 16:44+0200\n"
 "Last-Translator: Sergiu Bivol <sergiu@ase.md>\n"
 "Language-Team: Romanian <kde-i18n-ro@kde.org>\n"
@@ -34,22 +34,14 @@ msgstr "kiokdeconnect"
 msgid "Listing devices..."
 msgstr "Se enumeră dispozitivele..."
 
-#: kiokdeconnect.cpp:130
+#: kiokdeconnect.cpp:131
 msgid "Accessing device..."
 msgstr "Se accesează dispozitivul..."
 
-#: kiokdeconnect.cpp:145
+#: kiokdeconnect.cpp:144
 msgid "Could not mount device filesystem"
 msgstr "Sistemul de fișiere de pe dispozitiv nu a putut fi montat"
 
-#: kiokdeconnect.cpp:160
-msgid "Camera pictures"
-msgstr "Imagini de pe aparat foto"
-
-#: kiokdeconnect.cpp:169
-msgid "All files"
-msgstr "Toate fișierele"
-
-#: kiokdeconnect.cpp:194
+#: kiokdeconnect.cpp:189
 msgid "Could not contact background service."
 msgstr "Serviciul de fundal nu a putut fi contactat."

@@ -1,0 +1,66 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Safa Alfulaij <safa1996alfulaij@gmail.com>, 2015.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-08-12 02:06+0000\n"
+"PO-Revision-Date: 2015-01-11 19:09+0300\n"
+"Last-Translator: Safa Alfulaij <safa1996alfulaij@gmail.com>\n"
+"Language-Team: Arabic <kde-i18n-doc@kde.org>\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+"X-Generator: Lokalize 1.5\n"
+
+#: kcm.cpp:152 kcm.cpp:236
+msgid "(paired)"
+msgstr "(مقترن)"
+
+#: kcm.cpp:152 kcm.cpp:208 kcm.cpp:219
+msgid "(unpaired)"
+msgstr "(غير مقترن)"
+
+#: kcm.cpp:166
+msgid "Plugins"
+msgstr "الملحقات"
+
+#: kcm.cpp:221
+#, kde-format
+msgid "Error trying to pair: %1"
+msgstr "خطأ في محاولة الاقتران: %1"
+
+#. i18n: ectx: property (text), widget (QPushButton, refresh_button)
+#: kcm.ui:41
+msgid "Refresh"
+msgstr "أنعش"
+
+#. i18n: ectx: property (text), widget (QLabel, name_label)
+#: kcm.ui:88
+msgid "Device"
+msgstr "الجهاز"
+
+#. i18n: ectx: property (text), widget (QLabel, status_label)
+#: kcm.ui:101
+msgid "(status)"
+msgstr "(الحالة)"
+
+#. i18n: ectx: property (text), widget (QPushButton, pair_button)
+#: kcm.ui:146
+msgid "Request pair"
+msgstr "اطلب الاقتران"
+
+#. i18n: ectx: property (text), widget (QPushButton, unpair_button)
+#: kcm.ui:159
+msgid "Unpair"
+msgstr "أزل الاقتران"
+
+#. i18n: ectx: property (text), widget (QPushButton, ping_button)
+#: kcm.ui:172
+msgid "Send ping"
+msgstr "أرسل وخزة"

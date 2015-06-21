@@ -22,8 +22,8 @@
 
 #include <KLocalizedString>
 #include <KIcon>
-
 #include <core/kdebugnamespace.h>
+
 
 K_PLUGIN_FACTORY( KdeConnectPluginFactory, registerPlugin< TelephonyPlugin >(); )
 K_EXPORT_PLUGIN( KdeConnectPluginFactory("kdeconnect_telephony", "kdeconnect-plugins") )
@@ -60,10 +60,13 @@ KNotification* TelephonyPlugin::createNotification(const NetworkPackage& np)
     } else if (event == "talking") {
         return NULL;
     } else {
-        //TODO: return NULL if !debug
-        type = "unknownEvent";
+#ifdef NDEBUG
+        return NULL;
+#else
+        type = "callReceived";
         icon = "pda";
         content = i18n("Unknown telephony event: %2", event);
+#endif
     }
 
     kDebug(debugArea()) << "Creating notification with type:" << type;
@@ -73,6 +76,11 @@ KNotification* TelephonyPlugin::createNotification(const NetworkPackage& np)
     notification->setComponentData(KComponentData("kdeconnect", "kdeconnect-kded"));
     notification->setTitle(title);
     notification->setText(content);
+
+    if (event == "ringing") {
+        notification->setActions( QStringList(i18n("Mute call")) );
+        connect(notification, SIGNAL(action1Activated()), this, SLOT(sendMutePackage()));
+    }
 
     return notification;
 
@@ -95,4 +103,11 @@ bool TelephonyPlugin::receivePackage(const NetworkPackage& np)
 
     return true;
 
+}
+
+void TelephonyPlugin::sendMutePackage()
+{
+    NetworkPackage package(PACKAGE_TYPE_TELEPHONY);
+    package.set<QString>( "action", "mute" );
+    sendPackage(package);
 }

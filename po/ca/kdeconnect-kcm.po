@@ -3,14 +3,14 @@
 # This file is distributed under the license LGPL version 2.1 or
 # version 3 or later versions approved by the membership of KDE e.V.
 #
-# Antoni Bella Pérez <antonibella5@orange.es>, 2014.
+# Antoni Bella Pérez <antonibella5@yahoo.com>, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: kdeconnect-kcm\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-07-01 02:07+0000\n"
-"PO-Revision-Date: 2014-06-05 21:53+0200\n"
-"Last-Translator: Antoni Bella Pérez <antonibella5@orange.es>\n"
+"POT-Creation-Date: 2014-08-12 02:06+0000\n"
+"PO-Revision-Date: 2014-08-16 16:41+0200\n"
+"Last-Translator: Antoni Bella Pérez <antonibella5@yahoo.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
@@ -19,44 +19,49 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Lokalize 1.5\n"
 
-#: kcm.cpp:145 kcm.cpp:229
+#: kcm.cpp:152 kcm.cpp:236
 msgid "(paired)"
 msgstr "(aparellat)"
 
-#: kcm.cpp:145 kcm.cpp:201 kcm.cpp:212
+#: kcm.cpp:152 kcm.cpp:208 kcm.cpp:219
 msgid "(unpaired)"
 msgstr "(sense aparellar)"
 
-#: kcm.cpp:159
+#: kcm.cpp:166
 msgid "Plugins"
 msgstr "Connectors"
 
-#: kcm.cpp:214
+#: kcm.cpp:221
 #, kde-format
 msgid "Error trying to pair: %1"
 msgstr "Error en intentar aparellar: %1"
 
+#. i18n: ectx: property (text), widget (QPushButton, refresh_button)
+#: kcm.ui:41
+msgid "Refresh"
+msgstr "Refresca"
+
 #. i18n: ectx: property (text), widget (QLabel, name_label)
-#: kcm.ui:84
+#: kcm.ui:88
 msgid "Device"
 msgstr "Dispositiu"
 
 #. i18n: ectx: property (text), widget (QLabel, status_label)
-#: kcm.ui:97
+#: kcm.ui:101
 msgid "(status)"
 msgstr "(estat)"
 
 #. i18n: ectx: property (text), widget (QPushButton, pair_button)
-#: kcm.ui:142
+#: kcm.ui:146
 msgid "Request pair"
 msgstr "Demana aparellar"
 
 #. i18n: ectx: property (text), widget (QPushButton, unpair_button)
-#: kcm.ui:155
+#: kcm.ui:159
 msgid "Unpair"
 msgstr "Desparella"
 
 #. i18n: ectx: property (text), widget (QPushButton, ping_button)
-#: kcm.ui:168
+#: kcm.ui:172
 msgid "Send ping"
 msgstr "Envia un ping"

@@ -1,13 +1,15 @@
-# Copyright (C) YEAR This_file_is_part_of_KDE
-# This file is distributed under the same license as the PACKAGE package.
+# Translation of kdeconnect-cli.po to Ukrainian
+# Copyright (C) 2014 This_file_is_part_of_KDE
+# This file is distributed under the license LGPL version 2.1 or
+# version 3 or later versions approved by the membership of KDE e.V.
 #
 # Yuri Chornoivan <yurchor@ukr.net>, 2014.
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
+"Project-Id-Version: kdeconnect-cli\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-07-01 02:07+0000\n"
-"PO-Revision-Date: 2014-07-01 08:44+0300\n"
+"POT-Creation-Date: 2014-11-11 02:05+0000\n"
+"PO-Revision-Date: 2014-11-11 09:14+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
@@ -38,43 +40,57 @@ msgstr "© Aleix Pol Gonzalez, 2013"
 msgid "Aleix Pol Gonzalez"
 msgstr "Aleix Pol Gonzalez"
 
-#: kdeconnect-cli.cpp:40
-msgid "List all devices"
-msgstr "Вивести список усіх пристроїв"
+#: kdeconnect-cli.cpp:37
+msgid "Albert Vaca Cintora"
+msgstr "Albert Vaca Cintora"
 
 #: kdeconnect-cli.cpp:41
-msgid "Share a file to a said device"
-msgstr "Надати файл у спільне зі вказаним пристроєм користування"
+msgid "List all devices."
+msgstr "Вивести список усіх пристроїв."
 
 #: kdeconnect-cli.cpp:42
-msgid "Request pairing to a said device"
-msgstr "Надіслати запит щодо встановлення зв’язку із вказаним пристроєм"
+msgid "Search for devices in the network and re-establish connections."
+msgstr "Виконати пошук пристроїв у мережі і повторно встановити з’єднання."
 
 #: kdeconnect-cli.cpp:43
-msgid "Stop pairing to a said device"
-msgstr "Розірвати зв’язок із вказаним пристроєм"
+msgid "Request pairing to a said device."
+msgstr "Надіслати запит щодо встановлення зв’язку із вказаним пристроєм."
 
 #: kdeconnect-cli.cpp:44
-msgid "Sends a ping to said device"
-msgstr "Надіслати луна-імпульс підтримання зв’язку до вказаного пристрою"
+msgid "Stop pairing to a said device."
+msgstr "Розірвати зв’язок із вказаним пристроєм."
 
 #: kdeconnect-cli.cpp:45
-msgid "Display the notifications on a said device"
-msgstr "Показувати сповіщення щодо вказаного пристрою"
+msgid "Send a ping to said device."
+msgstr "Надіслати луна-імпульс підтримання зв’язку до вказаного пристрою"
 
 #: kdeconnect-cli.cpp:46
-msgid "Device ID"
-msgstr "Ід. пристрою"
+msgid "Same as ping but you can customize the message shown."
+msgstr ""
+"Те саме, що і надсилання луна-імпульсу, але можна налаштувати показане "
+"повідомлення."
 
-#: kdeconnect-cli.cpp:73
+#: kdeconnect-cli.cpp:47
+msgid "Share a file to a said device."
+msgstr "Надати файл у спільне зі вказаним пристроєм користування."
+
+#: kdeconnect-cli.cpp:48
+msgid "Display the notifications on a said device."
+msgstr "Показувати сповіщення щодо вказаного пристрою."
+
+#: kdeconnect-cli.cpp:50
+msgid "Device ID."
+msgstr "Ідентифікатор пристрою."
+
+#: kdeconnect-cli.cpp:80
 msgid "No device specified"
 msgstr "Не вказано пристрій"
 
-#: kdeconnect-cli.cpp:85
+#: kdeconnect-cli.cpp:92
 #, kde-format
 msgid "Couldn't share %1"
 msgstr "Не вдалося надати у спільне користування %1"
 
-#: kdeconnect-cli.cpp:114
+#: kdeconnect-cli.cpp:125
 msgid "Nothing to be done with the device"
 msgstr "Дій із пристроєм не передбачено"

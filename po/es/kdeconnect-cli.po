@@ -6,15 +6,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-07-01 02:07+0000\n"
-"PO-Revision-Date: 2014-06-20 16:37+0200\n"
-"Last-Translator: Victor Rodrigo Cordoba <vrcordoba@gmail.com>\n"
+"POT-Creation-Date: 2014-11-11 02:05+0000\n"
+"PO-Revision-Date: 2014-11-12 22:37+0100\n"
+"Last-Translator: Víctor Rodrigo Córdoba <vrcordoba@gmail.com>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Lokalize 1.5\n"
 
 msgctxt "NAME OF TRANSLATORS"
@@ -37,43 +37,55 @@ msgstr "«©» 2013 Aleix Pol Gonzalez"
 msgid "Aleix Pol Gonzalez"
 msgstr "Aleix Pol Gonzalez"
 
-#: kdeconnect-cli.cpp:40
-msgid "List all devices"
-msgstr "Mostrar todos los dispositivos"
+#: kdeconnect-cli.cpp:37
+msgid "Albert Vaca Cintora"
+msgstr "Albert Vaca Cintora"
 
 #: kdeconnect-cli.cpp:41
-msgid "Share a file to a said device"
-msgstr ""
+msgid "List all devices."
+msgstr "Mostrar todos los dispositivos."
 
 #: kdeconnect-cli.cpp:42
-msgid "Request pairing to a said device"
-msgstr ""
+msgid "Search for devices in the network and re-establish connections."
+msgstr "Buscar dispositivos en la red y restablecer conexiones."
 
 #: kdeconnect-cli.cpp:43
-msgid "Stop pairing to a said device"
-msgstr ""
+msgid "Request pairing to a said device."
+msgstr "Solicitar emparejamiento con un dispositivo dado."
 
 #: kdeconnect-cli.cpp:44
-msgid "Sends a ping to said device"
-msgstr ""
+msgid "Stop pairing to a said device."
+msgstr "Parar emparejamiento con un dispositivo dado."
 
 #: kdeconnect-cli.cpp:45
-msgid "Display the notifications on a said device"
-msgstr ""
+msgid "Send a ping to said device."
+msgstr "Envía un ping a un dispositivo dado."
 
 #: kdeconnect-cli.cpp:46
-msgid "Device ID"
-msgstr "Identificador del dispositivo"
+msgid "Same as ping but you can customize the message shown."
+msgstr "Igual que el ping, pero pudiendo personalizar el mensaje mostrado."
 
-#: kdeconnect-cli.cpp:73
+#: kdeconnect-cli.cpp:47
+msgid "Share a file to a said device."
+msgstr "Compartir un archivo con un dispositivo dado."
+
+#: kdeconnect-cli.cpp:48
+msgid "Display the notifications on a said device."
+msgstr "Mostrar las notificaciones de un dispositivo dado."
+
+#: kdeconnect-cli.cpp:50
+msgid "Device ID."
+msgstr "Identificador del dispositivo."
+
+#: kdeconnect-cli.cpp:80
 msgid "No device specified"
 msgstr "No se ha especificado ningún dispositivo"
 
-#: kdeconnect-cli.cpp:85
+#: kdeconnect-cli.cpp:92
 #, kde-format
 msgid "Couldn't share %1"
-msgstr ""
+msgstr "No se pudo compartir %1"
 
-#: kdeconnect-cli.cpp:114
+#: kdeconnect-cli.cpp:125
 msgid "Nothing to be done with the device"
 msgstr "Nada que hacer con el dispositivo"

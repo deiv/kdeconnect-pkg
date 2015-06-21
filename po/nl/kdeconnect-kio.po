@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-02-15 01:46+0000\n"
+"POT-Creation-Date: 2014-10-11 01:54+0000\n"
 "PO-Revision-Date: 2014-02-15 16:59+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: Dutch <kde-i18n-nl@kde.org>\n"
@@ -33,22 +33,14 @@ msgstr "kiokdeconnect"
 msgid "Listing devices..."
 msgstr "Lijst met apparaten maken..."
 
-#: kiokdeconnect.cpp:130
+#: kiokdeconnect.cpp:131
 msgid "Accessing device..."
 msgstr "Toegang tot apparaat proberen..."
 
-#: kiokdeconnect.cpp:145
+#: kiokdeconnect.cpp:144
 msgid "Could not mount device filesystem"
 msgstr "Kon het bestandssysteem van het apparaat niet aankoppelen"
 
-#: kiokdeconnect.cpp:160
-msgid "Camera pictures"
-msgstr "Afbeeldingen van camera"
-
-#: kiokdeconnect.cpp:169
-msgid "All files"
-msgstr "Alle bestanden"
-
-#: kiokdeconnect.cpp:194
+#: kiokdeconnect.cpp:189
 msgid "Could not contact background service."
 msgstr "Kon geen contact maken met de achtergrondservice."

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-02-15 01:46+0000\n"
+"POT-Creation-Date: 2014-10-11 01:54+0000\n"
 "PO-Revision-Date: 2014-02-23 14:33+0100\n"
 "Last-Translator: Martin Schlander <mschlander@opensuse.org>\n"
 "Language-Team: Danish <kde-i18n-doc@kde.org>\n"
@@ -33,22 +33,14 @@ msgstr "kiokdeconnect"
 msgid "Listing devices..."
 msgstr "Oplistning af enheder..."
 
-#: kiokdeconnect.cpp:130
+#: kiokdeconnect.cpp:131
 msgid "Accessing device..."
 msgstr "Tilgår enhed..."
 
-#: kiokdeconnect.cpp:145
+#: kiokdeconnect.cpp:144
 msgid "Could not mount device filesystem"
 msgstr "Kunne ikke montere enhedens filsystem"
 
-#: kiokdeconnect.cpp:160
-msgid "Camera pictures"
-msgstr "Kamerabilleder"
-
-#: kiokdeconnect.cpp:169
-msgid "All files"
-msgstr "Alle filer"
-
-#: kiokdeconnect.cpp:194
+#: kiokdeconnect.cpp:189
 msgid "Could not contact background service."
 msgstr "Kunne ikke kontakte baggrundstjenesten."

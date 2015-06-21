@@ -1,0 +1,108 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+# Sebastien Renard <renard@kde.org>, 2014.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-11-11 02:05+0000\n"
+"PO-Revision-Date: 2014-09-21 18:01+0200\n"
+"Last-Translator: Sebastien Renard <renard@kde.org>\n"
+"Language-Team: French <kde-francophone@kde.org>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Lokalize 1.5\n"
+"X-Environment: kde\n"
+"X-Accelerator-Marker: &\n"
+"X-Text-Markup: kde4\n"
+
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Sébastien Renard"
+
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "renard@kde.org"
+
+#: kdeconnect-cli.cpp:34
+msgid "KDE Connect CLI tool"
+msgstr "Outil ligne de commande de KDE Connect"
+
+#: kdeconnect-cli.cpp:35
+msgid "(C) 2013 Aleix Pol Gonzalez"
+msgstr "(C) 2013 Aleix Pol Gonzalez"
+
+#: kdeconnect-cli.cpp:36
+msgid "Aleix Pol Gonzalez"
+msgstr "Aleix Pol Gonzalez"
+
+#: kdeconnect-cli.cpp:37
+msgid "Albert Vaca Cintora"
+msgstr ""
+
+#: kdeconnect-cli.cpp:41
+#, fuzzy
+#| msgid "List all devices"
+msgid "List all devices."
+msgstr "Afficher tous les périphériques"
+
+#: kdeconnect-cli.cpp:42
+msgid "Search for devices in the network and re-establish connections."
+msgstr ""
+
+#: kdeconnect-cli.cpp:43
+#, fuzzy
+#| msgid "Request pairing to a said device"
+msgid "Request pairing to a said device."
+msgstr "Demander l'appariement avec le périphérique indiqué"
+
+#: kdeconnect-cli.cpp:44
+#, fuzzy
+#| msgid "Stop pairing to a said device"
+msgid "Stop pairing to a said device."
+msgstr "Cesser l'appariement avec le périphérique indiqué"
+
+#: kdeconnect-cli.cpp:45
+#, fuzzy
+#| msgid "Sends a ping to said device"
+msgid "Send a ping to said device."
+msgstr "Envoi un ping au périphérique indiqué"
+
+#: kdeconnect-cli.cpp:46
+msgid "Same as ping but you can customize the message shown."
+msgstr ""
+
+#: kdeconnect-cli.cpp:47
+#, fuzzy
+#| msgid "Share a file to a said device"
+msgid "Share a file to a said device."
+msgstr "Partager un fichier avec le périphérique indiqué"
+
+#: kdeconnect-cli.cpp:48
+#, fuzzy
+#| msgid "Display the notifications on a said device"
+msgid "Display the notifications on a said device."
+msgstr "Afficher toutes les notifications sur le périphérique indiqué"
+
+#: kdeconnect-cli.cpp:50
+#, fuzzy
+#| msgid "Device ID"
+msgid "Device ID."
+msgstr "N° de périphérique"
+
+#: kdeconnect-cli.cpp:80
+msgid "No device specified"
+msgstr "Aucun périphérique indiqué"
+
+#: kdeconnect-cli.cpp:92
+#, kde-format
+msgid "Couldn't share %1"
+msgstr "Impossible de partager %1"
+
+#: kdeconnect-cli.cpp:125
+msgid "Nothing to be done with the device"
+msgstr "Aucune action à effectuer avec ce périphérique"
