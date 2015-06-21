@@ -1,3 +1,19 @@
+kdeconnect (0.8-1) unstable; urgency=medium
+
+  * New upstream version.
+  * Update copyright.
+  * Update standards version; no changes needed.
+  * debian/control:
+      - Add libfakekey-dev and libdbus-1-dev as a build dependency.
+      - Change runtime depend to libqca2-plugins instead of deprecated
+          libqca2-plugins-{gnupg, ossl} packages.
+      - Update Vcs-Browser to use cgit.
+  * Remove some older false positives in lintian overrides that are fixed:
+      - 'desktop-command-not-in-package' for kcmshell4.
+      - 'desktop-entry-lacks-keywords-entry' for kdeconnect.desktop.
+
+ -- David Suárez <david.sephirot@gmail.com>  Sun, 21 Jun 2015 14:15:31 +0200
+
 kdeconnect (0.7.2-1) unstable; urgency=medium
 
   * New upstream version.
